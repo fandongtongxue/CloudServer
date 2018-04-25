@@ -14,7 +14,7 @@ import me.fandong.cloudserver.Model.QiniuCommonListModel;
 import javax.servlet.http.HttpServletRequest;
 
 @RestController
-public class ListBucketController {
+public class ListQiniuBucketController {
     private StringMap stringMap;
     /*
     获取BucketList
@@ -23,7 +23,7 @@ public class ListBucketController {
     @param SK
     @author 范东同学
      */
-    @RequestMapping("/getBucketList")
+    @RequestMapping("/getQiniuBucketList")
     public String getBucketList(HttpServletRequest request) {
         stringMap = new StringMap();
         String AK = request.getParameter("AK");

@@ -10,8 +10,8 @@ import com.qiniu.storage.model.FileListing;
 import com.qiniu.util.Auth;
 import com.qiniu.util.Json;
 import com.qiniu.util.StringMap;
-import me.fandong.cloudserver.Model.QiniuFileListModel;
-import me.fandong.cloudserver.Model.QiniuFileModel;
+import me.fandong.cloudserver.Model.FileListModel;
+import me.fandong.cloudserver.Model.FileModel;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -19,7 +19,7 @@ import javax.servlet.http.HttpServletRequest;
 import java.util.ArrayList;
 
 @RestController
-public class ListFileController {
+public class ListQiniuFileController {
     private StringMap stringMap;
     private String filePrefix;
     /*
@@ -32,7 +32,7 @@ public class ListFileController {
     @param marker(首次传空值)
     @author 范东同学
      */
-    @RequestMapping("/getFileList")
+    @RequestMapping("/getQiniuFileList")
     public String getFileList(HttpServletRequest request){
         stringMap = new StringMap();
         String AK = request.getParameter("AK");
@@ -75,16 +75,16 @@ public class ListFileController {
             //参数五：delimiter 指定目录分隔符，列出所有公共前缀（模拟列出目录效果）。缺省值为空字符串
             FileListing fileListing = bucketManager.listFiles(bucket, filePrefix, marker, 20, null);
             FileInfo[] items = fileListing.items;
-            ArrayList array = new ArrayList<QiniuFileModel>();
+            ArrayList array = new ArrayList<FileModel>();
 
             for (FileInfo fileInfo : items) {
-                QiniuFileModel model = new QiniuFileModel();
+                FileModel model = new FileModel();
                 model.setFileName(fileInfo.key);
                 model.setFileSize(fileInfo.fsize/1024 + "KB");
                 model.setFileType(fileInfo.mimeType);
                 array.add(model);
             }
-            QiniuFileListModel listModel = new QiniuFileListModel();
+            FileListModel listModel = new FileListModel();
             listModel.setList(array);
             listModel.setMarker(fileListing.marker);
             stringMap.put("data",listModel);

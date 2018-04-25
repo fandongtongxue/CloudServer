@@ -1,6 +1,6 @@
 package me.fandong.cloudserver.Model;
 
-public class QiniuFileModel {
+public class FileModel {
 	private String fileName;
 	private String fileSize;
 	private String fileType;
@@ -27,7 +27,7 @@ public class QiniuFileModel {
 
 	@Override
 	public String toString() {
-		return "QiniuFileModel{" +
+		return "FileModel{" +
 				"fileName='" + fileName + '\'' +
 				", fileSize='" + fileSize + '\'' +
 				", fileType='" + fileType + '\'' +

@@ -2,8 +2,8 @@ package me.fandong.cloudserver.Model;
 
 import java.util.ArrayList;
 
-public class QiniuFileListModel {
-    private ArrayList<QiniuFileModel> list;
+public class FileListModel {
+    private ArrayList<FileModel> list;
     private String marker;
 
     public String getMarker() {
@@ -14,17 +14,17 @@ public class QiniuFileListModel {
         this.marker = marker;
     }
 
-    public ArrayList<QiniuFileModel> getList() {
+    public ArrayList<FileModel> getList() {
         return list;
     }
 
-    public void setList(ArrayList<QiniuFileModel> list) {
+    public void setList(ArrayList<FileModel> list) {
         this.list = list;
     }
 
     @Override
     public String toString() {
-        return "QiniuFileListModel{" +
+        return "FileListModel{" +
                 "list=" + list +
                 ", marker='" + marker + '\'' +
                 '}';

@@ -15,7 +15,7 @@ public class QiniuCommonListModel {
 
     @Override
     public String toString() {
-        return "QiniuCommonListModel{" +
+        return "CommonListModel{" +
                 "list=" + Arrays.toString(list) +
                 '}';
     }
