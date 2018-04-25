@@ -67,6 +67,7 @@ public class ListAliyunOSSFileController {
                 FileModel model = new FileModel();
                 model.setFileName(s.getKey());
                 model.setFileSize(s.getSize()/1024 + "KB");
+                model.setFileType("未知");
                 array.add(model);
             }
             nextMarker = objectListing.getNextMarker();
