@@ -28,13 +28,13 @@ public class ListAliyunOSSBucketController {
         //传空值处理
         if (accessKeyId == null){
             stringMap.put("data","");
-            stringMap.put("status",1);
+            stringMap.put("status",0);
             stringMap.put("msg","accessKeyId为空");
             return Json.encode(stringMap);
         }
         if (accessKeySecret == null){
             stringMap.put("data","");
-            stringMap.put("status",1);
+            stringMap.put("status",0);
             stringMap.put("msg","accessKeySecret为空");
             return Json.encode(stringMap);
         }
@@ -54,6 +54,7 @@ public class ListAliyunOSSBucketController {
         for (Bucket bucket:buckets) {
             AliyunOSSBucketModel bucketModel = new AliyunOSSBucketModel();
             bucketModel.setName(bucket.getName());
+            bucketModel.setEndPoint(bucket.getExtranetEndpoint());
             array.add(bucketModel);
         }
         model.setList(array);

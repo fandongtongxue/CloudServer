@@ -2,6 +2,15 @@ package me.fandong.cloudserver.Model;
 
 public class AliyunOSSBucketModel {
     private String name;
+    private String endPoint;
+
+    public String getEndPoint() {
+        return endPoint;
+    }
+
+    public void setEndPoint(String endPoint) {
+        this.endPoint = endPoint;
+    }
 
     public String getName() {
         return name;
@@ -15,6 +24,7 @@ public class AliyunOSSBucketModel {
     public String toString() {
         return "AliyunOSSBucketModel{" +
                 "name='" + name + '\'' +
+                ", endPoint='" + endPoint + '\'' +
                 '}';
     }
 }

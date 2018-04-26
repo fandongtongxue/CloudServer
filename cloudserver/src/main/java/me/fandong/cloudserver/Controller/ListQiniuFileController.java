@@ -42,19 +42,19 @@ public class ListQiniuFileController {
         String marker = request.getParameter("marker");
         if (AK == null){
             stringMap.put("data","");
-            stringMap.put("status",1);
+            stringMap.put("status",0);
             stringMap.put("msg","AK为空");
             return Json.encode(stringMap);
         }
         if (SK == null){
             stringMap.put("data","");
-            stringMap.put("status",1);
+            stringMap.put("status",0);
             stringMap.put("msg","SK为空");
             return Json.encode(stringMap);
         }
         if (bucket == null){
             stringMap.put("data","");
-            stringMap.put("status",1);
+            stringMap.put("status",0);
             stringMap.put("msg","bucket为空");
             return Json.encode(stringMap);
         }
@@ -73,7 +73,7 @@ public class ListQiniuFileController {
             //参数三：marker    上一次获取文件列表时返回的 marker
             //参数四：limit     每次迭代的长度限制，最大1000，推荐值 100
             //参数五：delimiter 指定目录分隔符，列出所有公共前缀（模拟列出目录效果）。缺省值为空字符串
-            FileListing fileListing = bucketManager.listFiles(bucket, filePrefix, marker, 20, null);
+            FileListing fileListing = bucketManager.listFiles(bucket, filePrefix, marker, 10000, null);
             FileInfo[] items = fileListing.items;
             ArrayList array = new ArrayList<FileModel>();
 

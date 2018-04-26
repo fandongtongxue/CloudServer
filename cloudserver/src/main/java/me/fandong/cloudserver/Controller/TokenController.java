@@ -29,19 +29,19 @@ public class TokenController {
         //传空值处理
         if (AK == null){
             stringMap.put("data","");
-            stringMap.put("status",1);
+            stringMap.put("status",0);
             stringMap.put("msg","AK为空");
             return Json.encode(stringMap);
         }
         if (SK == null){
             stringMap.put("data","");
-            stringMap.put("status",1);
+            stringMap.put("status",0);
             stringMap.put("msg","SK为空");
             return Json.encode(stringMap);
         }
         if (bucket == null){
             stringMap.put("data","");
-            stringMap.put("status",1);
+            stringMap.put("status",0);
             stringMap.put("msg","bucket为空");
             return Json.encode(stringMap);
         }
@@ -52,7 +52,7 @@ public class TokenController {
         QiniuTokenModel model = new QiniuTokenModel();
         model.setToken(auth.uploadToken(bucket));
         stringMap.put("data",model);
-        stringMap.put("status",0);
+        stringMap.put("status",1);
         stringMap.put("msg","获取上传token成功");
         return Json.encode(stringMap);
     }

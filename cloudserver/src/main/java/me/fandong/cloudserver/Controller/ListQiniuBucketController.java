@@ -31,13 +31,13 @@ public class ListQiniuBucketController {
         //传空值处理
         if (AK == null){
             stringMap.put("data","");
-            stringMap.put("status",1);
+            stringMap.put("status",0);
             stringMap.put("msg","AK为空");
             return Json.encode(stringMap);
         }
         if (SK == null){
             stringMap.put("data","");
-            stringMap.put("status",1);
+            stringMap.put("status",0);
             stringMap.put("msg","SK为空");
             return Json.encode(stringMap);
         }
