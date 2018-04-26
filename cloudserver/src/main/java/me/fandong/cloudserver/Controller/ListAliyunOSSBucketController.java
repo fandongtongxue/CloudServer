@@ -38,7 +38,7 @@ public class ListAliyunOSSBucketController {
             stringMap.put("msg","accessKeySecret为空");
             return Json.encode(stringMap);
         }
-
+        System.out.println(request.toString());
         String endpoint = "http://oss-cn-hangzhou.aliyuncs.com";
         // accessKey请登录https://ak-console.aliyun.com/#/查看
         // 创建OSSClient实例
@@ -61,6 +61,7 @@ public class ListAliyunOSSBucketController {
         stringMap.put("data",model);
         stringMap.put("status",1);
         stringMap.put("msg","获取Bucket列表数据成功");
+        System.out.println(stringMap.toString());
         return Json.encode(stringMap);
     }
 }

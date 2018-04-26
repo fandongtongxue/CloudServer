@@ -45,6 +45,7 @@ public class TokenController {
             stringMap.put("msg","bucket为空");
             return Json.encode(stringMap);
         }
+        System.out.println(request.toString());
         //密钥配置
         Auth auth = Auth.create(AK, SK);
         //创建上传对象
@@ -54,6 +55,7 @@ public class TokenController {
         stringMap.put("data",model);
         stringMap.put("status",1);
         stringMap.put("msg","获取上传token成功");
+        System.out.println(stringMap.toString());
         return Json.encode(stringMap);
     }
 }

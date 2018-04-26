@@ -59,7 +59,7 @@ public class ListQiniuFileController {
             return Json.encode(stringMap);
         }
 
-        System.out.println(filePrefix);
+        System.out.println(request.toString());
 
         Auth auth = Auth.create(AK, SK);
         Zone z = Zone.zone0();
@@ -90,6 +90,7 @@ public class ListQiniuFileController {
             stringMap.put("data",listModel);
             stringMap.put("status",1);
             stringMap.put("msg","获取文件列表数据成功");
+            System.out.println(stringMap.toString());
             return Json.encode(stringMap);
         } catch (QiniuException e) {
             //捕获异常信息
@@ -97,6 +98,7 @@ public class ListQiniuFileController {
             stringMap.put("data","");
             stringMap.put("status",0);
             stringMap.put("msg",e.error());
+            System.out.println(stringMap.toString());
             return Json.encode(stringMap);
         }
     }

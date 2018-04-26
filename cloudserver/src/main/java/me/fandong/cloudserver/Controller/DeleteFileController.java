@@ -48,6 +48,7 @@ public class DeleteFileController {
             stringMap.put("msg","key为空");
             return Json.encode(stringMap);
         }
+        System.out.println(request.toString());
         Auth auth = Auth.create(AK, SK);
         Zone z = Zone.zone0();
         Configuration c = new Configuration(z);
@@ -58,12 +59,14 @@ public class DeleteFileController {
             stringMap.put("data","");
             stringMap.put("status",1);
             stringMap.put("msg","删除文件成功");
+            System.out.println(stringMap.toString());
             return Json.encode(stringMap);
         } catch (QiniuException e) {
             Response r = e.response;
             stringMap.put("data","");
             stringMap.put("status",0);
             stringMap.put("msg",e.error());
+            System.out.println(stringMap.toString());
             return Json.encode(stringMap);
         }
     }

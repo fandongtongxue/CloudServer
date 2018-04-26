@@ -1,6 +1,5 @@
 package me.fandong.cloudserver.Controller;
 
-import com.qiniu.storage.model.FileInfo;
 import com.qiniu.util.Json;
 import com.qiniu.util.StringMap;
 import me.fandong.cloudserver.Model.FileListModel;
@@ -55,6 +54,7 @@ public class ListAliyunOSSFileController {
             stringMap.put("msg","endPoint为空");
             return Json.encode(stringMap);
         }
+        System.out.println(request.toString());
 
         // endpoint以杭州为例，其它region请按实际情况填写
         // 云账号AccessKey有所有API访问权限，建议遵循阿里云安全最佳实践，创建并使用RAM子账号进行API访问或日常运维，请登录 https://ram.console.aliyun.com 创建
@@ -85,6 +85,7 @@ public class ListAliyunOSSFileController {
             stringMap.put("msg","获取文件列表数据成功");
             // 关闭client
             ossClient.shutdown();
+            System.out.println(stringMap.toString());
             return Json.encode(stringMap);
         } while (objectListing.isTruncated());
     }

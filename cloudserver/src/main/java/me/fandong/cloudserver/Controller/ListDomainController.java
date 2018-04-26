@@ -49,6 +49,7 @@ public class ListDomainController {
             stringMap.put("msg","bucket为空");
             return Json.encode(stringMap);
         }
+        System.out.println(request.toString());
         Auth auth = Auth.create(AK, SK);
         //地区
         Zone z = Zone.zone0();
@@ -61,12 +62,14 @@ public class ListDomainController {
             stringMap.put("data",model);
             stringMap.put("status",1);
             stringMap.put("msg","获取Bucket列表数据成功");
+            System.out.println(stringMap.toString());
             return Json.encode(stringMap);
         } catch (QiniuException e) {
             e.printStackTrace();
             stringMap.put("data","");
             stringMap.put("status",0);
             stringMap.put("msg",e.error());
+            System.out.println(stringMap.toString());
             return Json.encode(stringMap);
         }
     }
