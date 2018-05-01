@@ -19,7 +19,7 @@ import javax.servlet.http.HttpServletRequest;
 import java.util.ArrayList;
 
 @RestController
-public class ListQiniuFileController {
+public class QiniuFileController {
     private StringMap stringMap;
     private String filePrefix;
     /*
@@ -59,7 +59,7 @@ public class ListQiniuFileController {
             return Json.encode(stringMap);
         }
 
-        System.out.println(request.toString());
+        System.out.println(Json.encode(stringMap));
 
         Auth auth = Auth.create(AK, SK);
         Zone z = Zone.zone0();
@@ -90,7 +90,7 @@ public class ListQiniuFileController {
             stringMap.put("data",listModel);
             stringMap.put("status",1);
             stringMap.put("msg","获取文件列表数据成功");
-            System.out.println(stringMap.toString());
+            System.out.println(Json.encode(stringMap));
             return Json.encode(stringMap);
         } catch (QiniuException e) {
             //捕获异常信息
@@ -98,7 +98,62 @@ public class ListQiniuFileController {
             stringMap.put("data","");
             stringMap.put("status",0);
             stringMap.put("msg",e.error());
-            System.out.println(stringMap.toString());
+            System.out.println(Json.encode(stringMap));
+            return Json.encode(stringMap);
+        }
+    }
+
+    //删除文件
+    @RequestMapping("deleteQiniuFile")
+    public String deleteFile(HttpServletRequest request){
+        stringMap = new StringMap();
+        String AK = request.getParameter("AK");
+        String SK = request.getParameter("SK");
+        String bucket = request.getParameter("bucket");
+        String key = request.getParameter("fileName");
+        if (AK == null){
+            stringMap.put("data","");
+            stringMap.put("status",0);
+            stringMap.put("msg","AK为空");
+            return Json.encode(stringMap);
+        }
+        if (SK == null){
+            stringMap.put("data","");
+            stringMap.put("status",0);
+            stringMap.put("msg","SK为空");
+            return Json.encode(stringMap);
+        }
+        if (bucket == null){
+            stringMap.put("data","");
+            stringMap.put("status",0);
+            stringMap.put("msg","bucket为空");
+            return Json.encode(stringMap);
+        }
+        if (key == null){
+            stringMap.put("data","");
+            stringMap.put("status",0);
+            stringMap.put("msg","key为空");
+            return Json.encode(stringMap);
+        }
+        System.out.println(Json.encode(stringMap));
+        Auth auth = Auth.create(AK, SK);
+        Zone z = Zone.zone0();
+        Configuration c = new Configuration(z);
+        //实例化一个BucketManager对象
+        BucketManager bucketManager = new BucketManager(auth, c);
+        try {
+            bucketManager.delete(bucket,key);
+            stringMap.put("data","");
+            stringMap.put("status",1);
+            stringMap.put("msg","删除文件成功");
+            System.out.println(Json.encode(stringMap));
+            return Json.encode(stringMap);
+        } catch (QiniuException e) {
+            Response r = e.response;
+            stringMap.put("data","");
+            stringMap.put("status",0);
+            stringMap.put("msg",e.error());
+            System.out.println(Json.encode(stringMap));
             return Json.encode(stringMap);
         }
     }
