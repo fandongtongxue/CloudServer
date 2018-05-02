@@ -39,14 +39,14 @@ public class UploadController {
         //把当前时间戳作为字符串
         String key = System.currentTimeMillis() + ".jpg";
         //测试服务器文件路径(301)
-//        File file = new File("/Users/fandong/Git/CloudServer/cloudserver/src/main/resources/static/"+key);
+        File file = new File("/Users/fandong/Git/CloudServer/cloudserver/src/main/resources/static/"+key);
         //测试服务器文件路径(701)
 //        File file = new File("/Users/fandongtongxue/Documents/GitHub/CloudServer/cloudserver/src/main/resources/static/"+key);
         //正式服务器文件路径(要可直接访问,40GB高效云盘地址以供云盘上传使用)
         //华南服务器
 //        File file = new File("/"+key+".jpg");
         //美国服务器
-        File file = new File("/home/static/"+key);
+//        File file = new File("/home/static/"+key);
         //如果文件路径不存在,创建父目录,创建当前文件路径
         if(!file.exists()) {
             file.getParentFile().mkdir();
@@ -84,14 +84,14 @@ public class UploadController {
         //把当前时间戳作为字符串
         String key = System.currentTimeMillis() + ".mp4";
         //测试服务器文件路径
-//        File file = new File("/Users/fandong/Git/CloudServer/cloudserver/src/main/resources/static/"+key);
+        File file = new File("/Users/fandong/Git/CloudServer/cloudserver/src/main/resources/static/"+key);
         //测试服务器文件路径(701)
 //        File file = new File("/Users/fandongtongxue/Documents/GitHub/CloudServer/cloudserver/src/main/resources/static/"+key);
         //正式服务器文件路径(要可直接访问,40GB高效云盘地址以供云盘上传使用)
         //华南服务器
 //        File file = new File("/"+key+".jpg");
         //美国服务器
-        File file = new File("/home/static/"+key);
+//        File file = new File("/home/static/"+key);
         //如果文件路径不存在,创建父目录,创建当前文件路径
         if(!file.exists()) {
             file.getParentFile().mkdir();
@@ -173,6 +173,8 @@ public class UploadController {
             stringMap.put("status",1);
             stringMap.put("msg","文件上传到七牛云成功");
             System.out.println(Json.encode(stringMap));
+            File file = new File(filePath);
+            file.delete();
             return Json.encode(stringMap);
         } catch (QiniuException e) {
             Response r = e.response;
@@ -255,6 +257,8 @@ public class UploadController {
             stringMap.put("status",1);
             stringMap.put("msg","文件上传到阿里云成功");
             System.out.println(Json.encode(stringMap));
+            File file = new File(filePath);
+            file.delete();
             return Json.encode(stringMap);
 
         } catch (OSSException oe) {
