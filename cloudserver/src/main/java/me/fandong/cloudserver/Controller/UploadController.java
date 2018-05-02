@@ -46,7 +46,7 @@ public class UploadController {
         //华南服务器
 //        File file = new File("/"+key+".jpg");
         //美国服务器
-        File file = new File("/home/static/"+key+".jpg");
+        File file = new File("/home/static/"+key);
         //如果文件路径不存在,创建父目录,创建当前文件路径
         if(!file.exists()) {
             file.getParentFile().mkdir();
@@ -91,7 +91,7 @@ public class UploadController {
         //华南服务器
 //        File file = new File("/"+key+".jpg");
         //美国服务器
-        File file = new File("/home/static/"+key+".jpg");
+        File file = new File("/home/static/"+key);
         //如果文件路径不存在,创建父目录,创建当前文件路径
         if(!file.exists()) {
             file.getParentFile().mkdir();
