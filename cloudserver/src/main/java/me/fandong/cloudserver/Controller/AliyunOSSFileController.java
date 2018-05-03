@@ -32,6 +32,7 @@ public class AliyunOSSFileController {
         String bucket = request.getParameter("bucket");
         String endPoint = request.getParameter("endPoint");
         String keyPrefix = request.getParameter("keyPrefix");
+        String marker = request.getParameter("marker");
         //传空值处理
         if (accessKeyId == null){
             stringMap.put("data","");
@@ -63,13 +64,12 @@ public class AliyunOSSFileController {
         // 云账号AccessKey有所有API访问权限，建议遵循阿里云安全最佳实践，创建并使用RAM子账号进行API访问或日常运维，请登录 https://ram.console.aliyun.com 创建
         // 创建OSSClient实例
         OSSClient ossClient = new OSSClient(endPoint, accessKeyId, accessKeySecret);
-        final int maxKeys = 1000;
-        String nextMarker = "";
+        final int maxKeys = 20;
         ObjectListing objectListing = null;
         do {
             try {
                 objectListing = ossClient.listObjects(new ListObjectsRequest(bucket).
-                        withPrefix(keyPrefix).withMarker(nextMarker).withMaxKeys(maxKeys));
+                        withPrefix(keyPrefix).withMarker(marker).withMaxKeys(maxKeys));
                 List<OSSObjectSummary> sums = objectListing.getObjectSummaries();
                 ArrayList array = new ArrayList<FileModel>();
                 for (OSSObjectSummary s : sums) {
@@ -79,10 +79,13 @@ public class AliyunOSSFileController {
                     model.setFileType("未知");
                     array.add(model);
                 }
-                nextMarker = objectListing.getNextMarker();
+                marker = objectListing.getNextMarker();
                 FileListModel listModel = new FileListModel();
                 listModel.setList(array);
-                listModel.setMarker(nextMarker);
+                listModel.setMarker(marker);
+                if (marker == null){
+                    listModel.setMarker("");
+                }
                 stringMap.put("data",listModel);
                 stringMap.put("status",1);
                 stringMap.put("msg","获取文件列表数据成功");

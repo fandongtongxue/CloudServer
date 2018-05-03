@@ -1,3 +1,5 @@
+/Users/fandong/Git/CloudServer/cloudserver/src/main/java/me/fandong/cloudserver/Controller/UploadController.java
+/Users/fandong/Git/CloudServer/cloudserver/src/main/java/me/fandong/cloudserver/Model/FilePathModel.java
 /Users/fandong/Git/CloudServer/cloudserver/src/main/java/me/fandong/cloudserver/Model/FileListModel.java
 /Users/fandong/Git/CloudServer/cloudserver/src/main/java/me/fandong/cloudserver/Model/AliyunOSSBucketListModel.java
 /Users/fandong/Git/CloudServer/cloudserver/src/main/java/me/fandong/cloudserver/Controller/AliyunOSSFileController.java
@@ -5,7 +7,6 @@
 /Users/fandong/Git/CloudServer/cloudserver/src/main/java/me/fandong/cloudserver/Model/QiniuCommonListModel.java
 /Users/fandong/Git/CloudServer/cloudserver/src/main/java/me/fandong/cloudserver/Model/AliyunOSSBucketModel.java
 /Users/fandong/Git/CloudServer/cloudserver/src/main/java/me/fandong/cloudserver/CloudserverApplication.java
-/Users/fandong/Git/CloudServer/cloudserver/src/main/java/me/fandong/cloudserver/Model/QiniuTokenModel.java
 /Users/fandong/Git/CloudServer/cloudserver/src/main/java/me/fandong/cloudserver/Controller/QiniuBucketController.java
 /Users/fandong/Git/CloudServer/cloudserver/src/main/java/me/fandong/cloudserver/Controller/AliyunOSSBucketController.java
 /Users/fandong/Git/CloudServer/cloudserver/src/main/java/me/fandong/cloudserver/Model/FileModel.java
