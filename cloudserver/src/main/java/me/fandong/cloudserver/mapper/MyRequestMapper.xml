@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="me.fandong.cloudserver.dao.MyRequestDao">
+    <resultMap id="BaseResultMap" type="me.fandong.cloudserver.Model.MyRequest">
+        <result column="id" property="id" />
+        <result column="url" property="url" />
+        <result column="param" property="param" />
+        <result column="status" property="status" />
+        <result column="msg" property="msg" />
+    </resultMap>
+
+    <parameterMap id="MyRequest" type="me.fandong.cloudserver.Model.MyRequest"/>
+
+    <sql id="BaseResultList">
+        id, url, param, status, msg
+    </sql>
+    <select id="findAllMyRequest" resultMap="BaseResultMap" >
+        select
+        <include refid="BaseResultList" />
+        from MyRequest
+    </select>
+
+    <insert id="createMyRequest" parameterMap="MyRequest" useGeneratedKeys="true" keyProperty="id">
+        insert into
+            MyRequest(id,url,param,status,msg)
+        values
+            (#{id},#{url},#{param},#{status},#{msg})
+    </insert>
+
+</mapper>

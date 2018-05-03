@@ -5,18 +5,16 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import javax.servlet.MultipartConfigElement;
 import org.springframework.boot.web.servlet.MultipartConfigFactory;
 import org.springframework.context.annotation.Bean;
+import org.mybatis.spring.annotation.MapperScan;
 
 @SpringBootApplication
+@MapperScan("me.fandong.cloudserver.dao.MyRequestDao")
 public class CloudserverApplication {
 
     public static void main(String[] args) {
         SpringApplication.run(CloudserverApplication.class, args);
     }
-    /**
-     * @date:2018/3/5 14:02
-     * @author:hejr
-     * @description: 文件上传配置
-     */
+
     @Bean
     public MultipartConfigElement multipartConfigElement() {
         MultipartConfigFactory factory = new MultipartConfigFactory();
