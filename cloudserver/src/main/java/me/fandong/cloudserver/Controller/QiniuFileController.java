@@ -58,9 +58,6 @@ public class QiniuFileController {
             stringMap.put("msg","bucket为空");
             return Json.encode(stringMap);
         }
-
-        System.out.println(Json.encode(stringMap));
-
         Auth auth = Auth.create(AK, SK);
         Zone z = Zone.zone0();
         Configuration c = new Configuration(z);
@@ -138,7 +135,6 @@ public class QiniuFileController {
             stringMap.put("msg","key为空");
             return Json.encode(stringMap);
         }
-        System.out.println(Json.encode(stringMap));
         Auth auth = Auth.create(AK, SK);
         Zone z = Zone.zone0();
         Configuration c = new Configuration(z);

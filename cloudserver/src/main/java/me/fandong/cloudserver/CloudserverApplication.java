@@ -5,10 +5,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import javax.servlet.MultipartConfigElement;
 import org.springframework.boot.web.servlet.MultipartConfigFactory;
 import org.springframework.context.annotation.Bean;
-import org.mybatis.spring.annotation.MapperScan;
 
 @SpringBootApplication
-@MapperScan("me.fandong.cloudserver.dao.MyRequestDao")
 public class CloudserverApplication {
 
     public static void main(String[] args) {

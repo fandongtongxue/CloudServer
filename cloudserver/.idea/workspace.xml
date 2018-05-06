@@ -31,47 +31,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="MyRequest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/me/fandong/cloudserver/Model/MyRequest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="266">
-              <caret line="20" selection-start-line="20" selection-end-line="20" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MyRequestService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/me/fandong/cloudserver/service/MyRequestService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="114">
-              <caret line="6" column="4" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="4" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#152#153#0" expanded="true" />
-                <element signature="e#200#201#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MyRequestController.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/me/fandong/cloudserver/Controller/MyRequestController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="114">
-              <caret line="6" selection-start-line="6" selection-end-line="6" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MyRequestDao.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/me/fandong/cloudserver/dao/MyRequestDao.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="application.properties" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
           <provider selected="true" editor-type-id="text-editor">
@@ -81,14 +40,89 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="286">
+              <caret line="53" column="33" selection-start-line="53" selection-start-column="33" selection-end-line="53" selection-end-column="33" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="CloudserverApplication.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/me/fandong/cloudserver/CloudserverApplication.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="190">
-              <caret line="17" selection-start-line="17" selection-end-line="17" />
+            <state relative-caret-position="315">
+              <caret line="21" column="39" selection-start-line="21" selection-start-column="35" selection-end-line="21" selection-end-column="39" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AliyunOSSBucketController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/me/fandong/cloudserver/Controller/AliyunOSSBucketController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="181">
+              <caret line="34" column="33" selection-start-line="34" selection-start-column="33" selection-end-line="34" selection-end-column="33" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="log4j.xml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/log4j.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="239">
+              <caret line="21" column="17" lean-forward="true" selection-start-line="21" selection-start-column="17" selection-end-line="21" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AliyunOSSFileController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/me/fandong/cloudserver/Controller/AliyunOSSFileController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2835">
+              <caret line="152" selection-start-line="152" selection-end-line="152" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="QiniuFileController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/me/fandong/cloudserver/Controller/QiniuFileController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1092">
+              <caret line="68" column="33" selection-start-line="68" selection-start-column="33" selection-end-line="68" selection-end-column="33" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UploadController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/me/fandong/cloudserver/Controller/UploadController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="4326">
+              <caret line="232" selection-start-line="232" selection-end-line="232" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="QiniuBucketController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/me/fandong/cloudserver/Controller/QiniuBucketController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="3045">
+              <caret line="156" selection-start-line="156" selection-end-line="156" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Log.java" pinned="false" current-in-tab="false">
+        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-10.jdk/Contents/Home/lib/src.zip!/jdk.compiler/com/sun/tools/sjavac/Log.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="42">
+              <caret line="25" column="8" selection-start-line="25" selection-start-column="8" selection-end-line="25" selection-end-column="28" />
             </state>
           </provider>
         </entry>
@@ -133,10 +167,6 @@
         <option value="$PROJECT_DIR$/src/main/java/me/fandong/cloudserver/Controller/ListQiniuBucketController.java" />
         <option value="$PROJECT_DIR$/src/main/java/me/fandong/cloudserver/Controller/ListQiniuFileController.java" />
         <option value="$PROJECT_DIR$/src/main/java/me/fandong/cloudserver/Controller/TokenController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/me/fandong/cloudserver/Controller/QiniuFileController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/me/fandong/cloudserver/Controller/AliyunOSSFileController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/me/fandong/cloudserver/Controller/UploadController.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/mapper/RequestLog.kt" />
         <option value="$PROJECT_DIR$/src/main/resources/mapper/MyRequestInterface.kt" />
         <option value="$PROJECT_DIR$/src/main/resources/mapper/MyRequest.kt" />
@@ -144,10 +174,18 @@
         <option value="$PROJECT_DIR$/src/main/java/me/fandong/cloudserver/Model/MyRequest.java" />
         <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/src/main/java/me/fandong/cloudserver/mapper/MyRequestMapper.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/me/fandong/cloudserver/CloudserverApplication.java" />
         <option value="$PROJECT_DIR$/src/main/java/me/fandong/cloudserver/dao/MyRequestDao.java" />
         <option value="$PROJECT_DIR$/src/main/java/me/fandong/cloudserver/service/MyRequestService.java" />
         <option value="$PROJECT_DIR$/src/main/java/me/fandong/cloudserver/Controller/MyRequestController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/me/fandong/cloudserver/CloudserverApplication.java" />
+        <option value="$PROJECT_DIR$/src/main/java/me/fandong/cloudserver/Controller/AliyunOSSFileController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/me/fandong/cloudserver/Controller/QiniuBucketController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/me/fandong/cloudserver/Controller/UploadController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/me/fandong/cloudserver/Controller/QiniuFileController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/me/fandong/cloudserver/Controller/AliyunOSSBucketController.java" />
+        <option value="$PROJECT_DIR$/src/log4j.properties" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/resources/log4j.xml" />
       </list>
     </option>
   </component>
@@ -184,9 +222,9 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1601" />
+    <option name="x" value="4" />
     <option name="y" value="23" />
-    <option name="width" value="1705" />
+    <option name="width" value="1411" />
     <option name="height" value="1053" />
   </component>
   <component name="ProjectView">
@@ -194,6 +232,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -204,7 +243,7 @@
             <path>
               <item name="cloudserver" type="b2602c69:ProjectViewProjectNode" />
               <item name="cloudserver" type="462c0819:PsiDirectoryNode" />
-              <item name="target" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="cloudserver" type="b2602c69:ProjectViewProjectNode" />
@@ -214,8 +253,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="AndroidView" />
-      <pane id="Scope" />
       <pane id="PackagesPane">
         <subPane>
           <expand>
@@ -231,42 +268,13 @@
             <path>
               <item name="cloudserver" type="58d84e3e:PackageViewProjectNode" />
               <item name="cloudserver" type="616d4139:PackageViewModuleNode" />
-              <item name="me.fandong.cloudserver" type="1f31426a:PackageElementNode" />
-              <item name="Controller" type="1f31426a:PackageElementNode" />
-            </path>
-            <path>
-              <item name="cloudserver" type="58d84e3e:PackageViewProjectNode" />
-              <item name="cloudserver" type="616d4139:PackageViewModuleNode" />
-              <item name="me.fandong.cloudserver" type="1f31426a:PackageElementNode" />
-              <item name="dao" type="1f31426a:PackageElementNode" />
-            </path>
-            <path>
-              <item name="cloudserver" type="58d84e3e:PackageViewProjectNode" />
-              <item name="cloudserver" type="616d4139:PackageViewModuleNode" />
-              <item name="me.fandong.cloudserver" type="1f31426a:PackageElementNode" />
-              <item name="mapper" type="1f31426a:PackageElementNode" />
-            </path>
-            <path>
-              <item name="cloudserver" type="58d84e3e:PackageViewProjectNode" />
-              <item name="cloudserver" type="616d4139:PackageViewModuleNode" />
-              <item name="me.fandong.cloudserver" type="1f31426a:PackageElementNode" />
-              <item name="Model" type="1f31426a:PackageElementNode" />
-            </path>
-            <path>
-              <item name="cloudserver" type="58d84e3e:PackageViewProjectNode" />
-              <item name="cloudserver" type="616d4139:PackageViewModuleNode" />
-              <item name="me.fandong.cloudserver" type="1f31426a:PackageElementNode" />
-              <item name="service" type="1f31426a:PackageElementNode" />
-            </path>
-            <path>
-              <item name="cloudserver" type="58d84e3e:PackageViewProjectNode" />
-              <item name="cloudserver" type="616d4139:PackageViewModuleNode" />
               <item name="Libraries" type="5c3f07af:PackageViewLibrariesNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -289,6 +297,8 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src" />
+      <recent name="$PROJECT_DIR$/src/main/resources" />
       <recent name="$PROJECT_DIR$/src/main/java/me/fandong/cloudserver/mapper" />
     </key>
   </component>
@@ -378,11 +388,15 @@
       <workItem from="1525356471941" duration="2667000" />
       <workItem from="1525417683785" duration="312000" />
       <workItem from="1525418503871" duration="307000" />
+      <workItem from="1525484037956" duration="129000" />
+      <workItem from="1525484599297" duration="3000" />
+      <workItem from="1525484948461" duration="8346000" />
+      <workItem from="1525613532685" duration="505000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="42697000" />
+    <option name="totallyTimeSpent" value="51680000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -394,12 +408,12 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="1601" y="23" width="1705" height="1053" extended-state="0" />
+    <frame x="4" y="23" width="1411" height="1053" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
-      <window_info anchor="right" id="Maven Projects" order="3" visible="true" weight="0.12387252" />
+      <window_info anchor="right" id="Maven Projects" order="3" weight="0.06964006" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
@@ -409,15 +423,16 @@
       <window_info id="UI Designer" order="2" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32858595" />
+      <window_info anchor="bottom" id="Messages" order="7" weight="0.32916147" />
       <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info id="Image Layers" order="2" />
       <window_info anchor="bottom" id="Java Enterprise" order="7" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
       <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.26659858" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.2165272" />
       <window_info anchor="bottom" id="Spring" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.32958803" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4930362" visible="true" weight="0.21407096" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.32890704" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4930362" visible="true" weight="0.20818116" />
       <window_info anchor="right" id="Bean Validation" order="3" weight="0.3297568" />
       <window_info id="Web" order="2" side_tool="true" />
       <window_info anchor="right" id="Theme Preview" order="3" />
@@ -425,7 +440,6 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Messages" order="7" weight="0.32925585" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Find" order="1" />
@@ -442,28 +456,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$MAVEN_REPOSITORY$/com/aliyun/oss/aliyun-sdk-oss/2.8.3/aliyun-sdk-oss-2.8.3.jar!/com/aliyun/oss/model/OSSObjectSummary.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="16" column="20" lean-forward="true" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/me/fandong/cloudserver/Controller/ListQiniuFileController.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/me/fandong/cloudserver/Model/AliyunOSSBucketListModel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="21" column="1" lean-forward="true" selection-start-line="21" selection-start-column="1" selection-end-line="21" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/me/fandong/cloudserver/Model/AliyunOSSBucketModel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="15" column="36" selection-start-line="15" selection-start-column="16" selection-end-line="15" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/me/fandong/cloudserver/Controller/ListAliyunOSSFileController.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/me/fandong/cloudserver/Controller/ConfigController.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/me/fandong/cloudserver/Controller/ListBucketController.java" />
@@ -543,20 +535,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/me/fandong/cloudserver/Controller/QiniuFileController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1575">
-          <caret line="94" column="13" selection-start-line="94" selection-start-column="13" selection-end-line="94" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/me/fandong/cloudserver/Controller/AliyunOSSBucketController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/me/fandong/cloudserver/Model/FilePathModel.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="252">
@@ -599,31 +577,15 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/me/fandong/cloudserver/Controller/UploadController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1218">
-          <caret line="84" column="18" selection-start-line="84" selection-start-column="18" selection-end-line="84" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1155">
-          <caret line="55" column="35" selection-start-line="55" selection-start-column="35" selection-end-line="55" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/RequestLog.kt" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/me/fandong/cloudserver/Controller/AliyunOSSFileController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1344">
-          <caret line="81" column="49" selection-start-line="81" selection-start-column="49" selection-end-line="81" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/MyRequestInterface.kt" />
     <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/MyRequest.kt" />
     <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch.xml" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/me/fandong/cloudserver/mapper/MyRequestMapper.xml" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/me/fandong/cloudserver/dao/MyRequestDao.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/me/fandong/cloudserver/service/MyRequestService.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/me/fandong/cloudserver/Controller/MyRequestController.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/me/fandong/cloudserver/Model/MyRequest.java" />
     <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -631,47 +593,79 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/me/fandong/cloudserver/Model/MyRequest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="20" selection-start-line="20" selection-end-line="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/me/fandong/cloudserver/CloudserverApplication.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="17" selection-start-line="17" selection-end-line="17" />
+        <state relative-caret-position="315">
+          <caret line="21" column="39" selection-start-line="21" selection-start-column="35" selection-end-line="21" selection-end-column="39" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/me/fandong/cloudserver/mapper/MyRequestMapper.xml" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/me/fandong/cloudserver/dao/MyRequestDao.java">
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-10.jdk/Contents/Home/lib/src.zip!/jdk.compiler/com/sun/tools/sjavac/Log.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+        <state relative-caret-position="42">
+          <caret line="25" column="8" selection-start-line="25" selection-start-column="8" selection-end-line="25" selection-end-column="28" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/me/fandong/cloudserver/service/MyRequestService.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/me/fandong/cloudserver/Controller/AliyunOSSFileController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="6" column="4" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="4" />
+        <state relative-caret-position="2835">
+          <caret line="152" selection-start-line="152" selection-end-line="152" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/me/fandong/cloudserver/Controller/QiniuBucketController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3045">
+          <caret line="156" selection-start-line="156" selection-end-line="156" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/me/fandong/cloudserver/Controller/UploadController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4326">
+          <caret line="232" selection-start-line="232" selection-end-line="232" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/me/fandong/cloudserver/Controller/QiniuFileController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1092">
+          <caret line="68" column="33" selection-start-line="68" selection-start-column="33" selection-end-line="68" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/log4j.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="11" column="53" selection-start-line="11" selection-start-column="53" selection-end-line="11" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="53" column="33" selection-start-line="53" selection-start-column="33" selection-end-line="53" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/me/fandong/cloudserver/Controller/AliyunOSSBucketController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="181">
+          <caret line="34" column="33" selection-start-line="34" selection-start-column="33" selection-end-line="34" selection-end-column="33" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#152#153#0" expanded="true" />
-            <element signature="e#200#201#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/me/fandong/cloudserver/Controller/MyRequestController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/log4j.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="6" selection-start-line="6" selection-end-line="6" />
+        <state relative-caret-position="239">
+          <caret line="21" column="17" lean-forward="true" selection-start-line="21" selection-start-column="17" selection-end-line="21" selection-end-column="17" />
         </state>
       </provider>
     </entry>

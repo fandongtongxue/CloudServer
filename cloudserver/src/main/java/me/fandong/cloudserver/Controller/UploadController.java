@@ -230,7 +230,6 @@ public class UploadController {
             stringMap.put("msg","filePath为空");
             return Json.encode(stringMap);
         }
-        System.out.println(Json.encode(stringMap));
         OSSClient ossClient = new OSSClient(endPoint, accessKeyId, accessKeySecret);
 
         try {

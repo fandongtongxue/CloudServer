@@ -41,7 +41,6 @@ public class QiniuBucketController {
             stringMap.put("msg","SK为空");
             return Json.encode(stringMap);
         }
-        System.out.println(Json.encode(stringMap));
         Auth auth = Auth.create(AK, SK);
         //地区
         Zone z = Zone.zone0();
@@ -99,7 +98,6 @@ public class QiniuBucketController {
             stringMap.put("msg","bucket为空");
             return Json.encode(stringMap);
         }
-        System.out.println(Json.encode(stringMap));
         Auth auth = Auth.create(AK, SK);
         //地区
         Zone z = Zone.zone0();
@@ -156,7 +154,6 @@ public class QiniuBucketController {
             stringMap.put("msg","region为空");
             return Json.encode(stringMap);
         }
-        System.out.println(Json.encode(stringMap));
         Auth auth = Auth.create(AK, SK);
         //地区
         Zone z = Zone.zone0();
