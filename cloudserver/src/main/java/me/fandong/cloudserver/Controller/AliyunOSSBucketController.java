@@ -44,8 +44,9 @@ public class AliyunOSSBucketController {
             stringMap.put("msg","accessKeySecret为空");
             return Json.encode(stringMap);
         }
-        logger.debug("url:"+"/getAliyunOSSBucketList");
-        logger.debug("params:"+"accessKeyId:"+accessKeyId+" accessKeySecret:"+accessKeySecret);
+        logger.info("url:"+"/getAliyunOSSBucketList");
+        logger.info("params:"+"accessKeyId:"+accessKeyId+" accessKeySecret:"+accessKeySecret);
+        logger.debug("test");
         String endpoint = "http://oss-cn-hangzhou.aliyuncs.com";
         // accessKey请登录https://ak-console.aliyun.com/#/查看
         // 创建OSSClient实例
@@ -68,7 +69,7 @@ public class AliyunOSSBucketController {
         stringMap.put("data",model);
         stringMap.put("status",1);
         stringMap.put("msg","获取Bucket列表数据成功");
-        logger.debug("result:"+Json.encode(stringMap));
+        logger.info("result:"+Json.encode(stringMap));
         return Json.encode(stringMap);
     }
 
@@ -105,7 +106,8 @@ public class AliyunOSSBucketController {
             stringMap.put("msg","bucket为空");
             return Json.encode(stringMap);
         }
-
+        logger.info("url:"+"/createAliyunBucket");
+        logger.info("params:"+"accessKeyId:"+accessKeyId+" accessKeySecret:"+accessKeySecret+" endPoint:"+endPoint+" bucket:"+bucket);
         // accessKey请登录https://ak-console.aliyun.com/#/查看
         // 创建OSSClient实例
         OSSClient ossClient = new OSSClient(endPoint, accessKeyId, accessKeySecret);
@@ -113,7 +115,7 @@ public class AliyunOSSBucketController {
         stringMap.put("data","");
         stringMap.put("status",1);
         stringMap.put("msg","bucket创建成功");
-        System.out.println(Json.encode(stringMap));
+        logger.info("result:"+Json.encode(stringMap));
         return Json.encode(stringMap);
     }
 
@@ -151,6 +153,9 @@ public class AliyunOSSBucketController {
             return Json.encode(stringMap);
         }
 
+        logger.info("url:"+"/deleteAliyunBucket");
+        logger.info("params:"+"accessKeyId:"+accessKeyId+" accessKeySecret:"+accessKeySecret+" endPoint:"+endPoint+" bucket:"+bucket);
+
         // accessKey请登录https://ak-console.aliyun.com/#/查看
         // 创建OSSClient实例
         OSSClient ossClient = new OSSClient(endPoint, accessKeyId, accessKeySecret);
@@ -159,19 +164,19 @@ public class AliyunOSSBucketController {
             stringMap.put("data","");
             stringMap.put("status",1);
             stringMap.put("msg","bucket删除成功");
-            System.out.println(Json.encode(stringMap));
+            logger.info("result:"+Json.encode(stringMap));
             return Json.encode(stringMap);
         }catch (OSSException oe){
             stringMap.put("data","");
             stringMap.put("status",0);
             stringMap.put("msg",oe.getMessage());
-            System.out.println(Json.encode(stringMap));
+            logger.info("result:"+Json.encode(stringMap));
             return Json.encode(stringMap);
         }catch (ClientException ce) {
             stringMap.put("data", "");
             stringMap.put("status", 0);
             stringMap.put("msg", ce.getErrorMessage());
-            System.out.println(Json.encode(stringMap));
+            logger.info("result:"+Json.encode(stringMap));
             return Json.encode(stringMap);
         }
     }
