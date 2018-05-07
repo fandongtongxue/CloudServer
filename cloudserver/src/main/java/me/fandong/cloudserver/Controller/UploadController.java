@@ -10,6 +10,7 @@ import com.qiniu.util.Auth;
 import com.qiniu.util.Json;
 import com.qiniu.util.StringMap;
 import me.fandong.cloudserver.Model.FilePathModel;
+import org.apache.log4j.Logger;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import javax.servlet.http.HttpServletRequest;
@@ -31,6 +32,8 @@ import com.aliyun.oss.ClientException;
 @RestController
 public class UploadController {
     private StringMap stringMap;
+
+    private static Logger logger = Logger.getLogger(UploadController.class);
 
     @RequestMapping(value="/uploadImageFile",method=RequestMethod.POST)
     public String uploadImageFile(HttpServletRequest request, MultipartHttpServletRequest multiRequest) throws IOException{
@@ -71,7 +74,7 @@ public class UploadController {
         stringMap.put("data",model);
         stringMap.put("status",1);
         stringMap.put("msg","文件上传成功");
-        System.out.println(Json.encode(stringMap));
+        logger.info("result:"+Json.encode(stringMap));
         return Json.encode(stringMap);
     }
 
@@ -114,7 +117,7 @@ public class UploadController {
         stringMap.put("data",model);
         stringMap.put("status",1);
         stringMap.put("msg","文件上传成功");
-        System.out.println(Json.encode(stringMap));
+        logger.info("result:"+Json.encode(stringMap));
         return Json.encode(stringMap);
     }
 
@@ -157,6 +160,8 @@ public class UploadController {
             stringMap.put("msg","filePath为空");
             return Json.encode(stringMap);
         }
+        logger.info("url:"+"/uploadQiniuFile");
+        logger.info("params:"+"AK:"+AK+" SK:"+SK+" bucket:"+bucket);
         Auth auth = Auth.create(AK, SK);
 
         Zone z = Zone.autoZone();
@@ -168,7 +173,7 @@ public class UploadController {
             stringMap.put("data","");
             stringMap.put("status",1);
             stringMap.put("msg","文件上传到七牛云成功");
-            System.out.println(Json.encode(stringMap));
+            logger.info("result:"+Json.encode(stringMap));
             File file = new File(filePath);
             file.delete();
             return Json.encode(stringMap);
@@ -177,7 +182,7 @@ public class UploadController {
             stringMap.put("data","");
             stringMap.put("status",0);
             stringMap.put("msg",e.error());
-            System.out.println(Json.encode(stringMap));
+            logger.info("result:"+Json.encode(stringMap));
             return Json.encode(stringMap);
         }
     }
@@ -230,6 +235,10 @@ public class UploadController {
             stringMap.put("msg","filePath为空");
             return Json.encode(stringMap);
         }
+
+        logger.info("url:"+"/getAliyunOSSFileList");
+        logger.info("params:"+"accessKeyId:"+accessKeyId+" accessKeySecret:"+accessKeySecret+" endPoint:"+endPoint+" bucket:"+bucket);
+
         OSSClient ossClient = new OSSClient(endPoint, accessKeyId, accessKeySecret);
 
         try {
@@ -251,7 +260,7 @@ public class UploadController {
             stringMap.put("data","");
             stringMap.put("status",1);
             stringMap.put("msg","文件上传到阿里云成功");
-            System.out.println(Json.encode(stringMap));
+            logger.info("result:"+Json.encode(stringMap));
             File file = new File(filePath);
             file.delete();
             return Json.encode(stringMap);
@@ -266,7 +275,7 @@ public class UploadController {
             stringMap.put("data","");
             stringMap.put("status",0);
             stringMap.put("msg","文件上传到阿里云失败");
-            System.out.println(Json.encode(stringMap));
+            logger.info("result:"+Json.encode(stringMap));
             return Json.encode(stringMap);
         } catch (ClientException ce) {
             System.out.println("Caught an ClientException, which means the client encountered "
@@ -276,14 +285,14 @@ public class UploadController {
             stringMap.put("data","");
             stringMap.put("status",0);
             stringMap.put("msg","文件上传到阿里云失败");
-            System.out.println(Json.encode(stringMap));
+            logger.info("result:"+Json.encode(stringMap));
             return Json.encode(stringMap);
         } catch (Throwable e) {
             e.printStackTrace();
             stringMap.put("data","");
             stringMap.put("status",0);
             stringMap.put("msg","文件上传到阿里云失败");
-            System.out.println(Json.encode(stringMap));
+            logger.info("result:"+Json.encode(stringMap));
             return Json.encode(stringMap);
         } finally {
             ossClient.shutdown();

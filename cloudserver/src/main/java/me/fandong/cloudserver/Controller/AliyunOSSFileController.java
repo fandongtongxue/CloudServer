@@ -6,6 +6,7 @@ import com.qiniu.util.Json;
 import com.qiniu.util.StringMap;
 import me.fandong.cloudserver.Model.FileListModel;
 import me.fandong.cloudserver.Model.FileModel;
+import org.apache.log4j.Logger;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -22,6 +23,7 @@ import javax.servlet.http.HttpServletRequest;
 @RestController
 public class AliyunOSSFileController {
     private StringMap stringMap;
+    private static Logger logger = Logger.getLogger(AliyunOSSFileController.class);
 
     @RequestMapping("/getAliyunOSSFileList")
     public String getFileList (HttpServletRequest request){
@@ -58,6 +60,8 @@ public class AliyunOSSFileController {
             stringMap.put("msg","endPoint为空");
             return Json.encode(stringMap);
         }
+        logger.info("url:"+"/getAliyunOSSFileList");
+        logger.info("params:"+"accessKeyId:"+accessKeyId+" accessKeySecret:"+accessKeySecret+" endPoint:"+endPoint+" bucket:"+bucket);
 
         // endpoint以杭州为例，其它region请按实际情况填写
         // 云账号AccessKey有所有API访问权限，建议遵循阿里云安全最佳实践，创建并使用RAM子账号进行API访问或日常运维，请登录 https://ram.console.aliyun.com 创建
@@ -90,19 +94,19 @@ public class AliyunOSSFileController {
                 stringMap.put("msg","获取文件列表数据成功");
                 // 关闭client
                 ossClient.shutdown();
-                System.out.println(Json.encode(stringMap));
+                logger.info("result:"+Json.encode(stringMap));
                 return Json.encode(stringMap);
             }catch (OSSException oe){
                 stringMap.put("data","");
                 stringMap.put("status",0);
                 stringMap.put("msg",oe.getMessage());
-                System.out.println(Json.encode(stringMap));
+                logger.info("result:"+Json.encode(stringMap));
                 return Json.encode(stringMap);
             }catch (ClientException ce) {
                 stringMap.put("data", "");
                 stringMap.put("status", 0);
                 stringMap.put("msg", ce.getErrorMessage());
-                System.out.println(Json.encode(stringMap));
+                logger.info("result:"+Json.encode(stringMap));
                 return Json.encode(stringMap);
             }
 
@@ -151,6 +155,9 @@ public class AliyunOSSFileController {
             return Json.encode(stringMap);
         }
 
+        logger.info("url:"+"/deleteAliyunOSSFile");
+        logger.info("params:"+"accessKeyId:"+accessKeyId+" accessKeySecret:"+accessKeySecret+" endPoint:"+endPoint+" bucket:"+bucket+" key:"+key);
+
         // endpoint以杭州为例，其它region请按实际情况填写
         // 云账号AccessKey有所有API访问权限，建议遵循阿里云安全最佳实践，创建并使用RAM子账号进行API访问或日常运维，请登录 https://ram.console.aliyun.com 创建
         // 创建OSSClient实例
@@ -160,19 +167,19 @@ public class AliyunOSSFileController {
             stringMap.put("data","");
             stringMap.put("status",1);
             stringMap.put("msg","文件删除成功");
-            System.out.println(Json.encode(stringMap));
+            logger.info("result:"+Json.encode(stringMap));
             return Json.encode(stringMap);
         }catch (OSSException oe){
             stringMap.put("data","");
             stringMap.put("status",0);
             stringMap.put("msg",oe.getMessage());
-            System.out.println(Json.encode(stringMap));
+            logger.info("result:"+Json.encode(stringMap));
             return Json.encode(stringMap);
         }catch (ClientException ce) {
             stringMap.put("data", "");
             stringMap.put("status", 0);
             stringMap.put("msg", ce.getErrorMessage());
-            System.out.println(Json.encode(stringMap));
+            logger.info("result:"+Json.encode(stringMap));
             return Json.encode(stringMap);
         }
 

@@ -12,6 +12,7 @@ import com.qiniu.util.Json;
 import com.qiniu.util.StringMap;
 import me.fandong.cloudserver.Model.FileListModel;
 import me.fandong.cloudserver.Model.FileModel;
+import org.apache.log4j.Logger;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -21,6 +22,7 @@ import java.util.ArrayList;
 @RestController
 public class QiniuFileController {
     private StringMap stringMap;
+    private static Logger logger = Logger.getLogger(QiniuFileController.class);
     private String filePrefix;
     /*
     获取FileList
@@ -58,6 +60,8 @@ public class QiniuFileController {
             stringMap.put("msg","bucket为空");
             return Json.encode(stringMap);
         }
+        logger.info("url:"+"/getQiniuFileList");
+        logger.info("params:"+"AK:"+AK+" SK:"+SK+" bucket:"+bucket);
         Auth auth = Auth.create(AK, SK);
         Zone z = Zone.zone0();
         Configuration c = new Configuration(z);
@@ -90,7 +94,7 @@ public class QiniuFileController {
             stringMap.put("data",listModel);
             stringMap.put("status",1);
             stringMap.put("msg","获取文件列表数据成功");
-            System.out.println(Json.encode(stringMap));
+            logger.info("result:"+Json.encode(stringMap));
             return Json.encode(stringMap);
         } catch (QiniuException e) {
             //捕获异常信息
@@ -98,7 +102,7 @@ public class QiniuFileController {
             stringMap.put("data","");
             stringMap.put("status",0);
             stringMap.put("msg",e.error());
-            System.out.println(Json.encode(stringMap));
+            logger.info("result:"+Json.encode(stringMap));
             return Json.encode(stringMap);
         }
     }
@@ -135,6 +139,8 @@ public class QiniuFileController {
             stringMap.put("msg","key为空");
             return Json.encode(stringMap);
         }
+        logger.info("url:"+"/deleteQiniuFile");
+        logger.info("params:"+"AK:"+AK+" SK:"+SK+" bucket:"+bucket+" key:"+key);
         Auth auth = Auth.create(AK, SK);
         Zone z = Zone.zone0();
         Configuration c = new Configuration(z);
@@ -145,14 +151,14 @@ public class QiniuFileController {
             stringMap.put("data","");
             stringMap.put("status",1);
             stringMap.put("msg","删除文件成功");
-            System.out.println(Json.encode(stringMap));
+            logger.info("result:"+Json.encode(stringMap));
             return Json.encode(stringMap);
         } catch (QiniuException e) {
             Response r = e.response;
             stringMap.put("data","");
             stringMap.put("status",0);
             stringMap.put("msg",e.error());
-            System.out.println(Json.encode(stringMap));
+            logger.info("result:"+Json.encode(stringMap));
             return Json.encode(stringMap);
         }
     }

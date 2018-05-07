@@ -8,6 +8,7 @@ import com.qiniu.util.Auth;
 import com.qiniu.util.Json;
 import com.qiniu.util.StringMap;
 import me.fandong.cloudserver.Model.QiniuCommonListModel;
+import org.apache.log4j.Logger;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -16,6 +17,7 @@ import javax.servlet.http.HttpServletRequest;
 @RestController
 public class QiniuBucketController {
     private StringMap stringMap;
+    private static Logger logger = Logger.getLogger(QiniuBucketController.class);
     /*
     获取BucketList
     @method GET
@@ -41,6 +43,9 @@ public class QiniuBucketController {
             stringMap.put("msg","SK为空");
             return Json.encode(stringMap);
         }
+        logger.info("url:"+"/getQiniuBucketList");
+        logger.info("params:"+"AK:"+AK+" SK:"+SK);
+
         Auth auth = Auth.create(AK, SK);
         //地区
         Zone z = Zone.zone0();
@@ -53,14 +58,14 @@ public class QiniuBucketController {
             stringMap.put("data",model);
             stringMap.put("status",1);
             stringMap.put("msg","获取Bucket列表数据成功");
-            System.out.println(Json.encode(stringMap));
+            logger.info("result:"+Json.encode(stringMap));
             return Json.encode(stringMap);
         } catch (QiniuException e) {
             e.printStackTrace();
             stringMap.put("data","");
             stringMap.put("status",0);
             stringMap.put("msg",e.error());
-            System.out.println(Json.encode(stringMap));
+            logger.info("result:"+Json.encode(stringMap));
             return Json.encode(stringMap);
         }
     }
@@ -98,6 +103,8 @@ public class QiniuBucketController {
             stringMap.put("msg","bucket为空");
             return Json.encode(stringMap);
         }
+        logger.info("url:"+"/getQiniuDomainList");
+        logger.info("params:"+"AK:"+AK+" SK:"+SK+" bucket:"+bucket);
         Auth auth = Auth.create(AK, SK);
         //地区
         Zone z = Zone.zone0();
@@ -110,14 +117,14 @@ public class QiniuBucketController {
             stringMap.put("data",model);
             stringMap.put("status",1);
             stringMap.put("msg","获取Bucket列表数据成功");
-            System.out.println(Json.encode(stringMap));
+            logger.info("result:"+Json.encode(stringMap));
             return Json.encode(stringMap);
         } catch (QiniuException e) {
             e.printStackTrace();
             stringMap.put("data","");
             stringMap.put("status",0);
             stringMap.put("msg",e.error());
-            System.out.println(Json.encode(stringMap));
+            logger.info("result:"+Json.encode(stringMap));
             return Json.encode(stringMap);
         }
     }
@@ -154,6 +161,8 @@ public class QiniuBucketController {
             stringMap.put("msg","region为空");
             return Json.encode(stringMap);
         }
+        logger.info("url:"+"/createQiniuBucket");
+        logger.info("params:"+"AK:"+AK+" SK:"+SK+" bucket"+bucket+" region:"+region);
         Auth auth = Auth.create(AK, SK);
         //地区
         Zone z = Zone.zone0();
@@ -165,14 +174,14 @@ public class QiniuBucketController {
             stringMap.put("data","");
             stringMap.put("status",1);
             stringMap.put("msg","bucket创建成功");
-            System.out.println(Json.encode(stringMap));
+            logger.info("result:"+Json.encode(stringMap));
             return Json.encode(stringMap);
         } catch (Exception e) {
             e.printStackTrace();
             stringMap.put("data","");
             stringMap.put("status",0);
             stringMap.put("msg",e.toString());
-            System.out.println(Json.encode(stringMap));
+            logger.info("result:"+Json.encode(stringMap));
             return Json.encode(stringMap);
         }
     }
