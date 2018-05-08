@@ -7,6 +7,8 @@ import com.qiniu.util.StringMap;
 import me.fandong.cloudserver.Model.AliyunOSSBucketListModel;
 import me.fandong.cloudserver.Model.AliyunOSSBucketModel;
 import me.fandong.cloudserver.Model.FileModel;
+import me.fandong.cloudserver.service.MyRequestService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -22,6 +24,9 @@ import org.apache.log4j.Logger;
 public class AliyunOSSBucketController {
 
     private static Logger logger = Logger.getLogger(AliyunOSSBucketController.class);
+
+    @Autowired
+    MyRequestService myRequestService;
 
     private StringMap stringMap;
 
@@ -70,6 +75,7 @@ public class AliyunOSSBucketController {
         stringMap.put("status",1);
         stringMap.put("msg","获取Bucket列表数据成功");
         logger.info("result:"+Json.encode(stringMap));
+        myRequestService.createMyRequest("/getAliyunOSSBucketList","accessKeyId:"+accessKeyId+"&accessKeySecret:"+accessKeySecret,Json.encode(stringMap),"1","获取Bucket列表数据成功");
         return Json.encode(stringMap);
     }
 

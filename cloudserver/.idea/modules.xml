@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/cloudserver.iml" filepath="$PROJECT_DIR$/cloudserver.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/cloudserver.iml" filepath="$PROJECT_DIR$/.idea/cloudserver.iml" />
     </modules>
   </component>
 </project>
