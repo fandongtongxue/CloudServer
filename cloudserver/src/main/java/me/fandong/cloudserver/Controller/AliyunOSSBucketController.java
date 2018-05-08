@@ -75,7 +75,6 @@ public class AliyunOSSBucketController {
         stringMap.put("status",1);
         stringMap.put("msg","获取Bucket列表数据成功");
         logger.info("result:"+Json.encode(stringMap));
-        myRequestService.createMyRequest("/getAliyunOSSBucketList","accessKeyId:"+accessKeyId+"&accessKeySecret:"+accessKeySecret,Json.encode(stringMap),"1","获取Bucket列表数据成功");
         return Json.encode(stringMap);
     }
 
