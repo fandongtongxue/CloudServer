@@ -164,6 +164,7 @@ public class AliyunOSSBucketController {
         // accessKey请登录https://ak-console.aliyun.com/#/查看
         // 创建OSSClient实例
         OSSClient ossClient = new OSSClient(endPoint, accessKeyId, accessKeySecret);
+        String params = "accessKeyId:"+accessKeyId+"&accessKeySecret:"+accessKeySecret+"&endPoint:"+endPoint+"&bucket:"+bucket;
         try {
             ossClient.deleteBucket(bucket);
             stringMap.put("data","");
@@ -176,12 +177,14 @@ public class AliyunOSSBucketController {
             stringMap.put("status",0);
             stringMap.put("msg",oe.getMessage());
             logger.info("result:"+Json.encode(stringMap));
+            myRequestService.createMyRequest("/deleteAliyunBucket",params,Json.encode(stringMap),"0",oe.getMessage());
             return Json.encode(stringMap);
         }catch (ClientException ce) {
             stringMap.put("data", "");
             stringMap.put("status", 0);
             stringMap.put("msg", ce.getErrorMessage());
             logger.info("result:"+Json.encode(stringMap));
+            myRequestService.createMyRequest("/deleteAliyunBucket",params,Json.encode(stringMap),"0",ce.getErrorMessage());
             return Json.encode(stringMap);
         }
     }

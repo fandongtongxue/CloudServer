@@ -12,7 +12,9 @@ import com.qiniu.util.Json;
 import com.qiniu.util.StringMap;
 import me.fandong.cloudserver.Model.FileListModel;
 import me.fandong.cloudserver.Model.FileModel;
+import me.fandong.cloudserver.service.MyRequestService;
 import org.apache.log4j.Logger;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -23,6 +25,8 @@ import java.util.ArrayList;
 public class QiniuFileController {
     private StringMap stringMap;
     private static Logger logger = Logger.getLogger(QiniuFileController.class);
+    @Autowired
+    MyRequestService myRequestService;
     private String filePrefix;
     /*
     获取FileList
@@ -62,6 +66,7 @@ public class QiniuFileController {
         }
         logger.info("url:"+"/getQiniuFileList");
         logger.info("params:"+"AK:"+AK+" SK:"+SK+" bucket:"+bucket);
+        String params ="AK:"+AK+"&SK:"+SK+"&bucket:"+bucket;
         Auth auth = Auth.create(AK, SK);
         Zone z = Zone.zone0();
         Configuration c = new Configuration(z);
@@ -103,6 +108,7 @@ public class QiniuFileController {
             stringMap.put("status",0);
             stringMap.put("msg",e.error());
             logger.info("result:"+Json.encode(stringMap));
+            myRequestService.createMyRequest("/getQiniuFileList",params,Json.encode(stringMap),"0",e.error());
             return Json.encode(stringMap);
         }
     }
@@ -141,6 +147,7 @@ public class QiniuFileController {
         }
         logger.info("url:"+"/deleteQiniuFile");
         logger.info("params:"+"AK:"+AK+" SK:"+SK+" bucket:"+bucket+" key:"+key);
+        String params ="AK:"+AK+"&SK:"+SK+"&bucket:"+bucket+"&key:"+key;
         Auth auth = Auth.create(AK, SK);
         Zone z = Zone.zone0();
         Configuration c = new Configuration(z);
@@ -159,6 +166,7 @@ public class QiniuFileController {
             stringMap.put("status",0);
             stringMap.put("msg",e.error());
             logger.info("result:"+Json.encode(stringMap));
+            myRequestService.createMyRequest("/deleteQiniuFile",params,Json.encode(stringMap),"0",e.error());
             return Json.encode(stringMap);
         }
     }

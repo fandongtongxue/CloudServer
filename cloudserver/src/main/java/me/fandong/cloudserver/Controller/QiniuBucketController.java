@@ -8,7 +8,9 @@ import com.qiniu.util.Auth;
 import com.qiniu.util.Json;
 import com.qiniu.util.StringMap;
 import me.fandong.cloudserver.Model.QiniuCommonListModel;
+import me.fandong.cloudserver.service.MyRequestService;
 import org.apache.log4j.Logger;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -18,6 +20,8 @@ import javax.servlet.http.HttpServletRequest;
 public class QiniuBucketController {
     private StringMap stringMap;
     private static Logger logger = Logger.getLogger(QiniuBucketController.class);
+    @Autowired
+    MyRequestService myRequestService;
     /*
     获取BucketList
     @method GET
@@ -45,6 +49,7 @@ public class QiniuBucketController {
         }
         logger.info("url:"+"/getQiniuBucketList");
         logger.info("params:"+"AK:"+AK+" SK:"+SK);
+        String params ="AK:"+AK+"&SK:"+SK;
 
         Auth auth = Auth.create(AK, SK);
         //地区
@@ -66,6 +71,7 @@ public class QiniuBucketController {
             stringMap.put("status",0);
             stringMap.put("msg",e.error());
             logger.info("result:"+Json.encode(stringMap));
+            myRequestService.createMyRequest("/getQiniuBucketList",params,Json.encode(stringMap),"0",e.error());
             return Json.encode(stringMap);
         }
     }
@@ -78,7 +84,7 @@ public class QiniuBucketController {
     @param bucket
     @author 范东同学
      */
-    @RequestMapping("getQiniuDomainList")
+    @RequestMapping("/getQiniuDomainList")
     public String getDomainList(HttpServletRequest request) {
         stringMap = new StringMap();
         String AK = request.getParameter("AK");
@@ -105,6 +111,7 @@ public class QiniuBucketController {
         }
         logger.info("url:"+"/getQiniuDomainList");
         logger.info("params:"+"AK:"+AK+" SK:"+SK+" bucket:"+bucket);
+        String params ="AK:"+AK+"&SK:"+SK+"&bucket:"+bucket;
         Auth auth = Auth.create(AK, SK);
         //地区
         Zone z = Zone.zone0();
@@ -125,6 +132,7 @@ public class QiniuBucketController {
             stringMap.put("status",0);
             stringMap.put("msg",e.error());
             logger.info("result:"+Json.encode(stringMap));
+            myRequestService.createMyRequest("/getQiniuDomainList",params,Json.encode(stringMap),"0",e.error());
             return Json.encode(stringMap);
         }
     }
@@ -163,6 +171,7 @@ public class QiniuBucketController {
         }
         logger.info("url:"+"/createQiniuBucket");
         logger.info("params:"+"AK:"+AK+" SK:"+SK+" bucket"+bucket+" region:"+region);
+        String params ="AK:"+AK+"&SK:"+SK+"&bucket:"+bucket+"&region:"+region;
         Auth auth = Auth.create(AK, SK);
         //地区
         Zone z = Zone.zone0();
@@ -182,6 +191,7 @@ public class QiniuBucketController {
             stringMap.put("status",0);
             stringMap.put("msg",e.toString());
             logger.info("result:"+Json.encode(stringMap));
+            myRequestService.createMyRequest("/createQiniuBucket",params,Json.encode(stringMap),"0",e.toString());
             return Json.encode(stringMap);
         }
     }

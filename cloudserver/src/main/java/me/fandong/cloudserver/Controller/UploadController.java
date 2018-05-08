@@ -10,7 +10,9 @@ import com.qiniu.util.Auth;
 import com.qiniu.util.Json;
 import com.qiniu.util.StringMap;
 import me.fandong.cloudserver.Model.FilePathModel;
+import me.fandong.cloudserver.service.MyRequestService;
 import org.apache.log4j.Logger;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import javax.servlet.http.HttpServletRequest;
@@ -34,6 +36,9 @@ public class UploadController {
     private StringMap stringMap;
 
     private static Logger logger = Logger.getLogger(UploadController.class);
+
+    @Autowired
+    MyRequestService myRequestService;
 
     @RequestMapping(value="/uploadImageFile",method=RequestMethod.POST)
     public String uploadImageFile(HttpServletRequest request, MultipartHttpServletRequest multiRequest) throws IOException{
@@ -162,6 +167,7 @@ public class UploadController {
         }
         logger.info("url:"+"/uploadQiniuFile");
         logger.info("params:"+"AK:"+AK+" SK:"+SK+" bucket:"+bucket);
+        String params ="AK:"+AK+"&SK:"+SK+"&bucket:"+bucket;
         Auth auth = Auth.create(AK, SK);
 
         Zone z = Zone.autoZone();
@@ -183,6 +189,7 @@ public class UploadController {
             stringMap.put("status",0);
             stringMap.put("msg",e.error());
             logger.info("result:"+Json.encode(stringMap));
+            myRequestService.createMyRequest("/uploadQiniuFile",params,Json.encode(stringMap),"0",e.error());
             return Json.encode(stringMap);
         }
     }
@@ -236,9 +243,9 @@ public class UploadController {
             return Json.encode(stringMap);
         }
 
-        logger.info("url:"+"/getAliyunOSSFileList");
+        logger.info("url:"+"/uploadAliyunFile");
         logger.info("params:"+"accessKeyId:"+accessKeyId+" accessKeySecret:"+accessKeySecret+" endPoint:"+endPoint+" bucket:"+bucket);
-
+        String params = "accessKeyId:"+accessKeyId+"&accessKeySecret:"+accessKeySecret+"&endPoint:"+endPoint+"&bucket:"+bucket+"&key:"+key;
         OSSClient ossClient = new OSSClient(endPoint, accessKeyId, accessKeySecret);
 
         try {
@@ -276,6 +283,7 @@ public class UploadController {
             stringMap.put("status",0);
             stringMap.put("msg","文件上传到阿里云失败");
             logger.info("result:"+Json.encode(stringMap));
+            myRequestService.createMyRequest("/uploadAliyunFile",params,Json.encode(stringMap),"0",oe.getMessage());
             return Json.encode(stringMap);
         } catch (ClientException ce) {
             System.out.println("Caught an ClientException, which means the client encountered "
@@ -286,6 +294,7 @@ public class UploadController {
             stringMap.put("status",0);
             stringMap.put("msg","文件上传到阿里云失败");
             logger.info("result:"+Json.encode(stringMap));
+            myRequestService.createMyRequest("/uploadAliyunFile",params,Json.encode(stringMap),"0",ce.getErrorMessage());
             return Json.encode(stringMap);
         } catch (Throwable e) {
             e.printStackTrace();
@@ -293,6 +302,7 @@ public class UploadController {
             stringMap.put("status",0);
             stringMap.put("msg","文件上传到阿里云失败");
             logger.info("result:"+Json.encode(stringMap));
+            myRequestService.createMyRequest("/uploadAliyunFile",params,Json.encode(stringMap),"0",e.getMessage());
             return Json.encode(stringMap);
         } finally {
             ossClient.shutdown();
