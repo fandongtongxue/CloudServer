@@ -15,8 +15,7 @@ import me.fandong.cloudserver.Model.FileModel;
 import me.fandong.cloudserver.service.MyRequestService;
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import javax.servlet.http.HttpServletRequest;
 import java.util.ArrayList;
@@ -38,7 +37,7 @@ public class QiniuFileController {
     @param marker(首次传空值)
     @author 范东同学
      */
-    @RequestMapping("/getQiniuFileList")
+    @GetMapping("/getQiniuFileList")
     public String getFileList(HttpServletRequest request){
         stringMap = new StringMap();
         String AK = request.getParameter("AK");
@@ -114,7 +113,7 @@ public class QiniuFileController {
     }
 
     //删除文件
-    @RequestMapping("deleteQiniuFile")
+    @PostMapping("/deleteQiniuFile")
     public String deleteFile(HttpServletRequest request){
         stringMap = new StringMap();
         String AK = request.getParameter("AK");

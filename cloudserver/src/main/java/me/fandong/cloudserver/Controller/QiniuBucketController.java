@@ -11,8 +11,7 @@ import me.fandong.cloudserver.Model.QiniuCommonListModel;
 import me.fandong.cloudserver.service.MyRequestService;
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import javax.servlet.http.HttpServletRequest;
 
@@ -29,7 +28,7 @@ public class QiniuBucketController {
     @param SK
     @author 范东同学
      */
-    @RequestMapping("/getQiniuBucketList")
+    @GetMapping("/getQiniuBucketList")
     public String getBucketList(HttpServletRequest request) {
         stringMap = new StringMap();
         String AK = request.getParameter("AK");
@@ -84,7 +83,7 @@ public class QiniuBucketController {
     @param bucket
     @author 范东同学
      */
-    @RequestMapping("/getQiniuDomainList")
+    @GetMapping("/getQiniuDomainList")
     public String getDomainList(HttpServletRequest request) {
         stringMap = new StringMap();
         String AK = request.getParameter("AK");
@@ -137,7 +136,7 @@ public class QiniuBucketController {
         }
     }
 
-    @RequestMapping("/createQiniuBucket")
+    @PostMapping("/createQiniuBucket")
     public String createBucket (HttpServletRequest request){
         stringMap = new StringMap();
         String AK = request.getParameter("AK");

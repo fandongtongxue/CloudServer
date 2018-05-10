@@ -9,8 +9,7 @@ import me.fandong.cloudserver.Model.FileModel;
 import me.fandong.cloudserver.service.MyRequestService;
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import com.aliyun.oss.OSSClient;
 import com.aliyun.oss.model.ListObjectsRequest;
@@ -30,7 +29,7 @@ public class AliyunOSSFileController {
     @Autowired
     MyRequestService myRequestService;
 
-    @RequestMapping("/getAliyunOSSFileList")
+    @GetMapping("/getAliyunOSSFileList")
     public String getFileList (HttpServletRequest request){
         stringMap = new StringMap();
 
@@ -120,7 +119,7 @@ public class AliyunOSSFileController {
         } while (objectListing.isTruncated());
     }
 
-    @RequestMapping("/deleteAliyunOSSFile")
+    @PostMapping("/deleteAliyunOSSFile")
     public String deleteFile (HttpServletRequest request){
         stringMap = new StringMap();
 

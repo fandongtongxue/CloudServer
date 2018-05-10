@@ -13,6 +13,7 @@ import me.fandong.cloudserver.Model.FilePathModel;
 import me.fandong.cloudserver.service.MyRequestService;
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import javax.servlet.http.HttpServletRequest;
@@ -40,7 +41,7 @@ public class UploadController {
     @Autowired
     MyRequestService myRequestService;
 
-    @RequestMapping(value="/uploadImageFile",method=RequestMethod.POST)
+    @PostMapping("/uploadImageFile")
     public String uploadImageFile(HttpServletRequest request, MultipartHttpServletRequest multiRequest) throws IOException{
         stringMap = new StringMap();
 
@@ -83,7 +84,7 @@ public class UploadController {
         return Json.encode(stringMap);
     }
 
-    @RequestMapping(value="/uploadVideoFile",method=RequestMethod.POST)
+    @PostMapping("/uploadVideoFile")
     public String uploadVideoFile(HttpServletRequest request, MultipartHttpServletRequest multiRequest) throws IOException{
         stringMap = new StringMap();
 
@@ -194,7 +195,7 @@ public class UploadController {
         }
     }
 
-    @RequestMapping(value="/uploadAliyunFile",method=RequestMethod.POST)
+    @PostMapping("/uploadAliyunFile")
     public String uploadAliyunFile(HttpServletRequest request) {
         stringMap = new StringMap();
 

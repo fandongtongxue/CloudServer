@@ -9,8 +9,7 @@ import me.fandong.cloudserver.Model.AliyunOSSBucketModel;
 import me.fandong.cloudserver.Model.FileModel;
 import me.fandong.cloudserver.service.MyRequestService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import javax.servlet.http.HttpServletRequest;
 import com.aliyun.oss.OSSClient;
@@ -19,6 +18,8 @@ import com.aliyun.oss.model.Bucket;
 import java.util.ArrayList;
 import java.util.List;
 import org.apache.log4j.Logger;
+import io.swagger.annotations.ApiOperation;
+import io.swagger.annotations.ApiImplicitParam;
 
 @RestController
 public class AliyunOSSBucketController {
@@ -29,8 +30,7 @@ public class AliyunOSSBucketController {
     MyRequestService myRequestService;
 
     private StringMap stringMap;
-
-    @RequestMapping("/getAliyunOSSBucketList")
+    @GetMapping("/getAliyunOSSBucketList")
     public String getBucketList(HttpServletRequest request) {
         stringMap = new StringMap();
 
@@ -78,7 +78,7 @@ public class AliyunOSSBucketController {
         return Json.encode(stringMap);
     }
 
-    @RequestMapping("/createAliyunBucket")
+    @PostMapping("/createAliyunBucket")
     public String createBucket (HttpServletRequest request){
         stringMap = new StringMap();
 
@@ -124,7 +124,7 @@ public class AliyunOSSBucketController {
         return Json.encode(stringMap);
     }
 
-    @RequestMapping("/deleteAliyunBucket")
+    @PostMapping("/deleteAliyunBucket")
     public String deleteBucket (HttpServletRequest request){
         stringMap = new StringMap();
 
