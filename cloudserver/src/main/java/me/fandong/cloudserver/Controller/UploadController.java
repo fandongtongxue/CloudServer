@@ -9,6 +9,10 @@ import com.qiniu.storage.Configuration;
 import com.qiniu.util.Auth;
 import com.qiniu.util.Json;
 import com.qiniu.util.StringMap;
+import io.swagger.annotations.ApiImplicitParam;
+import io.swagger.annotations.ApiImplicitParams;
+import io.swagger.annotations.ApiOperation;
+import io.swagger.annotations.ApiParam;
 import me.fandong.cloudserver.Model.FilePathModel;
 import me.fandong.cloudserver.service.MyRequestService;
 import org.apache.log4j.Logger;
@@ -18,6 +22,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import javax.servlet.http.HttpServletRequest;
 
+import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.multipart.MultipartHttpServletRequest;
 import java.io.IOException;
 import java.io.FileOutputStream;
@@ -40,9 +45,8 @@ public class UploadController {
 
     @Autowired
     MyRequestService myRequestService;
-
     @PostMapping("/uploadImageFile")
-    public String uploadImageFile(HttpServletRequest request, MultipartHttpServletRequest multiRequest) throws IOException{
+    public String uploadImageFile(MultipartHttpServletRequest multiRequest) throws IOException{
         stringMap = new StringMap();
 
         //把当前时间戳作为字符串
@@ -85,7 +89,7 @@ public class UploadController {
     }
 
     @PostMapping("/uploadVideoFile")
-    public String uploadVideoFile(HttpServletRequest request, MultipartHttpServletRequest multiRequest) throws IOException{
+    public String uploadVideoFile(MultipartHttpServletRequest multiRequest) throws IOException{
         stringMap = new StringMap();
 
         //把当前时间戳作为字符串
@@ -127,15 +131,17 @@ public class UploadController {
         return Json.encode(stringMap);
     }
 
-    //上传文件之后的上传云
+    @ApiOperation(value="上传文件到七牛云存储", notes="根据AK、SK、Bucket、key、filePath上传文件到七牛云")
+    @ApiImplicitParams({
+            @ApiImplicitParam(name = "AK", value = "AK", required = true, dataType = "string"),
+            @ApiImplicitParam(name = "SK", value = "SK", required = true, dataType = "string"),
+            @ApiImplicitParam(name = "bucket", value = "bucket", required = true, dataType = "string"),
+            @ApiImplicitParam(name = "key", value = "key", required = true, dataType = "string"),
+            @ApiImplicitParam(name = "filePath", value = "filePath", required = true, dataType = "string")
+    })
     @RequestMapping(value="/uploadQiniuFile",method=RequestMethod.POST)
-    public String uploadQiniuFile(HttpServletRequest request) {
+    public String uploadQiniuFile(String AK, String SK, String bucket, String key, String filePath) {
         stringMap = new StringMap();
-        String AK = request.getParameter("AK");
-        String SK = request.getParameter("SK");
-        String bucket = request.getParameter("bucket");
-        String key = request.getParameter("key");
-        String filePath = request.getParameter("filePath");
         if (AK == null){
             stringMap.put("data","");
             stringMap.put("status",0);
@@ -195,16 +201,18 @@ public class UploadController {
         }
     }
 
+    @ApiOperation(value="上传文件到阿里云OSS", notes="根据accessKeyId、accessKeySecret、bucket、endPoint、key、filePath上传文件到阿里云OSS")
+    @ApiImplicitParams({
+            @ApiImplicitParam(name = "accessKeyId", value = "accessKeyId", required = true, dataType = "string"),
+            @ApiImplicitParam(name = "accessKeySecret", value = "accessKeySecret", required = true, dataType = "string"),
+            @ApiImplicitParam(name = "bucket", value = "bucket", required = true, dataType = "string"),
+            @ApiImplicitParam(name = "endPoint", value = "endPoint", required = true, dataType = "string"),
+            @ApiImplicitParam(name = "key", value = "key", required = true, dataType = "string"),
+            @ApiImplicitParam(name = "filePath", value = "filePath", required = true, dataType = "string")
+    })
     @PostMapping("/uploadAliyunFile")
-    public String uploadAliyunFile(HttpServletRequest request) {
+    public String uploadAliyunFile(String accessKeyId, String accessKeySecret, String bucket, String endPoint, String key, String filePath) {
         stringMap = new StringMap();
-
-        String accessKeyId = request.getParameter("accessKeyId");
-        String accessKeySecret = request.getParameter("accessKeySecret");
-        String bucket = request.getParameter("bucket");
-        String endPoint = request.getParameter("endPoint");
-        String key = request.getParameter("key");
-        String filePath = request.getParameter("filePath");
 
         //传空值处理
         if (accessKeyId == null){

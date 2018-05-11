@@ -4,6 +4,7 @@ import com.aliyun.oss.ClientException;
 import com.aliyun.oss.OSSException;
 import com.qiniu.util.Json;
 import com.qiniu.util.StringMap;
+import io.swagger.annotations.Api;
 import me.fandong.cloudserver.Model.AliyunOSSBucketListModel;
 import me.fandong.cloudserver.Model.AliyunOSSBucketModel;
 import me.fandong.cloudserver.Model.FileModel;
@@ -11,7 +12,6 @@ import me.fandong.cloudserver.service.MyRequestService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
-import javax.servlet.http.HttpServletRequest;
 import com.aliyun.oss.OSSClient;
 import com.aliyun.oss.model.Bucket;
 
@@ -20,6 +20,7 @@ import java.util.List;
 import org.apache.log4j.Logger;
 import io.swagger.annotations.ApiOperation;
 import io.swagger.annotations.ApiImplicitParam;
+import io.swagger.annotations.ApiImplicitParams;
 
 @RestController
 public class AliyunOSSBucketController {
@@ -30,12 +31,16 @@ public class AliyunOSSBucketController {
     MyRequestService myRequestService;
 
     private StringMap stringMap;
+
+    @ApiOperation(value="获取阿里云OSSBucket列表", notes="根据accessKeyId和accessKeySecret查询Bucket列表")
+    @ApiImplicitParams({
+            @ApiImplicitParam(name = "accessKeyId", value = "accessKeyId", required = true, dataType = "string"),
+            @ApiImplicitParam(name = "accessKeySecret", value = "accessKeySecret", required = true, dataType = "string")
+    })
     @GetMapping("/getAliyunOSSBucketList")
-    public String getBucketList(HttpServletRequest request) {
+    public String getBucketList(String accessKeyId, String accessKeySecret) {
         stringMap = new StringMap();
 
-        String accessKeyId = request.getParameter("accessKeyId");
-        String accessKeySecret = request.getParameter("accessKeySecret");
         //传空值处理
         if (accessKeyId == null){
             stringMap.put("data","");
@@ -51,7 +56,6 @@ public class AliyunOSSBucketController {
         }
         logger.info("url:"+"/getAliyunOSSBucketList");
         logger.info("params:"+"accessKeyId:"+accessKeyId+" accessKeySecret:"+accessKeySecret);
-        logger.debug("test");
         String endpoint = "http://oss-cn-hangzhou.aliyuncs.com";
         // accessKey请登录https://ak-console.aliyun.com/#/查看
         // 创建OSSClient实例
@@ -78,14 +82,17 @@ public class AliyunOSSBucketController {
         return Json.encode(stringMap);
     }
 
+    @ApiOperation(value="创建阿里云OSSBucket", notes="根据accessKeyId、accessKeySecret、endPoint、bucket创建Bucket")
+    @ApiImplicitParams({
+            @ApiImplicitParam(name = "accessKeyId", value = "accessKeyId", required = true, dataType = "string"),
+            @ApiImplicitParam(name = "accessKeySecret", value = "accessKeySecret", required = true, dataType = "string"),
+            @ApiImplicitParam(name = "endPoint", value = "endPoint", required = true, dataType = "string"),
+            @ApiImplicitParam(name = "bucket", value = "bucket", required = true, dataType = "string")
+    })
     @PostMapping("/createAliyunBucket")
-    public String createBucket (HttpServletRequest request){
+    public String createBucket (String accessKeyId, String accessKeySecret, String endPoint, String bucket){
         stringMap = new StringMap();
 
-        String accessKeyId = request.getParameter("accessKeyId");
-        String accessKeySecret = request.getParameter("accessKeySecret");
-        String endPoint = request.getParameter("endPoint");
-        String bucket = request.getParameter("bucket");
         //传空值处理
         if (accessKeyId == null){
             stringMap.put("data","");
@@ -124,14 +131,17 @@ public class AliyunOSSBucketController {
         return Json.encode(stringMap);
     }
 
+    @ApiOperation(value="删除阿里云OSSBucket", notes="根据accessKeyId、accessKeySecret、endPoint、bucket删除Bucket")
+    @ApiImplicitParams({
+            @ApiImplicitParam(name = "accessKeyId", value = "accessKeyId", required = true, dataType = "string"),
+            @ApiImplicitParam(name = "accessKeySecret", value = "accessKeySecret", required = true, dataType = "string"),
+            @ApiImplicitParam(name = "endPoint", value = "endPoint", required = true, dataType = "string"),
+            @ApiImplicitParam(name = "bucket", value = "bucket", required = true, dataType = "string")
+    })
     @PostMapping("/deleteAliyunBucket")
-    public String deleteBucket (HttpServletRequest request){
+    public String deleteBucket (String accessKeyId, String accessKeySecret, String endPoint, String bucket){
         stringMap = new StringMap();
 
-        String accessKeyId = request.getParameter("accessKeyId");
-        String accessKeySecret = request.getParameter("accessKeySecret");
-        String endPoint = request.getParameter("endPoint");
-        String bucket = request.getParameter("bucket");
         //传空值处理
         if (accessKeyId == null){
             stringMap.put("data","");

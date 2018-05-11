@@ -10,6 +10,9 @@ import com.qiniu.storage.model.FileListing;
 import com.qiniu.util.Auth;
 import com.qiniu.util.Json;
 import com.qiniu.util.StringMap;
+import io.swagger.annotations.ApiImplicitParam;
+import io.swagger.annotations.ApiImplicitParams;
+import io.swagger.annotations.ApiOperation;
 import me.fandong.cloudserver.Model.FileListModel;
 import me.fandong.cloudserver.Model.FileModel;
 import me.fandong.cloudserver.service.MyRequestService;
@@ -27,24 +30,18 @@ public class QiniuFileController {
     @Autowired
     MyRequestService myRequestService;
     private String filePrefix;
-    /*
-    获取FileList
-    @method GET
-    @param AK
-    @param SK
-    @param bucket
-    @param filePrefix(文件名前缀)
-    @param marker(首次传空值)
-    @author 范东同学
-     */
+
+    @ApiOperation(value="获取七牛云存储Bucket的文件列表", notes="根据AK、SK、Bucket、filePrefix、marker查询Bucket的文件列表")
+    @ApiImplicitParams({
+            @ApiImplicitParam(name = "AK", value = "AK", required = true, dataType = "string"),
+            @ApiImplicitParam(name = "SK", value = "SK", required = true, dataType = "string"),
+            @ApiImplicitParam(name = "bucket", value = "bucket", required = true, dataType = "string"),
+            @ApiImplicitParam(name = "filePrefix", value = "filePrefix", required = false, dataType = "string"),
+            @ApiImplicitParam(name = "marker", value = "marker", required = false, dataType = "string")
+    })
     @GetMapping("/getQiniuFileList")
-    public String getFileList(HttpServletRequest request){
+    public String getFileList(String AK, String SK, String bucket, String filePrefix, String marker){
         stringMap = new StringMap();
-        String AK = request.getParameter("AK");
-        String SK = request.getParameter("SK");
-        String bucket = request.getParameter("bucket");
-        String filePrefix = request.getParameter("filePrefix");
-        String marker = request.getParameter("marker");
         if (AK == null){
             stringMap.put("data","");
             stringMap.put("status",0);
@@ -112,14 +109,17 @@ public class QiniuFileController {
         }
     }
 
-    //删除文件
+    @ApiOperation(value="删除七牛云存储Bucket的文件", notes="根据AK、SK、Bucket、fileName删除Bucket的文件")
+    @ApiImplicitParams({
+            @ApiImplicitParam(name = "AK", value = "AK", required = true, dataType = "string"),
+            @ApiImplicitParam(name = "SK", value = "SK", required = true, dataType = "string"),
+            @ApiImplicitParam(name = "bucket", value = "bucket", required = true, dataType = "string"),
+            @ApiImplicitParam(name = "fileName", value = "fileName", required = true, dataType = "string"),
+    })
     @PostMapping("/deleteQiniuFile")
-    public String deleteFile(HttpServletRequest request){
+    public String deleteFile(String AK, String SK, String bucket, String fileName){
         stringMap = new StringMap();
-        String AK = request.getParameter("AK");
-        String SK = request.getParameter("SK");
-        String bucket = request.getParameter("bucket");
-        String key = request.getParameter("fileName");
+        String key = fileName;
         if (AK == null){
             stringMap.put("data","");
             stringMap.put("status",0);

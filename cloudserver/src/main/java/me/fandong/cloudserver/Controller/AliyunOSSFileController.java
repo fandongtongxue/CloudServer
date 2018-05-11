@@ -4,6 +4,10 @@ import com.aliyun.oss.ClientException;
 import com.aliyun.oss.OSSException;
 import com.qiniu.util.Json;
 import com.qiniu.util.StringMap;
+import io.swagger.annotations.Api;
+import io.swagger.annotations.ApiImplicitParam;
+import io.swagger.annotations.ApiImplicitParams;
+import io.swagger.annotations.ApiOperation;
 import me.fandong.cloudserver.Model.FileListModel;
 import me.fandong.cloudserver.Model.FileModel;
 import me.fandong.cloudserver.service.MyRequestService;
@@ -19,8 +23,6 @@ import com.aliyun.oss.model.ObjectListing;
 import java.util.ArrayList;
 import java.util.List;
 
-import javax.servlet.http.HttpServletRequest;
-
 @RestController
 public class AliyunOSSFileController {
     private StringMap stringMap;
@@ -29,16 +31,18 @@ public class AliyunOSSFileController {
     @Autowired
     MyRequestService myRequestService;
 
+    @ApiOperation(value="获取阿里云OSSBucket的文件列表", notes="根据accessKeyId、accessKeySecret、endPoint、bucket、keyPrefix、marker获取Bucket中文件列表")
+    @ApiImplicitParams({
+            @ApiImplicitParam(name = "accessKeyId", value = "accessKeyId", required = true, dataType = "string"),
+            @ApiImplicitParam(name = "accessKeySecret", value = "accessKeySecret", required = true, dataType = "string"),
+            @ApiImplicitParam(name = "endPoint", value = "endPoint", required = true, dataType = "string"),
+            @ApiImplicitParam(name = "bucket", value = "bucket", required = true, dataType = "string"),
+            @ApiImplicitParam(name = "keyPrefix", value = "keyPrefix", required = false, dataType = "string"),
+            @ApiImplicitParam(name = "marker", value = "marker", required = false, dataType = "string")
+    })
     @GetMapping("/getAliyunOSSFileList")
-    public String getFileList (HttpServletRequest request){
+    public String getFileList (String accessKeyId, String accessKeySecret, String endPoint, String bucket, String keyPrefix, String marker){
         stringMap = new StringMap();
-
-        String accessKeyId = request.getParameter("accessKeyId");
-        String accessKeySecret = request.getParameter("accessKeySecret");
-        String bucket = request.getParameter("bucket");
-        String endPoint = request.getParameter("endPoint");
-        String keyPrefix = request.getParameter("keyPrefix");
-        String marker = request.getParameter("marker");
         //传空值处理
         if (accessKeyId == null){
             stringMap.put("data","");
@@ -119,15 +123,17 @@ public class AliyunOSSFileController {
         } while (objectListing.isTruncated());
     }
 
+    @ApiOperation(value="删除阿里云OSSBucket的文件", notes="根据accessKeyId、accessKeySecret、endPoint、bucket、key删除Bucket中的文件")
+    @ApiImplicitParams({
+            @ApiImplicitParam(name = "accessKeyId", value = "accessKeyId", required = true, dataType = "string"),
+            @ApiImplicitParam(name = "accessKeySecret", value = "accessKeySecret", required = true, dataType = "string"),
+            @ApiImplicitParam(name = "endPoint", value = "endPoint", required = true, dataType = "string"),
+            @ApiImplicitParam(name = "bucket", value = "bucket", required = true, dataType = "string"),
+            @ApiImplicitParam(name = "key", value = "key", required = true, dataType = "string")
+    })
     @PostMapping("/deleteAliyunOSSFile")
-    public String deleteFile (HttpServletRequest request){
+    public String deleteFile (String accessKeyId, String accessKeySecret, String endPoint, String bucket, String key){
         stringMap = new StringMap();
-
-        String accessKeyId = request.getParameter("accessKeyId");
-        String accessKeySecret = request.getParameter("accessKeySecret");
-        String bucket = request.getParameter("bucket");
-        String endPoint = request.getParameter("endPoint");
-        String key = request.getParameter("key");
 
         //传空值处理
         if (accessKeyId == null){

@@ -5,6 +5,7 @@
 /Users/fandong/Git/CloudServer/cloudserver/src/main/java/me/fandong/cloudserver/CloudserverApplication.java
 /Users/fandong/Git/CloudServer/cloudserver/src/main/java/me/fandong/cloudserver/dao/impl/MyRequestImpl.java
 /Users/fandong/Git/CloudServer/cloudserver/src/main/java/me/fandong/cloudserver/Controller/QiniuBucketController.java
+/Users/fandong/Git/CloudServer/cloudserver/src/main/java/me/fandong/cloudserver/Config/SwaggerConfig.java
 /Users/fandong/Git/CloudServer/cloudserver/src/main/java/me/fandong/cloudserver/Controller/UploadController.java
 /Users/fandong/Git/CloudServer/cloudserver/src/main/java/me/fandong/cloudserver/Model/FilePathModel.java
 /Users/fandong/Git/CloudServer/cloudserver/src/main/java/me/fandong/cloudserver/Controller/AliyunOSSFileController.java
