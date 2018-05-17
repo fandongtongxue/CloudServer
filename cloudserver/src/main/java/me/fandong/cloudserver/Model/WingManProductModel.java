@@ -1,23 +1,16 @@
 package me.fandong.cloudserver.Model;
 
 public class WingManProductModel {
-    private String id;
+    private int id;
     private String title;
     private String price;
     private String content;
 
-    public WingManProductModel(String id, String title, String price, String content) {
-        this.id = id;
-        this.title = title;
-        this.price = price;
-        this.content = content;
-    }
-
-    public String getId() {
+    public int getId() {
         return id;
     }
 
-    public void setId(String id) {
+    public void setId(int id) {
         this.id = id;
     }
 
