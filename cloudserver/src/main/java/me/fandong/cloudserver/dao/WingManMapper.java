@@ -7,5 +7,5 @@ import java.util.List;
 
 public interface WingManMapper {
     List<WingManProductModel> listWingManProducts();
-    WingManUserModel getWingManUserModel(String uuid);
+    List<WingManUserModel> getWingManUserModel(String uuid);
 }

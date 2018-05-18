@@ -17,7 +17,7 @@ public class WingManService {
         return wingManMapper.listWingManProducts();
     }
 
-    public WingManUserModel getWingManUserModel(String uuid){
+    public List<WingManUserModel> getWingManUserModel(String uuid){
         return wingManMapper.getWingManUserModel(uuid);
     }
 }

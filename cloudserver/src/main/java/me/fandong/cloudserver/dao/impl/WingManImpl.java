@@ -10,6 +10,7 @@ import org.springframework.stereotype.Repository;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.ArrayList;
 import java.util.List;
 
 @Repository
@@ -34,8 +35,18 @@ public class WingManImpl implements WingManMapper {
     }
 
     @Override
-    public WingManUserModel getWingManUserModel(String uuid){
-        String sql = "SELECT * FROM CloudServer.app_WingMan_User WHERE uuid ="+uuid;
-        return (WingManUserModel)jdbcTemplate.queryForObject(sql,WingManUserModel.class);
+    public List<WingManUserModel> getWingManUserModel(String uuid){
+        String sql = "SELECT * FROM app_WingMan_User WHERE uuid ="+uuid;
+        return (ArrayList<WingManUserModel>)jdbcTemplate.query(sql, new RowMapper<WingManUserModel>() {
+            @Override
+            public WingManUserModel mapRow(ResultSet rs, int rowNum) throws SQLException {
+                WingManUserModel model = new WingManUserModel();
+                model.setId(rs.getInt("id"));
+                model.setUuid(rs.getString("uuid"));
+                model.setCurrentDate(rs.getString("currentDate"));
+                model.setExpireDate(rs.getString("expireDate"));
+                return model;
+            }
+        });
     }
 }

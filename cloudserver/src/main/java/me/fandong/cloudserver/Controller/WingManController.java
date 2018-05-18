@@ -13,6 +13,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.util.ArrayList;
 import java.util.List;
 
 @RestController
@@ -26,6 +27,7 @@ public class WingManController {
     @ApiOperation(value="获取WingMan应用内产品列表", notes="查询WingMan应用内产品列表")
     @GetMapping("/getWingManProductList")
     public String getWingManProductList(){
+        stringMap = new StringMap();
         List<WingManProductModel> list = wingManService.listWingManProducts();
         WingManProductListModel model = new WingManProductListModel(list);
         stringMap.put("data",model);
@@ -39,14 +41,15 @@ public class WingManController {
     @ApiImplicitParam(name = "uuid", value = "uuid", required = true, dataType = "string")
     @GetMapping("/getWingManUser")
     public String getWingManUser(String uuid){
+        stringMap = new StringMap();
         if (uuid == null){
             stringMap.put("data","");
             stringMap.put("status",0);
             stringMap.put("msg","uuid为空");
             return Json.encode(stringMap);
         }
-        WingManUserModel model = wingManService.getWingManUserModel(uuid);
-        stringMap.put("data",model);
+        ArrayList<WingManUserModel> list = (ArrayList<WingManUserModel>)wingManService.getWingManUserModel(uuid);
+        stringMap.put("data",list);
         stringMap.put("status",1);
         stringMap.put("msg","获取WingMan应用内产品用户数据成功");
         logger.info("result:"+Json.encode(stringMap));
