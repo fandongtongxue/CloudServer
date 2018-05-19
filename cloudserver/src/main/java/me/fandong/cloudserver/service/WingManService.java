@@ -20,4 +20,8 @@ public class WingManService {
     public List<WingManUserModel> getWingManUserModel(String uuid){
         return wingManMapper.getWingManUserModel(uuid);
     }
+
+    public void createWingManUserModel(String uuid){
+        wingManMapper.createWingManUserModel(uuid);
+    }
 }

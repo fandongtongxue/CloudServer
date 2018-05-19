@@ -49,10 +49,20 @@ public class WingManController {
             return Json.encode(stringMap);
         }
         ArrayList<WingManUserModel> list = (ArrayList<WingManUserModel>)wingManService.getWingManUserModel(uuid);
-        stringMap.put("data",list);
-        stringMap.put("status",1);
-        stringMap.put("msg","获取WingMan应用内产品用户数据成功");
-        logger.info("result:"+Json.encode(stringMap));
-        return Json.encode(stringMap);
+        if (!list.isEmpty()) {
+            stringMap.put("data", list);
+            stringMap.put("status", 1);
+            stringMap.put("msg", "获取WingMan应用内产品用户数据成功");
+            logger.info("result:" + Json.encode(stringMap));
+            return Json.encode(stringMap);
+        }else {
+            wingManService.createWingManUserModel(uuid);
+            ArrayList<WingManUserModel> tempList = (ArrayList<WingManUserModel>)wingManService.getWingManUserModel(uuid);
+            stringMap.put("data", list);
+            stringMap.put("status", 1);
+            stringMap.put("msg", "获取WingMan应用内产品用户数据成功");
+            logger.info("result:" + Json.encode(stringMap));
+            return Json.encode(stringMap);
+        }
     }
 }
