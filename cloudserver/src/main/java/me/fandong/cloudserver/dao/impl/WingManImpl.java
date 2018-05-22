@@ -38,7 +38,7 @@ public class WingManImpl implements WingManMapper {
 
     @Override
     public List<WingManUserModel> getWingManUserModel(String uuid){
-        String sql = "SELECT * FROM app_WingMan_User WHERE uuid ="+uuid;
+        String sql = "SELECT * FROM app_WingMan_User WHERE uuid ="+"\""+uuid+"\"";
         return (ArrayList<WingManUserModel>)jdbcTemplate.query(sql, new RowMapper<WingManUserModel>() {
             @Override
             public WingManUserModel mapRow(ResultSet rs, int rowNum) throws SQLException {
@@ -58,8 +58,9 @@ public class WingManImpl implements WingManMapper {
         String createTimeString = currentDate.toString();
         Date expireDate = getDateAfter(currentDate,7);
         String expireDateString = expireDate.toString();
-        jdbcTemplate.update("INSERT INTO CloudServer.app_WingMan_User(uuid,currentDate,ExpireDate) VALUES (?,?,?)",uuid,createTimeString,expireDateString);
-    }
+        String sql = "INSERT INTO CloudServer.app_WingMan_User(uuid,currentDate,ExpireDate) VALUES ("+"\""+uuid+"\""+","+"\""+createTimeString+"\""+","+"\""+expireDateString+"\""+");";
+        jdbcTemplate.update(sql);
+}
 
     public static Date getDateAfter(Date d,int day){
         Calendar now =Calendar.getInstance();

@@ -7,6 +7,7 @@ import io.swagger.annotations.ApiOperation;
 import me.fandong.cloudserver.Model.WingManProductListModel;
 import me.fandong.cloudserver.Model.WingManProductModel;
 import me.fandong.cloudserver.Model.WingManUserModel;
+import me.fandong.cloudserver.dao.impl.WingManImpl;
 import me.fandong.cloudserver.service.WingManService;
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -15,6 +16,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.time.format.DateTimeFormatter;
 
 @RestController
 public class WingManController {
@@ -58,11 +60,42 @@ public class WingManController {
         }else {
             wingManService.createWingManUserModel(uuid);
             ArrayList<WingManUserModel> tempList = (ArrayList<WingManUserModel>)wingManService.getWingManUserModel(uuid);
-            stringMap.put("data", list);
-            stringMap.put("status", 1);
-            stringMap.put("msg", "获取WingMan应用内产品用户数据成功");
-            logger.info("result:" + Json.encode(stringMap));
+            if (!tempList.isEmpty()){
+                stringMap.put("data", list);
+                stringMap.put("status", 1);
+                stringMap.put("msg", "获取WingMan应用内产品用户数据成功");
+                logger.info("result:" + Json.encode(stringMap));
+                return Json.encode(stringMap);
+            }else {
+                return getWingManUser(uuid);
+            }
+        }
+    }
+
+    @ApiOperation(value="更新WingMan用户过期时间", notes="更新WingMan用户过期时间")
+    @GetMapping("/updateWingManUserExpireDate")
+    public String updateWingManUserExpireDate(String uuid, int day){
+        stringMap = new StringMap();
+        if (uuid == null){
+            stringMap.put("data","");
+            stringMap.put("status",0);
+            stringMap.put("msg","uuid为空");
             return Json.encode(stringMap);
         }
+        if (day == 0){
+            stringMap.put("data","");
+            stringMap.put("status",0);
+            stringMap.put("msg","day为0");
+            return Json.encode(stringMap);
+        }
+        ArrayList<WingManUserModel> list = (ArrayList<WingManUserModel>)wingManService.getWingManUserModel(uuid);
+        WingManUserModel model = list.get(0);
+        String expireDateString = model.getExpireDate();
+        System.out.println(expireDateString);
+//        WingManImpl.getDateAfter(,day);
+        stringMap.put("data","");
+        stringMap.put("status",1);
+        stringMap.put("msg","更新过期时间成功");
+        return Json.encode(stringMap);
     }
 }

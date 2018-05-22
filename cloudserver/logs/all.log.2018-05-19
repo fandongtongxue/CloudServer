@@ -1,0 +1,386 @@
+2018-05-19 00:14:05,590  INFO Version:21 - HV000001: Hibernate Validator 6.0.9.Final
+2018-05-19 00:14:05,959  INFO CloudserverApplication:50 - Starting CloudserverApplication on fandongdeMacBook-Pro.local with PID 777 (/Users/fandongtongxue/Documents/GitHub/CloudServer/cloudserver/target/classes started by fandongtongxue in /Users/fandongtongxue/Documents/GitHub/CloudServer/cloudserver)
+2018-05-19 00:14:05,960  INFO CloudserverApplication:663 - The following profiles are active: dis
+2018-05-19 00:14:06,027  INFO AnnotationConfigServletWebServerApplicationContext:590 - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@22f31dec: startup date [Sat May 19 00:14:06 CST 2018]; root of context hierarchy
+2018-05-19 00:14:07,044  INFO PostProcessorRegistrationDelegate$BeanPostProcessorChecker:328 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$e92dba94] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-05-19 00:14:07,446  INFO TomcatWebServer:91 - Tomcat initialized with port(s): 8081 (http)
+2018-05-19 00:14:07,633  INFO ContextLoader:285 - Root WebApplicationContext: initialization completed in 1610 ms
+2018-05-19 00:14:07,803  INFO ServletRegistrationBean:185 - Servlet dispatcherServlet mapped to [/]
+2018-05-19 00:14:07,809  INFO FilterRegistrationBean:244 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-05-19 00:14:07,810  INFO FilterRegistrationBean:244 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-05-19 00:14:07,810  INFO FilterRegistrationBean:244 - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-05-19 00:14:07,810  INFO FilterRegistrationBean:244 - Mapping filter: 'requestContextFilter' to: [/*]
+2018-05-19 00:14:08,286  INFO RequestMappingHandlerMapping:547 - Mapped "{[/getAliyunOSSBucketList],methods=[GET]}" onto public java.lang.String me.fandong.cloudserver.Controller.AliyunOSSBucketController.getBucketList(java.lang.String,java.lang.String)
+2018-05-19 00:14:08,287  INFO RequestMappingHandlerMapping:547 - Mapped "{[/createAliyunBucket],methods=[POST]}" onto public java.lang.String me.fandong.cloudserver.Controller.AliyunOSSBucketController.createBucket(java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+2018-05-19 00:14:08,287  INFO RequestMappingHandlerMapping:547 - Mapped "{[/deleteAliyunBucket],methods=[POST]}" onto public java.lang.String me.fandong.cloudserver.Controller.AliyunOSSBucketController.deleteBucket(java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+2018-05-19 00:14:08,288  INFO RequestMappingHandlerMapping:547 - Mapped "{[/getAliyunOSSFileList],methods=[GET]}" onto public java.lang.String me.fandong.cloudserver.Controller.AliyunOSSFileController.getFileList(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+2018-05-19 00:14:08,289  INFO RequestMappingHandlerMapping:547 - Mapped "{[/deleteAliyunOSSFile],methods=[POST]}" onto public java.lang.String me.fandong.cloudserver.Controller.AliyunOSSFileController.deleteFile(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+2018-05-19 00:14:08,291  INFO RequestMappingHandlerMapping:547 - Mapped "{[/getQiniuBucketList],methods=[GET]}" onto public java.lang.String me.fandong.cloudserver.Controller.QiniuBucketController.getBucketList(java.lang.String,java.lang.String)
+2018-05-19 00:14:08,291  INFO RequestMappingHandlerMapping:547 - Mapped "{[/createQiniuBucket],methods=[POST]}" onto public java.lang.String me.fandong.cloudserver.Controller.QiniuBucketController.createBucket(java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+2018-05-19 00:14:08,291  INFO RequestMappingHandlerMapping:547 - Mapped "{[/getQiniuDomainList],methods=[GET]}" onto public java.lang.String me.fandong.cloudserver.Controller.QiniuBucketController.getDomainList(java.lang.String,java.lang.String,java.lang.String)
+2018-05-19 00:14:08,292  INFO RequestMappingHandlerMapping:547 - Mapped "{[/getQiniuFileList],methods=[GET]}" onto public java.lang.String me.fandong.cloudserver.Controller.QiniuFileController.getFileList(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+2018-05-19 00:14:08,292  INFO RequestMappingHandlerMapping:547 - Mapped "{[/deleteQiniuFile],methods=[POST]}" onto public java.lang.String me.fandong.cloudserver.Controller.QiniuFileController.deleteFile(java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+2018-05-19 00:14:08,293  INFO RequestMappingHandlerMapping:547 - Mapped "{[/uploadImageFile],methods=[POST]}" onto public java.lang.String me.fandong.cloudserver.Controller.UploadController.uploadImageFile(org.springframework.web.multipart.MultipartHttpServletRequest) throws java.io.IOException
+2018-05-19 00:14:08,294  INFO RequestMappingHandlerMapping:547 - Mapped "{[/uploadVideoFile],methods=[POST]}" onto public java.lang.String me.fandong.cloudserver.Controller.UploadController.uploadVideoFile(org.springframework.web.multipart.MultipartHttpServletRequest) throws java.io.IOException
+2018-05-19 00:14:08,294  INFO RequestMappingHandlerMapping:547 - Mapped "{[/uploadQiniuFile],methods=[POST]}" onto public java.lang.String me.fandong.cloudserver.Controller.UploadController.uploadQiniuFile(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+2018-05-19 00:14:08,295  INFO RequestMappingHandlerMapping:547 - Mapped "{[/uploadAliyunFile],methods=[POST]}" onto public java.lang.String me.fandong.cloudserver.Controller.UploadController.uploadAliyunFile(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+2018-05-19 00:14:08,295  INFO RequestMappingHandlerMapping:547 - Mapped "{[/getWingManProductList],methods=[GET]}" onto public java.lang.String me.fandong.cloudserver.Controller.WingManController.getWingManProductList()
+2018-05-19 00:14:08,296  INFO RequestMappingHandlerMapping:547 - Mapped "{[/getWingManUser],methods=[GET]}" onto public java.lang.String me.fandong.cloudserver.Controller.WingManController.getWingManUser(java.lang.String)
+2018-05-19 00:14:08,301  INFO RequestMappingHandlerMapping:547 - Mapped "{[/swagger-resources/configuration/ui]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2018-05-19 00:14:08,301  INFO RequestMappingHandlerMapping:547 - Mapped "{[/swagger-resources/configuration/security]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2018-05-19 00:14:08,302  INFO RequestMappingHandlerMapping:547 - Mapped "{[/swagger-resources]}" onto public org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2018-05-19 00:14:08,305  INFO RequestMappingHandlerMapping:547 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-05-19 00:14:08,306  INFO RequestMappingHandlerMapping:547 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-05-19 00:14:08,334  WARN AnnotationConfigServletWebServerApplicationContext:558 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'xmlModelPlugin': Lookup method resolution failed; nested exception is java.lang.IllegalStateException: Failed to introspect Class [springfox.documentation.schema.XmlModelPlugin] from ClassLoader [jdk.internal.loader.ClassLoaders$AppClassLoader@4459eb14]
+2018-05-19 00:14:08,357  INFO ConditionEvaluationReportLoggingListener:101 - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2018-05-19 00:14:08,362 ERROR SpringApplication:842 - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'xmlModelPlugin': Lookup method resolution failed; nested exception is java.lang.IllegalStateException: Failed to introspect Class [springfox.documentation.schema.XmlModelPlugin] from ClassLoader [jdk.internal.loader.ClassLoaders$AppClassLoader@4459eb14]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.determineCandidateConstructors(AutowiredAnnotationBeanPostProcessor.java:262)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.determineConstructorsFromBeanPostProcessors(AbstractAutowireCapableBeanFactory.java:1198)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1123)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:541)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:501)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:760)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:869)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:550)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:140)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:759)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:395)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:327)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1255)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1243)
+	at me.fandong.cloudserver.CloudserverApplication.main(CloudserverApplication.java:13)
+Caused by: java.lang.IllegalStateException: Failed to introspect Class [springfox.documentation.schema.XmlModelPlugin] from ClassLoader [jdk.internal.loader.ClassLoaders$AppClassLoader@4459eb14]
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:659)
+	at org.springframework.util.ReflectionUtils.doWithMethods(ReflectionUtils.java:556)
+	at org.springframework.util.ReflectionUtils.doWithMethods(ReflectionUtils.java:541)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.determineCandidateConstructors(AutowiredAnnotationBeanPostProcessor.java:245)
+	... 18 more
+Caused by: java.lang.NoClassDefFoundError: javax/xml/bind/annotation/XmlType
+	at java.base/java.lang.Class.getDeclaredMethods0(Native Method)
+	at java.base/java.lang.Class.privateGetDeclaredMethods(Class.java:3119)
+	at java.base/java.lang.Class.getDeclaredMethods(Class.java:2268)
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:641)
+	... 21 more
+Caused by: java.lang.ClassNotFoundException: javax.xml.bind.annotation.XmlType
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:582)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:190)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:499)
+	... 25 more
+2018-05-19 00:14:39,501  INFO Version:21 - HV000001: Hibernate Validator 6.0.9.Final
+2018-05-19 00:14:39,654  INFO CloudserverApplication:50 - Starting CloudserverApplication on fandongdeMacBook-Pro.local with PID 779 (/Users/fandongtongxue/Documents/GitHub/CloudServer/cloudserver/target/classes started by fandongtongxue in /Users/fandongtongxue/Documents/GitHub/CloudServer/cloudserver)
+2018-05-19 00:14:39,655  INFO CloudserverApplication:663 - The following profiles are active: dis
+2018-05-19 00:14:39,690  INFO AnnotationConfigServletWebServerApplicationContext:590 - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@32c726ee: startup date [Sat May 19 00:14:39 CST 2018]; root of context hierarchy
+2018-05-19 00:14:40,679  INFO PostProcessorRegistrationDelegate$BeanPostProcessorChecker:328 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$996ed93a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-05-19 00:14:40,880  INFO TomcatWebServer:91 - Tomcat initialized with port(s): 8081 (http)
+2018-05-19 00:14:40,962  INFO ContextLoader:285 - Root WebApplicationContext: initialization completed in 1276 ms
+2018-05-19 00:14:41,064  INFO ServletRegistrationBean:185 - Servlet dispatcherServlet mapped to [/]
+2018-05-19 00:14:41,068  INFO FilterRegistrationBean:244 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-05-19 00:14:41,068  INFO FilterRegistrationBean:244 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-05-19 00:14:41,068  INFO FilterRegistrationBean:244 - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-05-19 00:14:41,068  INFO FilterRegistrationBean:244 - Mapping filter: 'requestContextFilter' to: [/*]
+2018-05-19 00:14:41,503  INFO RequestMappingHandlerMapping:547 - Mapped "{[/getAliyunOSSBucketList],methods=[GET]}" onto public java.lang.String me.fandong.cloudserver.Controller.AliyunOSSBucketController.getBucketList(java.lang.String,java.lang.String)
+2018-05-19 00:14:41,504  INFO RequestMappingHandlerMapping:547 - Mapped "{[/createAliyunBucket],methods=[POST]}" onto public java.lang.String me.fandong.cloudserver.Controller.AliyunOSSBucketController.createBucket(java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+2018-05-19 00:14:41,504  INFO RequestMappingHandlerMapping:547 - Mapped "{[/deleteAliyunBucket],methods=[POST]}" onto public java.lang.String me.fandong.cloudserver.Controller.AliyunOSSBucketController.deleteBucket(java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+2018-05-19 00:14:41,505  INFO RequestMappingHandlerMapping:547 - Mapped "{[/getAliyunOSSFileList],methods=[GET]}" onto public java.lang.String me.fandong.cloudserver.Controller.AliyunOSSFileController.getFileList(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+2018-05-19 00:14:41,506  INFO RequestMappingHandlerMapping:547 - Mapped "{[/deleteAliyunOSSFile],methods=[POST]}" onto public java.lang.String me.fandong.cloudserver.Controller.AliyunOSSFileController.deleteFile(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+2018-05-19 00:14:41,507  INFO RequestMappingHandlerMapping:547 - Mapped "{[/getQiniuBucketList],methods=[GET]}" onto public java.lang.String me.fandong.cloudserver.Controller.QiniuBucketController.getBucketList(java.lang.String,java.lang.String)
+2018-05-19 00:14:41,508  INFO RequestMappingHandlerMapping:547 - Mapped "{[/createQiniuBucket],methods=[POST]}" onto public java.lang.String me.fandong.cloudserver.Controller.QiniuBucketController.createBucket(java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+2018-05-19 00:14:41,508  INFO RequestMappingHandlerMapping:547 - Mapped "{[/getQiniuDomainList],methods=[GET]}" onto public java.lang.String me.fandong.cloudserver.Controller.QiniuBucketController.getDomainList(java.lang.String,java.lang.String,java.lang.String)
+2018-05-19 00:14:41,509  INFO RequestMappingHandlerMapping:547 - Mapped "{[/getQiniuFileList],methods=[GET]}" onto public java.lang.String me.fandong.cloudserver.Controller.QiniuFileController.getFileList(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+2018-05-19 00:14:41,509  INFO RequestMappingHandlerMapping:547 - Mapped "{[/deleteQiniuFile],methods=[POST]}" onto public java.lang.String me.fandong.cloudserver.Controller.QiniuFileController.deleteFile(java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+2018-05-19 00:14:41,510  INFO RequestMappingHandlerMapping:547 - Mapped "{[/uploadImageFile],methods=[POST]}" onto public java.lang.String me.fandong.cloudserver.Controller.UploadController.uploadImageFile(org.springframework.web.multipart.MultipartHttpServletRequest) throws java.io.IOException
+2018-05-19 00:14:41,511  INFO RequestMappingHandlerMapping:547 - Mapped "{[/uploadVideoFile],methods=[POST]}" onto public java.lang.String me.fandong.cloudserver.Controller.UploadController.uploadVideoFile(org.springframework.web.multipart.MultipartHttpServletRequest) throws java.io.IOException
+2018-05-19 00:14:41,511  INFO RequestMappingHandlerMapping:547 - Mapped "{[/uploadQiniuFile],methods=[POST]}" onto public java.lang.String me.fandong.cloudserver.Controller.UploadController.uploadQiniuFile(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+2018-05-19 00:14:41,511  INFO RequestMappingHandlerMapping:547 - Mapped "{[/uploadAliyunFile],methods=[POST]}" onto public java.lang.String me.fandong.cloudserver.Controller.UploadController.uploadAliyunFile(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+2018-05-19 00:14:41,512  INFO RequestMappingHandlerMapping:547 - Mapped "{[/getWingManProductList],methods=[GET]}" onto public java.lang.String me.fandong.cloudserver.Controller.WingManController.getWingManProductList()
+2018-05-19 00:14:41,512  INFO RequestMappingHandlerMapping:547 - Mapped "{[/getWingManUser],methods=[GET]}" onto public java.lang.String me.fandong.cloudserver.Controller.WingManController.getWingManUser(java.lang.String)
+2018-05-19 00:14:41,517  INFO RequestMappingHandlerMapping:547 - Mapped "{[/swagger-resources/configuration/ui]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2018-05-19 00:14:41,517  INFO RequestMappingHandlerMapping:547 - Mapped "{[/swagger-resources/configuration/security]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2018-05-19 00:14:41,518  INFO RequestMappingHandlerMapping:547 - Mapped "{[/swagger-resources]}" onto public org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2018-05-19 00:14:41,521  INFO RequestMappingHandlerMapping:547 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-05-19 00:14:41,521  INFO RequestMappingHandlerMapping:547 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-05-19 00:14:41,548  WARN AnnotationConfigServletWebServerApplicationContext:558 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'xmlModelPlugin': Lookup method resolution failed; nested exception is java.lang.IllegalStateException: Failed to introspect Class [springfox.documentation.schema.XmlModelPlugin] from ClassLoader [jdk.internal.loader.ClassLoaders$AppClassLoader@4459eb14]
+2018-05-19 00:14:41,567  INFO ConditionEvaluationReportLoggingListener:101 - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2018-05-19 00:14:41,571 ERROR SpringApplication:842 - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'xmlModelPlugin': Lookup method resolution failed; nested exception is java.lang.IllegalStateException: Failed to introspect Class [springfox.documentation.schema.XmlModelPlugin] from ClassLoader [jdk.internal.loader.ClassLoaders$AppClassLoader@4459eb14]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.determineCandidateConstructors(AutowiredAnnotationBeanPostProcessor.java:262)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.determineConstructorsFromBeanPostProcessors(AbstractAutowireCapableBeanFactory.java:1198)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1123)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:541)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:501)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:760)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:869)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:550)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:140)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:759)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:395)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:327)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1255)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1243)
+	at me.fandong.cloudserver.CloudserverApplication.main(CloudserverApplication.java:13)
+Caused by: java.lang.IllegalStateException: Failed to introspect Class [springfox.documentation.schema.XmlModelPlugin] from ClassLoader [jdk.internal.loader.ClassLoaders$AppClassLoader@4459eb14]
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:659)
+	at org.springframework.util.ReflectionUtils.doWithMethods(ReflectionUtils.java:556)
+	at org.springframework.util.ReflectionUtils.doWithMethods(ReflectionUtils.java:541)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.determineCandidateConstructors(AutowiredAnnotationBeanPostProcessor.java:245)
+	... 18 more
+Caused by: java.lang.NoClassDefFoundError: javax/xml/bind/annotation/XmlType
+	at java.base/java.lang.Class.getDeclaredMethods0(Native Method)
+	at java.base/java.lang.Class.privateGetDeclaredMethods(Class.java:3119)
+	at java.base/java.lang.Class.getDeclaredMethods(Class.java:2268)
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:641)
+	... 21 more
+Caused by: java.lang.ClassNotFoundException: javax.xml.bind.annotation.XmlType
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:582)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:190)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:499)
+	... 25 more
+2018-05-19 00:15:24,456  INFO Version:21 - HV000001: Hibernate Validator 6.0.9.Final
+2018-05-19 00:15:24,717  INFO CloudserverApplication:50 - Starting CloudserverApplication on fandongdeMacBook-Pro.local with PID 789 (/Users/fandongtongxue/Documents/GitHub/CloudServer/cloudserver/target/classes started by fandongtongxue in /Users/fandongtongxue/Documents/GitHub/CloudServer/cloudserver)
+2018-05-19 00:15:24,719  INFO CloudserverApplication:663 - The following profiles are active: dis
+2018-05-19 00:15:24,759  INFO AnnotationConfigServletWebServerApplicationContext:590 - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@2e61d218: startup date [Sat May 19 00:15:24 CST 2018]; root of context hierarchy
+2018-05-19 00:15:25,649  INFO PostProcessorRegistrationDelegate$BeanPostProcessorChecker:328 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$75b92954] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-05-19 00:15:25,922  INFO TomcatWebServer:91 - Tomcat initialized with port(s): 8081 (http)
+2018-05-19 00:15:26,067  INFO ContextLoader:285 - Root WebApplicationContext: initialization completed in 1312 ms
+2018-05-19 00:15:26,189  INFO ServletRegistrationBean:185 - Servlet dispatcherServlet mapped to [/]
+2018-05-19 00:15:26,194  INFO FilterRegistrationBean:244 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-05-19 00:15:26,194  INFO FilterRegistrationBean:244 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-05-19 00:15:26,194  INFO FilterRegistrationBean:244 - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-05-19 00:15:26,194  INFO FilterRegistrationBean:244 - Mapping filter: 'requestContextFilter' to: [/*]
+2018-05-19 00:15:26,707  INFO RequestMappingHandlerMapping:547 - Mapped "{[/getAliyunOSSBucketList],methods=[GET]}" onto public java.lang.String me.fandong.cloudserver.Controller.AliyunOSSBucketController.getBucketList(java.lang.String,java.lang.String)
+2018-05-19 00:15:26,709  INFO RequestMappingHandlerMapping:547 - Mapped "{[/createAliyunBucket],methods=[POST]}" onto public java.lang.String me.fandong.cloudserver.Controller.AliyunOSSBucketController.createBucket(java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+2018-05-19 00:15:26,709  INFO RequestMappingHandlerMapping:547 - Mapped "{[/deleteAliyunBucket],methods=[POST]}" onto public java.lang.String me.fandong.cloudserver.Controller.AliyunOSSBucketController.deleteBucket(java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+2018-05-19 00:15:26,711  INFO RequestMappingHandlerMapping:547 - Mapped "{[/getAliyunOSSFileList],methods=[GET]}" onto public java.lang.String me.fandong.cloudserver.Controller.AliyunOSSFileController.getFileList(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+2018-05-19 00:15:26,715  INFO RequestMappingHandlerMapping:547 - Mapped "{[/deleteAliyunOSSFile],methods=[POST]}" onto public java.lang.String me.fandong.cloudserver.Controller.AliyunOSSFileController.deleteFile(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+2018-05-19 00:15:26,717  INFO RequestMappingHandlerMapping:547 - Mapped "{[/getQiniuBucketList],methods=[GET]}" onto public java.lang.String me.fandong.cloudserver.Controller.QiniuBucketController.getBucketList(java.lang.String,java.lang.String)
+2018-05-19 00:15:26,718  INFO RequestMappingHandlerMapping:547 - Mapped "{[/createQiniuBucket],methods=[POST]}" onto public java.lang.String me.fandong.cloudserver.Controller.QiniuBucketController.createBucket(java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+2018-05-19 00:15:26,718  INFO RequestMappingHandlerMapping:547 - Mapped "{[/getQiniuDomainList],methods=[GET]}" onto public java.lang.String me.fandong.cloudserver.Controller.QiniuBucketController.getDomainList(java.lang.String,java.lang.String,java.lang.String)
+2018-05-19 00:15:26,720  INFO RequestMappingHandlerMapping:547 - Mapped "{[/getQiniuFileList],methods=[GET]}" onto public java.lang.String me.fandong.cloudserver.Controller.QiniuFileController.getFileList(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+2018-05-19 00:15:26,720  INFO RequestMappingHandlerMapping:547 - Mapped "{[/deleteQiniuFile],methods=[POST]}" onto public java.lang.String me.fandong.cloudserver.Controller.QiniuFileController.deleteFile(java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+2018-05-19 00:15:26,722  INFO RequestMappingHandlerMapping:547 - Mapped "{[/uploadImageFile],methods=[POST]}" onto public java.lang.String me.fandong.cloudserver.Controller.UploadController.uploadImageFile(org.springframework.web.multipart.MultipartHttpServletRequest) throws java.io.IOException
+2018-05-19 00:15:26,723  INFO RequestMappingHandlerMapping:547 - Mapped "{[/uploadVideoFile],methods=[POST]}" onto public java.lang.String me.fandong.cloudserver.Controller.UploadController.uploadVideoFile(org.springframework.web.multipart.MultipartHttpServletRequest) throws java.io.IOException
+2018-05-19 00:15:26,723  INFO RequestMappingHandlerMapping:547 - Mapped "{[/uploadQiniuFile],methods=[POST]}" onto public java.lang.String me.fandong.cloudserver.Controller.UploadController.uploadQiniuFile(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+2018-05-19 00:15:26,724  INFO RequestMappingHandlerMapping:547 - Mapped "{[/uploadAliyunFile],methods=[POST]}" onto public java.lang.String me.fandong.cloudserver.Controller.UploadController.uploadAliyunFile(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+2018-05-19 00:15:26,725  INFO RequestMappingHandlerMapping:547 - Mapped "{[/getWingManProductList],methods=[GET]}" onto public java.lang.String me.fandong.cloudserver.Controller.WingManController.getWingManProductList()
+2018-05-19 00:15:26,726  INFO RequestMappingHandlerMapping:547 - Mapped "{[/getWingManUser],methods=[GET]}" onto public java.lang.String me.fandong.cloudserver.Controller.WingManController.getWingManUser(java.lang.String)
+2018-05-19 00:15:26,732  INFO RequestMappingHandlerMapping:547 - Mapped "{[/swagger-resources/configuration/ui]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2018-05-19 00:15:26,733  INFO RequestMappingHandlerMapping:547 - Mapped "{[/swagger-resources/configuration/security]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2018-05-19 00:15:26,733  INFO RequestMappingHandlerMapping:547 - Mapped "{[/swagger-resources]}" onto public org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2018-05-19 00:15:26,741  INFO RequestMappingHandlerMapping:547 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-05-19 00:15:26,743  INFO RequestMappingHandlerMapping:547 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-05-19 00:15:26,790  WARN AnnotationConfigServletWebServerApplicationContext:558 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'xmlModelPlugin': Lookup method resolution failed; nested exception is java.lang.IllegalStateException: Failed to introspect Class [springfox.documentation.schema.XmlModelPlugin] from ClassLoader [jdk.internal.loader.ClassLoaders$AppClassLoader@5a2e4553]
+2018-05-19 00:15:26,823  INFO ConditionEvaluationReportLoggingListener:101 - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2018-05-19 00:15:26,829 ERROR SpringApplication:842 - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'xmlModelPlugin': Lookup method resolution failed; nested exception is java.lang.IllegalStateException: Failed to introspect Class [springfox.documentation.schema.XmlModelPlugin] from ClassLoader [jdk.internal.loader.ClassLoaders$AppClassLoader@5a2e4553]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.determineCandidateConstructors(AutowiredAnnotationBeanPostProcessor.java:262)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.determineConstructorsFromBeanPostProcessors(AbstractAutowireCapableBeanFactory.java:1198)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1123)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:541)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:501)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:760)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:869)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:550)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:140)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:759)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:395)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:327)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1255)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1243)
+	at me.fandong.cloudserver.CloudserverApplication.main(CloudserverApplication.java:13)
+Caused by: java.lang.IllegalStateException: Failed to introspect Class [springfox.documentation.schema.XmlModelPlugin] from ClassLoader [jdk.internal.loader.ClassLoaders$AppClassLoader@5a2e4553]
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:659)
+	at org.springframework.util.ReflectionUtils.doWithMethods(ReflectionUtils.java:556)
+	at org.springframework.util.ReflectionUtils.doWithMethods(ReflectionUtils.java:541)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.determineCandidateConstructors(AutowiredAnnotationBeanPostProcessor.java:245)
+	... 18 more
+Caused by: java.lang.NoClassDefFoundError: javax/xml/bind/annotation/XmlType
+	at java.base/java.lang.Class.getDeclaredMethods0(Native Method)
+	at java.base/java.lang.Class.privateGetDeclaredMethods(Class.java:3119)
+	at java.base/java.lang.Class.getDeclaredMethods(Class.java:2268)
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:641)
+	... 21 more
+Caused by: java.lang.ClassNotFoundException: javax.xml.bind.annotation.XmlType
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:582)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:190)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:499)
+	... 25 more
+2018-05-19 06:50:57,324  INFO Version:21 - HV000001: Hibernate Validator 6.0.9.Final
+2018-05-19 06:50:57,626  INFO CloudserverApplication:50 - Starting CloudserverApplication on bogon with PID 1100 (/Users/fandongtongxue/Documents/GitHub/CloudServer/cloudserver/target/classes started by fandongtongxue in /Users/fandongtongxue/Documents/GitHub/CloudServer/cloudserver)
+2018-05-19 06:50:57,627  INFO CloudserverApplication:663 - The following profiles are active: dis
+2018-05-19 06:50:57,691  INFO AnnotationConfigServletWebServerApplicationContext:590 - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@2f177a4b: startup date [Sat May 19 06:50:57 CST 2018]; root of context hierarchy
+2018-05-19 06:50:58,712  INFO PostProcessorRegistrationDelegate$BeanPostProcessorChecker:328 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$6aaf0480] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-05-19 06:50:58,955  INFO TomcatWebServer:91 - Tomcat initialized with port(s): 8081 (http)
+2018-05-19 06:50:59,051  INFO ContextLoader:285 - Root WebApplicationContext: initialization completed in 1364 ms
+2018-05-19 06:50:59,136  INFO ServletRegistrationBean:185 - Servlet dispatcherServlet mapped to [/]
+2018-05-19 06:50:59,139  INFO FilterRegistrationBean:244 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-05-19 06:50:59,140  INFO FilterRegistrationBean:244 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-05-19 06:50:59,140  INFO FilterRegistrationBean:244 - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-05-19 06:50:59,140  INFO FilterRegistrationBean:244 - Mapping filter: 'requestContextFilter' to: [/*]
+2018-05-19 06:50:59,593  INFO RequestMappingHandlerMapping:547 - Mapped "{[/getAliyunOSSBucketList],methods=[GET]}" onto public java.lang.String me.fandong.cloudserver.Controller.AliyunOSSBucketController.getBucketList(java.lang.String,java.lang.String)
+2018-05-19 06:50:59,594  INFO RequestMappingHandlerMapping:547 - Mapped "{[/createAliyunBucket],methods=[POST]}" onto public java.lang.String me.fandong.cloudserver.Controller.AliyunOSSBucketController.createBucket(java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+2018-05-19 06:50:59,595  INFO RequestMappingHandlerMapping:547 - Mapped "{[/deleteAliyunBucket],methods=[POST]}" onto public java.lang.String me.fandong.cloudserver.Controller.AliyunOSSBucketController.deleteBucket(java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+2018-05-19 06:50:59,596  INFO RequestMappingHandlerMapping:547 - Mapped "{[/getAliyunOSSFileList],methods=[GET]}" onto public java.lang.String me.fandong.cloudserver.Controller.AliyunOSSFileController.getFileList(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+2018-05-19 06:50:59,597  INFO RequestMappingHandlerMapping:547 - Mapped "{[/deleteAliyunOSSFile],methods=[POST]}" onto public java.lang.String me.fandong.cloudserver.Controller.AliyunOSSFileController.deleteFile(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+2018-05-19 06:50:59,598  INFO RequestMappingHandlerMapping:547 - Mapped "{[/getQiniuBucketList],methods=[GET]}" onto public java.lang.String me.fandong.cloudserver.Controller.QiniuBucketController.getBucketList(java.lang.String,java.lang.String)
+2018-05-19 06:50:59,598  INFO RequestMappingHandlerMapping:547 - Mapped "{[/createQiniuBucket],methods=[POST]}" onto public java.lang.String me.fandong.cloudserver.Controller.QiniuBucketController.createBucket(java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+2018-05-19 06:50:59,599  INFO RequestMappingHandlerMapping:547 - Mapped "{[/getQiniuDomainList],methods=[GET]}" onto public java.lang.String me.fandong.cloudserver.Controller.QiniuBucketController.getDomainList(java.lang.String,java.lang.String,java.lang.String)
+2018-05-19 06:50:59,599  INFO RequestMappingHandlerMapping:547 - Mapped "{[/getQiniuFileList],methods=[GET]}" onto public java.lang.String me.fandong.cloudserver.Controller.QiniuFileController.getFileList(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+2018-05-19 06:50:59,600  INFO RequestMappingHandlerMapping:547 - Mapped "{[/deleteQiniuFile],methods=[POST]}" onto public java.lang.String me.fandong.cloudserver.Controller.QiniuFileController.deleteFile(java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+2018-05-19 06:50:59,601  INFO RequestMappingHandlerMapping:547 - Mapped "{[/uploadImageFile],methods=[POST]}" onto public java.lang.String me.fandong.cloudserver.Controller.UploadController.uploadImageFile(org.springframework.web.multipart.MultipartHttpServletRequest) throws java.io.IOException
+2018-05-19 06:50:59,601  INFO RequestMappingHandlerMapping:547 - Mapped "{[/uploadVideoFile],methods=[POST]}" onto public java.lang.String me.fandong.cloudserver.Controller.UploadController.uploadVideoFile(org.springframework.web.multipart.MultipartHttpServletRequest) throws java.io.IOException
+2018-05-19 06:50:59,602  INFO RequestMappingHandlerMapping:547 - Mapped "{[/uploadQiniuFile],methods=[POST]}" onto public java.lang.String me.fandong.cloudserver.Controller.UploadController.uploadQiniuFile(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+2018-05-19 06:50:59,602  INFO RequestMappingHandlerMapping:547 - Mapped "{[/uploadAliyunFile],methods=[POST]}" onto public java.lang.String me.fandong.cloudserver.Controller.UploadController.uploadAliyunFile(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+2018-05-19 06:50:59,603  INFO RequestMappingHandlerMapping:547 - Mapped "{[/getWingManProductList],methods=[GET]}" onto public java.lang.String me.fandong.cloudserver.Controller.WingManController.getWingManProductList()
+2018-05-19 06:50:59,603  INFO RequestMappingHandlerMapping:547 - Mapped "{[/getWingManUser],methods=[GET]}" onto public java.lang.String me.fandong.cloudserver.Controller.WingManController.getWingManUser(java.lang.String)
+2018-05-19 06:50:59,608  INFO RequestMappingHandlerMapping:547 - Mapped "{[/swagger-resources/configuration/ui]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2018-05-19 06:50:59,609  INFO RequestMappingHandlerMapping:547 - Mapped "{[/swagger-resources/configuration/security]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2018-05-19 06:50:59,610  INFO RequestMappingHandlerMapping:547 - Mapped "{[/swagger-resources]}" onto public org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2018-05-19 06:50:59,613  INFO RequestMappingHandlerMapping:547 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-05-19 06:50:59,613  INFO RequestMappingHandlerMapping:547 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-05-19 06:50:59,703  INFO PropertySourcedRequestMappingHandlerMapping:69 - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2018-05-19 06:50:59,757  INFO SimpleUrlHandlerMapping:373 - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-19 06:50:59,881  INFO RequestMappingHandlerAdapter:574 - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@2f177a4b: startup date [Sat May 19 06:50:57 CST 2018]; root of context hierarchy
+2018-05-19 06:50:59,929  INFO SimpleUrlHandlerMapping:373 - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-19 06:50:59,929  INFO SimpleUrlHandlerMapping:373 - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-19 06:51:00,233  INFO AnnotationMBeanExporter:433 - Registering beans for JMX exposure on startup
+2018-05-19 06:51:00,235  INFO AnnotationMBeanExporter:895 - Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-05-19 06:51:00,242  INFO AnnotationMBeanExporter:668 - Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2018-05-19 06:51:00,247  INFO DefaultLifecycleProcessor:351 - Starting beans in phase 2147483647
+2018-05-19 06:51:00,247  INFO DocumentationPluginsBootstrapper:151 - Context refreshed
+2018-05-19 06:51:00,267  INFO DocumentationPluginsBootstrapper:154 - Found 1 custom documentation plugin(s)
+2018-05-19 06:51:00,295  INFO ApiListingReferenceScanner:41 - Scanning for api listing references
+2018-05-19 06:51:00,379  INFO CachingOperationNameGenerator:40 - Generating unique operation named: createBucketUsingPOST_1
+2018-05-19 06:51:00,381  INFO CachingOperationNameGenerator:40 - Generating unique operation named: getBucketListUsingGET_1
+2018-05-19 06:51:00,386  INFO CachingOperationNameGenerator:40 - Generating unique operation named: deleteFileUsingPOST_1
+2018-05-19 06:51:00,390  INFO CachingOperationNameGenerator:40 - Generating unique operation named: getFileListUsingGET_1
+2018-05-19 06:51:00,461  INFO TomcatWebServer:206 - Tomcat started on port(s): 8081 (http) with context path ''
+2018-05-19 06:51:00,467  INFO CloudserverApplication:59 - Started CloudserverApplication in 3.263 seconds (JVM running for 3.824)
+2018-05-19 06:51:46,555  INFO DispatcherServlet:494 - FrameworkServlet 'dispatcherServlet': initialization started
+2018-05-19 06:51:46,569  INFO DispatcherServlet:509 - FrameworkServlet 'dispatcherServlet': initialization completed in 13 ms
+2018-05-19 06:51:54,303  INFO DruidDataSource:638 - {dataSource-1} inited
+2018-05-19 06:51:54,507  INFO XmlBeanDefinitionReader:316 - Loading XML bean definitions from class path resource [org/springframework/jdbc/support/sql-error-codes.xml]
+2018-05-19 06:51:54,552  INFO SQLErrorCodesFactory:128 - SQLErrorCodes loaded: [DB2, Derby, H2, HDB, HSQL, Informix, MS-SQL, MySQL, Oracle, PostgreSQL, Sybase]
+2018-05-19 06:53:59,750  INFO WingManController:36 - result:{"msg":"获取WingMan应用内产品列表数据成功","data":{"list":[{"id":1,"title":"7天使用时长","price":"￥3","content":"花费3元可获得7天使用时长，之后会在当前到期时间之上加7天作为新的到期时间"},{"id":2,"title":"1个月使用时长","price":"￥12","content":"花费12元可获得1个月使用时长，之后会在当前到期时间之上加1个月作为新的到期时间"},{"id":3,"title":"3个月使用时长","price":"￥30","content":"花费30元可获得3个月使用时长，之后会在当前到期时间之上加3个月作为新的到期时间"},{"id":4,"title":"1年使用时长","price":"￥118","content":"花费118元可获得1年使用时长，之后会在当前到期时间之上加1年作为新的到期时间"},{"id":5,"title":"3年使用时长","price":"￥318","content":"花费318元可获得3年使用时长，之后会在当前到期时间之上加3年作为新的到期时间"}]},"status":1}
+2018-05-19 06:54:56,601  INFO WingManController:36 - result:{"msg":"获取WingMan应用内产品列表数据成功","data":{"list":[{"id":1,"title":"7天使用时长","price":"￥3","content":"花费3元可获得7天使用时长，之后会在当前到期时间之上加7天作为新的到期时间"},{"id":2,"title":"1个月使用时长","price":"￥12","content":"花费12元可获得1个月使用时长，之后会在当前到期时间之上加1个月作为新的到期时间"},{"id":3,"title":"3个月使用时长","price":"￥30","content":"花费30元可获得3个月使用时长，之后会在当前到期时间之上加3个月作为新的到期时间"},{"id":4,"title":"1年使用时长","price":"￥118","content":"花费118元可获得1年使用时长，之后会在当前到期时间之上加1年作为新的到期时间"},{"id":5,"title":"3年使用时长","price":"￥318","content":"花费318元可获得3年使用时长，之后会在当前到期时间之上加3年作为新的到期时间"}]},"status":1}
+2018-05-19 06:57:11,058  INFO WingManController:55 - result:{"msg":"获取WingMan应用内产品用户数据成功","data":[{"id":1,"uuid":"12211221","currentDate":"Wed, 20 Dec 2017 13:32:17 +0800","expireDate":"Thu, 29 Dec 2022 15:40:03 +0800, currentDate \u003d Wed, 20 Dec 2017 15:41:34 +0800"}],"status":1}
+2018-05-19 06:58:34,005  INFO WingManController:55 - result:{"msg":"获取WingMan应用内产品用户数据成功","data":[{"id":1,"uuid":"12211221","currentDate":"Wed, 20 Dec 2017 13:32:17 +0800","expireDate":"Thu, 29 Dec 2022 15:40:03 +0800, currentDate \u003d Wed, 20 Dec 2017 15:41:34 +0800"}],"status":1}
+2018-05-19 07:09:06,737  INFO WingManController:36 - result:{"msg":"获取WingMan应用内产品列表数据成功","data":{"list":[{"id":1,"title":"7天使用时长","price":"￥3","content":"花费3元可获得7天使用时长，之后会在当前到期时间之上加7天作为新的到期时间"},{"id":2,"title":"1个月使用时长","price":"￥12","content":"花费12元可获得1个月使用时长，之后会在当前到期时间之上加1个月作为新的到期时间"},{"id":3,"title":"3个月使用时长","price":"￥30","content":"花费30元可获得3个月使用时长，之后会在当前到期时间之上加3个月作为新的到期时间"},{"id":4,"title":"1年使用时长","price":"￥118","content":"花费118元可获得1年使用时长，之后会在当前到期时间之上加1年作为新的到期时间"},{"id":5,"title":"3年使用时长","price":"￥318","content":"花费318元可获得3年使用时长，之后会在当前到期时间之上加3年作为新的到期时间"}]},"status":1}
+2018-05-19 07:10:35,262  INFO WingManController:36 - result:{"msg":"获取WingMan应用内产品列表数据成功","data":{"list":[{"id":1,"title":"7天使用时长","price":"￥3","content":"花费3元可获得7天使用时长，之后会在当前到期时间之上加7天作为新的到期时间"},{"id":2,"title":"1个月使用时长","price":"￥12","content":"花费12元可获得1个月使用时长，之后会在当前到期时间之上加1个月作为新的到期时间"},{"id":3,"title":"3个月使用时长","price":"￥30","content":"花费30元可获得3个月使用时长，之后会在当前到期时间之上加3个月作为新的到期时间"},{"id":4,"title":"1年使用时长","price":"￥118","content":"花费118元可获得1年使用时长，之后会在当前到期时间之上加1年作为新的到期时间"},{"id":5,"title":"3年使用时长","price":"￥318","content":"花费318元可获得3年使用时长，之后会在当前到期时间之上加3年作为新的到期时间"}]},"status":1}
+2018-05-19 07:11:07,846  INFO WingManController:36 - result:{"msg":"获取WingMan应用内产品列表数据成功","data":{"list":[{"id":1,"title":"7天使用时长","price":"￥3","content":"花费3元可获得7天使用时长，之后会在当前到期时间之上加7天作为新的到期时间"},{"id":2,"title":"1个月使用时长","price":"￥12","content":"花费12元可获得1个月使用时长，之后会在当前到期时间之上加1个月作为新的到期时间"},{"id":3,"title":"3个月使用时长","price":"￥30","content":"花费30元可获得3个月使用时长，之后会在当前到期时间之上加3个月作为新的到期时间"},{"id":4,"title":"1年使用时长","price":"￥118","content":"花费118元可获得1年使用时长，之后会在当前到期时间之上加1年作为新的到期时间"},{"id":5,"title":"3年使用时长","price":"￥318","content":"花费318元可获得3年使用时长，之后会在当前到期时间之上加3年作为新的到期时间"}]},"status":1}
+2018-05-19 07:12:05,198  INFO WingManController:36 - result:{"msg":"获取WingMan应用内产品列表数据成功","data":{"list":[{"id":1,"title":"7天使用时长","price":"￥3","content":"花费3元可获得7天使用时长，之后会在当前到期时间之上加7天作为新的到期时间"},{"id":2,"title":"1个月使用时长","price":"￥12","content":"花费12元可获得1个月使用时长，之后会在当前到期时间之上加1个月作为新的到期时间"},{"id":3,"title":"3个月使用时长","price":"￥30","content":"花费30元可获得3个月使用时长，之后会在当前到期时间之上加3个月作为新的到期时间"},{"id":4,"title":"1年使用时长","price":"￥118","content":"花费118元可获得1年使用时长，之后会在当前到期时间之上加1年作为新的到期时间"},{"id":5,"title":"3年使用时长","price":"￥318","content":"花费318元可获得3年使用时长，之后会在当前到期时间之上加3年作为新的到期时间"}]},"status":1}
+2018-05-19 07:13:04,282  INFO WingManController:36 - result:{"msg":"获取WingMan应用内产品列表数据成功","data":{"list":[{"id":1,"title":"7天使用时长","price":"￥3","content":"花费3元可获得7天使用时长，之后会在当前到期时间之上加7天作为新的到期时间"},{"id":2,"title":"1个月使用时长","price":"￥12","content":"花费12元可获得1个月使用时长，之后会在当前到期时间之上加1个月作为新的到期时间"},{"id":3,"title":"3个月使用时长","price":"￥30","content":"花费30元可获得3个月使用时长，之后会在当前到期时间之上加3个月作为新的到期时间"},{"id":4,"title":"1年使用时长","price":"￥118","content":"花费118元可获得1年使用时长，之后会在当前到期时间之上加1年作为新的到期时间"},{"id":5,"title":"3年使用时长","price":"￥318","content":"花费318元可获得3年使用时长，之后会在当前到期时间之上加3年作为新的到期时间"}]},"status":1}
+2018-05-19 07:16:11,735  WARN PageNotFound:250 - Request method 'POST' not supported
+2018-05-19 07:16:45,285  INFO WingManController:55 - result:{"msg":"获取WingMan应用内产品用户数据成功","data":[{"id":1,"uuid":"12211221","currentDate":"Wed, 20 Dec 2017 13:32:17 +0800","expireDate":"Thu, 29 Dec 2022 15:40:03 +0800, currentDate \u003d Wed, 20 Dec 2017 15:41:34 +0800"}],"status":1}
+2018-05-19 07:17:02,817  INFO WingManController:55 - result:{"msg":"获取WingMan应用内产品用户数据成功","data":[{"id":1,"uuid":"12211221","currentDate":"Wed, 20 Dec 2017 13:32:17 +0800","expireDate":"Thu, 29 Dec 2022 15:40:03 +0800, currentDate \u003d Wed, 20 Dec 2017 15:41:34 +0800"}],"status":1}
+2018-05-19 07:17:38,249  INFO WingManController:55 - result:{"msg":"获取WingMan应用内产品用户数据成功","data":[{"id":1,"uuid":"12211221","currentDate":"Wed, 20 Dec 2017 13:32:17 +0800","expireDate":"Thu, 29 Dec 2022 15:40:03 +0800, currentDate \u003d Wed, 20 Dec 2017 15:41:34 +0800"}],"status":1}
+2018-05-19 07:17:41,688  INFO WingManController:36 - result:{"msg":"获取WingMan应用内产品列表数据成功","data":{"list":[{"id":1,"title":"7天使用时长","price":"￥3","content":"花费3元可获得7天使用时长，之后会在当前到期时间之上加7天作为新的到期时间"},{"id":2,"title":"1个月使用时长","price":"￥12","content":"花费12元可获得1个月使用时长，之后会在当前到期时间之上加1个月作为新的到期时间"},{"id":3,"title":"3个月使用时长","price":"￥30","content":"花费30元可获得3个月使用时长，之后会在当前到期时间之上加3个月作为新的到期时间"},{"id":4,"title":"1年使用时长","price":"￥118","content":"花费118元可获得1年使用时长，之后会在当前到期时间之上加1年作为新的到期时间"},{"id":5,"title":"3年使用时长","price":"￥318","content":"花费318元可获得3年使用时长，之后会在当前到期时间之上加3年作为新的到期时间"}]},"status":1}
+2018-05-19 07:17:43,026  INFO WingManController:55 - result:{"msg":"获取WingMan应用内产品用户数据成功","data":[{"id":1,"uuid":"12211221","currentDate":"Wed, 20 Dec 2017 13:32:17 +0800","expireDate":"Thu, 29 Dec 2022 15:40:03 +0800, currentDate \u003d Wed, 20 Dec 2017 15:41:34 +0800"}],"status":1}
+2018-05-19 07:17:47,605  INFO WingManController:55 - result:{"msg":"获取WingMan应用内产品用户数据成功","data":[{"id":1,"uuid":"12211221","currentDate":"Wed, 20 Dec 2017 13:32:17 +0800","expireDate":"Thu, 29 Dec 2022 15:40:03 +0800, currentDate \u003d Wed, 20 Dec 2017 15:41:34 +0800"}],"status":1}
+2018-05-19 07:18:21,110  INFO WingManController:55 - result:{"msg":"获取WingMan应用内产品用户数据成功","data":[{"id":1,"uuid":"12211221","currentDate":"Wed, 20 Dec 2017 13:32:17 +0800","expireDate":"Thu, 29 Dec 2022 15:40:03 +0800, currentDate \u003d Wed, 20 Dec 2017 15:41:34 +0800"}],"status":1}
+2018-05-19 07:18:49,570  INFO WingManController:55 - result:{"msg":"获取WingMan应用内产品用户数据成功","data":[{"id":1,"uuid":"12211221","currentDate":"Wed, 20 Dec 2017 13:32:17 +0800","expireDate":"Thu, 29 Dec 2022 15:40:03 +0800, currentDate \u003d Wed, 20 Dec 2017 15:41:34 +0800"}],"status":1}
+2018-05-19 07:19:41,825  INFO WingManController:55 - result:{"msg":"获取WingMan应用内产品用户数据成功","data":[{"id":1,"uuid":"12211221","currentDate":"Wed, 20 Dec 2017 13:32:17 +0800","expireDate":"Thu, 29 Dec 2022 15:40:03 +0800, currentDate \u003d Wed, 20 Dec 2017 15:41:34 +0800"}],"status":1}
+2018-05-19 07:19:44,141  INFO WingManController:36 - result:{"msg":"获取WingMan应用内产品列表数据成功","data":{"list":[{"id":1,"title":"7天使用时长","price":"￥3","content":"花费3元可获得7天使用时长，之后会在当前到期时间之上加7天作为新的到期时间"},{"id":2,"title":"1个月使用时长","price":"￥12","content":"花费12元可获得1个月使用时长，之后会在当前到期时间之上加1个月作为新的到期时间"},{"id":3,"title":"3个月使用时长","price":"￥30","content":"花费30元可获得3个月使用时长，之后会在当前到期时间之上加3个月作为新的到期时间"},{"id":4,"title":"1年使用时长","price":"￥118","content":"花费118元可获得1年使用时长，之后会在当前到期时间之上加1年作为新的到期时间"},{"id":5,"title":"3年使用时长","price":"￥318","content":"花费318元可获得3年使用时长，之后会在当前到期时间之上加3年作为新的到期时间"}]},"status":1}
+2018-05-19 07:20:11,217  INFO WingManController:55 - result:{"msg":"获取WingMan应用内产品用户数据成功","data":[{"id":1,"uuid":"12211221","currentDate":"Wed, 20 Dec 2017 13:32:17 +0800","expireDate":"Thu, 29 Dec 2022 15:40:03 +0800, currentDate \u003d Wed, 20 Dec 2017 15:41:34 +0800"}],"status":1}
+2018-05-19 07:21:40,060  INFO WingManController:55 - result:{"msg":"获取WingMan应用内产品用户数据成功","data":[{"id":1,"uuid":"12211221","currentDate":"Wed, 20 Dec 2017 13:32:17 +0800","expireDate":"Thu, 29 Dec 2022 15:40:03 +0800, currentDate \u003d Wed, 20 Dec 2017 15:41:34 +0800"}],"status":1}
+2018-05-19 07:21:51,750  INFO WingManController:55 - result:{"msg":"获取WingMan应用内产品用户数据成功","data":[{"id":1,"uuid":"12211221","currentDate":"Wed, 20 Dec 2017 13:32:17 +0800","expireDate":"Thu, 29 Dec 2022 15:40:03 +0800, currentDate \u003d Wed, 20 Dec 2017 15:41:34 +0800"}],"status":1}
+2018-05-19 07:22:29,738  INFO WingManController:55 - result:{"msg":"获取WingMan应用内产品用户数据成功","data":[{"id":1,"uuid":"12211221","currentDate":"Wed, 20 Dec 2017 13:32:17 +0800","expireDate":"Thu, 29 Dec 2022 15:40:03 +0800, currentDate \u003d Wed, 20 Dec 2017 15:41:34 +0800"}],"status":1}
+2018-05-19 07:23:17,987  INFO WingManController:55 - result:{"msg":"获取WingMan应用内产品用户数据成功","data":[{"id":1,"uuid":"12211221","currentDate":"Wed, 20 Dec 2017 13:32:17 +0800","expireDate":"Thu, 29 Dec 2022 15:40:03 +0800, currentDate \u003d Wed, 20 Dec 2017 15:41:34 +0800"}],"status":1}
+2018-05-19 12:54:26,188  INFO WingManController:36 - result:{"msg":"获取WingMan应用内产品列表数据成功","data":{"list":[{"id":1,"title":"7天使用时长","price":"￥3","content":"花费3元可获得7天使用时长，之后会在当前到期时间之上加7天作为新的到期时间"},{"id":2,"title":"1个月使用时长","price":"￥12","content":"花费12元可获得1个月使用时长，之后会在当前到期时间之上加1个月作为新的到期时间"},{"id":3,"title":"3个月使用时长","price":"￥30","content":"花费30元可获得3个月使用时长，之后会在当前到期时间之上加3个月作为新的到期时间"},{"id":4,"title":"1年使用时长","price":"￥118","content":"花费118元可获得1年使用时长，之后会在当前到期时间之上加1年作为新的到期时间"},{"id":5,"title":"3年使用时长","price":"￥318","content":"花费318元可获得3年使用时长，之后会在当前到期时间之上加3年作为新的到期时间"}]},"status":1}
+2018-05-19 12:54:26,992  INFO WingManController:36 - result:{"msg":"获取WingMan应用内产品列表数据成功","data":{"list":[{"id":1,"title":"7天使用时长","price":"￥3","content":"花费3元可获得7天使用时长，之后会在当前到期时间之上加7天作为新的到期时间"},{"id":2,"title":"1个月使用时长","price":"￥12","content":"花费12元可获得1个月使用时长，之后会在当前到期时间之上加1个月作为新的到期时间"},{"id":3,"title":"3个月使用时长","price":"￥30","content":"花费30元可获得3个月使用时长，之后会在当前到期时间之上加3个月作为新的到期时间"},{"id":4,"title":"1年使用时长","price":"￥118","content":"花费118元可获得1年使用时长，之后会在当前到期时间之上加1年作为新的到期时间"},{"id":5,"title":"3年使用时长","price":"￥318","content":"花费318元可获得3年使用时长，之后会在当前到期时间之上加3年作为新的到期时间"}]},"status":1}
+2018-05-19 12:54:27,861  INFO WingManController:55 - result:{"msg":"获取WingMan应用内产品用户数据成功","data":[{"id":1,"uuid":"12211221","currentDate":"Wed, 20 Dec 2017 13:32:17 +0800","expireDate":"Thu, 29 Dec 2022 15:40:03 +0800, currentDate \u003d Wed, 20 Dec 2017 15:41:34 +0800"}],"status":1}
+2018-05-19 12:54:42,431  INFO WingManController:36 - result:{"msg":"获取WingMan应用内产品列表数据成功","data":{"list":[{"id":1,"title":"7天使用时长","price":"￥3","content":"花费3元可获得7天使用时长，之后会在当前到期时间之上加7天作为新的到期时间"},{"id":2,"title":"1个月使用时长","price":"￥12","content":"花费12元可获得1个月使用时长，之后会在当前到期时间之上加1个月作为新的到期时间"},{"id":3,"title":"3个月使用时长","price":"￥30","content":"花费30元可获得3个月使用时长，之后会在当前到期时间之上加3个月作为新的到期时间"},{"id":4,"title":"1年使用时长","price":"￥118","content":"花费118元可获得1年使用时长，之后会在当前到期时间之上加1年作为新的到期时间"},{"id":5,"title":"3年使用时长","price":"￥318","content":"花费318元可获得3年使用时长，之后会在当前到期时间之上加3年作为新的到期时间"}]},"status":1}
+2018-05-19 12:54:45,042  INFO WingManController:36 - result:{"msg":"获取WingMan应用内产品列表数据成功","data":{"list":[{"id":1,"title":"7天使用时长","price":"￥3","content":"花费3元可获得7天使用时长，之后会在当前到期时间之上加7天作为新的到期时间"},{"id":2,"title":"1个月使用时长","price":"￥12","content":"花费12元可获得1个月使用时长，之后会在当前到期时间之上加1个月作为新的到期时间"},{"id":3,"title":"3个月使用时长","price":"￥30","content":"花费30元可获得3个月使用时长，之后会在当前到期时间之上加3个月作为新的到期时间"},{"id":4,"title":"1年使用时长","price":"￥118","content":"花费118元可获得1年使用时长，之后会在当前到期时间之上加1年作为新的到期时间"},{"id":5,"title":"3年使用时长","price":"￥318","content":"花费318元可获得3年使用时长，之后会在当前到期时间之上加3年作为新的到期时间"}]},"status":1}
+2018-05-19 12:54:46,550  INFO WingManController:55 - result:{"msg":"获取WingMan应用内产品用户数据成功","data":[{"id":1,"uuid":"12211221","currentDate":"Wed, 20 Dec 2017 13:32:17 +0800","expireDate":"Thu, 29 Dec 2022 15:40:03 +0800, currentDate \u003d Wed, 20 Dec 2017 15:41:34 +0800"}],"status":1}
+2018-05-19 12:54:47,940  INFO WingManController:55 - result:{"msg":"获取WingMan应用内产品用户数据成功","data":[{"id":1,"uuid":"12211221","currentDate":"Wed, 20 Dec 2017 13:32:17 +0800","expireDate":"Thu, 29 Dec 2022 15:40:03 +0800, currentDate \u003d Wed, 20 Dec 2017 15:41:34 +0800"}],"status":1}
+2018-05-19 12:54:49,433  INFO WingManController:55 - result:{"msg":"获取WingMan应用内产品用户数据成功","data":[{"id":1,"uuid":"12211221","currentDate":"Wed, 20 Dec 2017 13:32:17 +0800","expireDate":"Thu, 29 Dec 2022 15:40:03 +0800, currentDate \u003d Wed, 20 Dec 2017 15:41:34 +0800"}],"status":1}
+2018-05-19 12:54:52,430  INFO WingManController:55 - result:{"msg":"获取WingMan应用内产品用户数据成功","data":[{"id":1,"uuid":"12211221","currentDate":"Wed, 20 Dec 2017 13:32:17 +0800","expireDate":"Thu, 29 Dec 2022 15:40:03 +0800, currentDate \u003d Wed, 20 Dec 2017 15:41:34 +0800"}],"status":1}
+2018-05-19 12:57:43,363  INFO WingManController:55 - result:{"msg":"获取WingMan应用内产品用户数据成功","data":[{"id":1,"uuid":"12211221","currentDate":"Wed, 20 Dec 2017 13:32:17 +0800","expireDate":"Thu, 29 Dec 2022 15:40:03 +0800, currentDate \u003d Wed, 20 Dec 2017 15:41:34 +0800"}],"status":1}
+2018-05-19 15:24:00,324  INFO WingManController:55 - result:{"msg":"获取WingMan应用内产品用户数据成功","data":[{"id":1,"uuid":"12211221","currentDate":"Wed, 20 Dec 2017 13:32:17 +0800","expireDate":"Thu, 29 Dec 2022 15:40:03 +0800, currentDate \u003d Wed, 20 Dec 2017 15:41:34 +0800"}],"status":1}
+2018-05-19 15:25:23,736  INFO WingManController:55 - result:{"msg":"获取WingMan应用内产品用户数据成功","data":[{"id":1,"uuid":"12211221","currentDate":"Wed, 20 Dec 2017 13:32:17 +0800","expireDate":"Thu, 29 Dec 2022 15:40:03 +0800, currentDate \u003d Wed, 20 Dec 2017 15:41:34 +0800"}],"status":1}
+2018-05-19 15:31:16,633  INFO WingManController:55 - result:{"msg":"获取WingMan应用内产品用户数据成功","data":[{"id":1,"uuid":"12211221","currentDate":"Wed, 20 Dec 2017 13:32:17 +0800","expireDate":"Thu, 29 Dec 2022 15:40:03 +0800, currentDate \u003d Wed, 20 Dec 2017 15:41:34 +0800"}],"status":1}
+2018-05-19 15:32:01,987  INFO WingManController:55 - result:{"msg":"获取WingMan应用内产品用户数据成功","data":[{"id":1,"uuid":"12211221","currentDate":"Wed, 20 Dec 2017 13:32:17 +0800","expireDate":"Thu, 29 Dec 2022 15:40:03 +0800, currentDate \u003d Wed, 20 Dec 2017 15:41:34 +0800"}],"status":1}
+2018-05-19 15:55:48,475  INFO AnnotationConfigServletWebServerApplicationContext:993 - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@2f177a4b: startup date [Sat May 19 06:50:57 CST 2018]; root of context hierarchy
+2018-05-19 15:55:48,488  INFO DefaultLifecycleProcessor:366 - Stopping beans in phase 2147483647
+2018-05-19 15:55:48,492  INFO AnnotationMBeanExporter:451 - Unregistering JMX-exposed beans on shutdown
+2018-05-19 15:55:48,493  INFO AnnotationMBeanExporter:183 - Unregistering JMX-exposed beans
+2018-05-19 15:55:48,501  INFO DruidDataSource:1288 - {dataSource-1} closed
+2018-05-19 15:55:51,561  INFO Version:21 - HV000001: Hibernate Validator 6.0.9.Final
+2018-05-19 15:55:51,754  INFO CloudserverApplication:50 - Starting CloudserverApplication on bogon with PID 9834 (/Users/fandongtongxue/Documents/GitHub/CloudServer/cloudserver/target/classes started by fandongtongxue in /Users/fandongtongxue/Documents/GitHub/CloudServer/cloudserver)
+2018-05-19 15:55:51,755  INFO CloudserverApplication:663 - The following profiles are active: dis
+2018-05-19 15:55:51,810  INFO AnnotationConfigServletWebServerApplicationContext:590 - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@27ae2fd0: startup date [Sat May 19 15:55:51 CST 2018]; root of context hierarchy
+2018-05-19 15:55:52,790  INFO PostProcessorRegistrationDelegate$BeanPostProcessorChecker:328 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$7e5a42e5] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-05-19 15:55:53,031  INFO TomcatWebServer:91 - Tomcat initialized with port(s): 8081 (http)
+2018-05-19 15:55:53,133  INFO ContextLoader:285 - Root WebApplicationContext: initialization completed in 1327 ms
+2018-05-19 15:55:53,233  INFO ServletRegistrationBean:185 - Servlet dispatcherServlet mapped to [/]
+2018-05-19 15:55:53,237  INFO FilterRegistrationBean:244 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-05-19 15:55:53,238  INFO FilterRegistrationBean:244 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-05-19 15:55:53,238  INFO FilterRegistrationBean:244 - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-05-19 15:55:53,238  INFO FilterRegistrationBean:244 - Mapping filter: 'requestContextFilter' to: [/*]
+2018-05-19 15:55:53,694  INFO RequestMappingHandlerMapping:547 - Mapped "{[/getAliyunOSSBucketList],methods=[GET]}" onto public java.lang.String me.fandong.cloudserver.Controller.AliyunOSSBucketController.getBucketList(java.lang.String,java.lang.String)
+2018-05-19 15:55:53,695  INFO RequestMappingHandlerMapping:547 - Mapped "{[/createAliyunBucket],methods=[POST]}" onto public java.lang.String me.fandong.cloudserver.Controller.AliyunOSSBucketController.createBucket(java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+2018-05-19 15:55:53,696  INFO RequestMappingHandlerMapping:547 - Mapped "{[/deleteAliyunBucket],methods=[POST]}" onto public java.lang.String me.fandong.cloudserver.Controller.AliyunOSSBucketController.deleteBucket(java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+2018-05-19 15:55:53,697  INFO RequestMappingHandlerMapping:547 - Mapped "{[/getAliyunOSSFileList],methods=[GET]}" onto public java.lang.String me.fandong.cloudserver.Controller.AliyunOSSFileController.getFileList(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+2018-05-19 15:55:53,698  INFO RequestMappingHandlerMapping:547 - Mapped "{[/deleteAliyunOSSFile],methods=[POST]}" onto public java.lang.String me.fandong.cloudserver.Controller.AliyunOSSFileController.deleteFile(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+2018-05-19 15:55:53,699  INFO RequestMappingHandlerMapping:547 - Mapped "{[/getQiniuBucketList],methods=[GET]}" onto public java.lang.String me.fandong.cloudserver.Controller.QiniuBucketController.getBucketList(java.lang.String,java.lang.String)
+2018-05-19 15:55:53,699  INFO RequestMappingHandlerMapping:547 - Mapped "{[/createQiniuBucket],methods=[POST]}" onto public java.lang.String me.fandong.cloudserver.Controller.QiniuBucketController.createBucket(java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+2018-05-19 15:55:53,700  INFO RequestMappingHandlerMapping:547 - Mapped "{[/getQiniuDomainList],methods=[GET]}" onto public java.lang.String me.fandong.cloudserver.Controller.QiniuBucketController.getDomainList(java.lang.String,java.lang.String,java.lang.String)
+2018-05-19 15:55:53,701  INFO RequestMappingHandlerMapping:547 - Mapped "{[/getQiniuFileList],methods=[GET]}" onto public java.lang.String me.fandong.cloudserver.Controller.QiniuFileController.getFileList(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+2018-05-19 15:55:53,701  INFO RequestMappingHandlerMapping:547 - Mapped "{[/deleteQiniuFile],methods=[POST]}" onto public java.lang.String me.fandong.cloudserver.Controller.QiniuFileController.deleteFile(java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+2018-05-19 15:55:53,702  INFO RequestMappingHandlerMapping:547 - Mapped "{[/uploadImageFile],methods=[POST]}" onto public java.lang.String me.fandong.cloudserver.Controller.UploadController.uploadImageFile(org.springframework.web.multipart.MultipartHttpServletRequest) throws java.io.IOException
+2018-05-19 15:55:53,703  INFO RequestMappingHandlerMapping:547 - Mapped "{[/uploadVideoFile],methods=[POST]}" onto public java.lang.String me.fandong.cloudserver.Controller.UploadController.uploadVideoFile(org.springframework.web.multipart.MultipartHttpServletRequest) throws java.io.IOException
+2018-05-19 15:55:53,703  INFO RequestMappingHandlerMapping:547 - Mapped "{[/uploadQiniuFile],methods=[POST]}" onto public java.lang.String me.fandong.cloudserver.Controller.UploadController.uploadQiniuFile(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+2018-05-19 15:55:53,703  INFO RequestMappingHandlerMapping:547 - Mapped "{[/uploadAliyunFile],methods=[POST]}" onto public java.lang.String me.fandong.cloudserver.Controller.UploadController.uploadAliyunFile(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+2018-05-19 15:55:53,704  INFO RequestMappingHandlerMapping:547 - Mapped "{[/getWingManProductList],methods=[GET]}" onto public java.lang.String me.fandong.cloudserver.Controller.WingManController.getWingManProductList()
+2018-05-19 15:55:53,705  INFO RequestMappingHandlerMapping:547 - Mapped "{[/getWingManUser],methods=[GET]}" onto public java.lang.String me.fandong.cloudserver.Controller.WingManController.getWingManUser(java.lang.String)
+2018-05-19 15:55:53,710  INFO RequestMappingHandlerMapping:547 - Mapped "{[/swagger-resources/configuration/ui]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2018-05-19 15:55:53,711  INFO RequestMappingHandlerMapping:547 - Mapped "{[/swagger-resources/configuration/security]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2018-05-19 15:55:53,711  INFO RequestMappingHandlerMapping:547 - Mapped "{[/swagger-resources]}" onto public org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2018-05-19 15:55:53,715  INFO RequestMappingHandlerMapping:547 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-05-19 15:55:53,716  INFO RequestMappingHandlerMapping:547 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-05-19 15:55:53,825  INFO PropertySourcedRequestMappingHandlerMapping:69 - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2018-05-19 15:55:53,882  INFO SimpleUrlHandlerMapping:373 - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-19 15:55:54,020  INFO RequestMappingHandlerAdapter:574 - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@27ae2fd0: startup date [Sat May 19 15:55:51 CST 2018]; root of context hierarchy
+2018-05-19 15:55:54,063  INFO SimpleUrlHandlerMapping:373 - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-19 15:55:54,063  INFO SimpleUrlHandlerMapping:373 - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-19 15:55:54,353  INFO AnnotationMBeanExporter:433 - Registering beans for JMX exposure on startup
+2018-05-19 15:55:54,355  INFO AnnotationMBeanExporter:895 - Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-05-19 15:55:54,360  INFO AnnotationMBeanExporter:668 - Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2018-05-19 15:55:54,366  INFO DefaultLifecycleProcessor:351 - Starting beans in phase 2147483647
+2018-05-19 15:55:54,366  INFO DocumentationPluginsBootstrapper:151 - Context refreshed
+2018-05-19 15:55:54,387  INFO DocumentationPluginsBootstrapper:154 - Found 1 custom documentation plugin(s)
+2018-05-19 15:55:54,416  INFO ApiListingReferenceScanner:41 - Scanning for api listing references
+2018-05-19 15:55:54,500  INFO CachingOperationNameGenerator:40 - Generating unique operation named: createBucketUsingPOST_1
+2018-05-19 15:55:54,502  INFO CachingOperationNameGenerator:40 - Generating unique operation named: getBucketListUsingGET_1
+2018-05-19 15:55:54,507  INFO CachingOperationNameGenerator:40 - Generating unique operation named: deleteFileUsingPOST_1
+2018-05-19 15:55:54,510  INFO CachingOperationNameGenerator:40 - Generating unique operation named: getFileListUsingGET_1
+2018-05-19 15:55:54,574  INFO TomcatWebServer:206 - Tomcat started on port(s): 8081 (http) with context path ''
+2018-05-19 15:55:54,578  INFO CloudserverApplication:59 - Started CloudserverApplication in 3.157 seconds (JVM running for 3.776)
+2018-05-19 15:56:00,625  INFO DispatcherServlet:494 - FrameworkServlet 'dispatcherServlet': initialization started
+2018-05-19 15:56:00,641  INFO DispatcherServlet:509 - FrameworkServlet 'dispatcherServlet': initialization completed in 16 ms
+2018-05-19 15:56:00,700  INFO DruidDataSource:638 - {dataSource-1} inited
+2018-05-19 15:56:00,900  INFO XmlBeanDefinitionReader:316 - Loading XML bean definitions from class path resource [org/springframework/jdbc/support/sql-error-codes.xml]
+2018-05-19 15:56:00,959  INFO SQLErrorCodesFactory:128 - SQLErrorCodes loaded: [DB2, Derby, H2, HDB, HSQL, Informix, MS-SQL, MySQL, Oracle, PostgreSQL, Sybase]
+2018-05-19 17:51:29,258  INFO AnnotationConfigServletWebServerApplicationContext:993 - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@27ae2fd0: startup date [Sat May 19 15:55:51 CST 2018]; root of context hierarchy
+2018-05-19 17:51:29,260  INFO DefaultLifecycleProcessor:366 - Stopping beans in phase 2147483647
+2018-05-19 17:51:29,261  INFO AnnotationMBeanExporter:451 - Unregistering JMX-exposed beans on shutdown
+2018-05-19 17:51:29,262  INFO AnnotationMBeanExporter:183 - Unregistering JMX-exposed beans
+2018-05-19 17:51:29,265  INFO DruidDataSource:1288 - {dataSource-1} closed
