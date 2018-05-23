@@ -14,6 +14,7 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 import java.util.Calendar;
+import java.text.SimpleDateFormat;
 
 @Repository
 public class WingManImpl implements WingManMapper {
@@ -55,12 +56,19 @@ public class WingManImpl implements WingManMapper {
     @Override
     public void createWingManUserModel(String uuid) {
         Date currentDate = new Date();
-        String createTimeString = currentDate.toString();
-        Date expireDate = getDateAfter(currentDate,7);
-        String expireDateString = expireDate.toString();
-        String sql = "INSERT INTO CloudServer.app_WingMan_User(uuid,currentDate,ExpireDate) VALUES ("+"\""+uuid+"\""+","+"\""+createTimeString+"\""+","+"\""+expireDateString+"\""+");";
+        SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+        String currentDateString = formatter.format(currentDate);
+
+        Date expireDate = getDateAfter(currentDate,1);
+        String expireDateString = formatter.format(expireDate);
+        String sql = "INSERT INTO CloudServer.app_WingMan_User(uuid,currentDate,ExpireDate) VALUES ("+"\""+uuid+"\""+","+"\""+currentDateString+"\""+","+"\""+expireDateString+"\""+");";
         jdbcTemplate.update(sql);
-}
+    }
+    @Override
+    public void updateWingManUserModel(String uuid, String expireDateString){
+        String sql = "UPDATE CloudServer.app_WingMan_User SET expireDate = '"+expireDateString+"' WHERE uuid = '"+uuid+"'";
+        jdbcTemplate.update(sql);
+    }
 
     public static Date getDateAfter(Date d,int day){
         Calendar now =Calendar.getInstance();

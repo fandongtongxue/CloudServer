@@ -24,4 +24,8 @@ public class WingManService {
     public void createWingManUserModel(String uuid){
         wingManMapper.createWingManUserModel(uuid);
     }
+
+    public void updateWingManUserModel(String uuid, String expireDateString){
+        wingManMapper.updateWingManUserModel(uuid,expireDateString);
+    }
 }
