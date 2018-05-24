@@ -12,11 +12,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="WingManController.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="WingManController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/me/fandong/cloudserver/Controller/WingManController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="478">
-              <caret line="130" column="45" lean-forward="true" selection-start-line="130" selection-start-column="45" selection-end-line="130" selection-end-column="45" />
+            <state relative-caret-position="577">
+              <caret line="131" column="17" selection-start-line="131" selection-start-column="17" selection-end-line="131" selection-end-column="17" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -24,10 +24,19 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="SwaggerConfig.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/me/fandong/cloudserver/Config/SwaggerConfig.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="380">
+              <caret line="29" column="41" lean-forward="true" selection-start-line="29" selection-start-column="41" selection-end-line="29" selection-end-column="41" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="String.java" pinned="false" current-in-tab="false">
         <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_161.jdk/Contents/Home/src.zip!/java/lang/String.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="209">
+            <state relative-caret-position="17480">
               <caret line="975" column="19" selection-start-line="975" selection-start-column="19" selection-end-line="975" selection-end-column="19" />
             </state>
           </provider>
@@ -36,7 +45,7 @@
       <file leaf-file-name="AliyunOSSFileController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/me/fandong/cloudserver/Controller/AliyunOSSFileController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="532">
+            <state relative-caret-position="1995">
               <caret line="126" column="4" selection-start-line="126" selection-start-column="4" selection-end-line="132" selection-end-column="6" />
             </state>
           </provider>
@@ -54,8 +63,8 @@
       <file leaf-file-name="WingManImpl.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/me/fandong/cloudserver/dao/impl/WingManImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="342">
-              <caret line="67" column="4" lean-forward="true" selection-start-line="67" selection-start-column="4" selection-end-line="67" selection-end-column="76" />
+            <state relative-caret-position="1007">
+              <caret line="67" column="4" selection-start-line="67" selection-start-column="4" selection-end-line="67" selection-end-column="76" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -72,19 +81,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="WingManProductListModel.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/me/fandong/cloudserver/Model/WingManProductListModel.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="228">
-              <caret line="18" selection-start-line="18" selection-end-line="18" />
-              <folding>
-                <element signature="e#213#214#0" expanded="true" />
-                <element signature="e#245#246#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="WingManMapper.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/me/fandong/cloudserver/dao/WingManMapper.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -97,7 +93,7 @@
       <file leaf-file-name="WingManService.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/me/fandong/cloudserver/service/WingManService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="494">
+            <state relative-caret-position="304">
               <caret line="28" column="67" selection-start-line="28" selection-start-column="67" selection-end-line="28" selection-end-column="67" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -142,7 +138,6 @@
         <option value="$PROJECT_DIR$/src/main/resources/application-dis.yml" />
         <option value="$PROJECT_DIR$/src/main/resources/application.yml" />
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/me/fandong/cloudserver/Config/SwaggerConfig.java" />
         <option value="$PROJECT_DIR$/src/main/java/me/fandong/cloudserver/Controller/AliyunOSSBucketController.java" />
         <option value="$PROJECT_DIR$/src/main/java/me/fandong/cloudserver/Controller/AliyunOSSFileController.java" />
         <option value="$PROJECT_DIR$/src/main/java/me/fandong/cloudserver/Controller/QiniuBucketController.java" />
@@ -159,6 +154,7 @@
         <option value="$PROJECT_DIR$/src/main/java/me/fandong/cloudserver/dao/WingManMapper.java" />
         <option value="$PROJECT_DIR$/src/main/java/me/fandong/cloudserver/service/WingManService.java" />
         <option value="$PROJECT_DIR$/src/main/java/me/fandong/cloudserver/Controller/WingManController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/me/fandong/cloudserver/Config/SwaggerConfig.java" />
       </list>
     </option>
   </component>
@@ -199,6 +195,59 @@
     </navigator>
     <panes>
       <pane id="Scope" />
+      <pane id="PackagesPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="cloudserver" type="58d84e3e:PackageViewProjectNode" />
+              <item name="cloudserver" type="616d4139:PackageViewModuleNode" />
+            </path>
+            <path>
+              <item name="cloudserver" type="58d84e3e:PackageViewProjectNode" />
+              <item name="cloudserver" type="616d4139:PackageViewModuleNode" />
+              <item name="me.fandong.cloudserver" type="1f31426a:PackageElementNode" />
+            </path>
+            <path>
+              <item name="cloudserver" type="58d84e3e:PackageViewProjectNode" />
+              <item name="cloudserver" type="616d4139:PackageViewModuleNode" />
+              <item name="me.fandong.cloudserver" type="1f31426a:PackageElementNode" />
+              <item name="Config" type="1f31426a:PackageElementNode" />
+            </path>
+            <path>
+              <item name="cloudserver" type="58d84e3e:PackageViewProjectNode" />
+              <item name="cloudserver" type="616d4139:PackageViewModuleNode" />
+              <item name="me.fandong.cloudserver" type="1f31426a:PackageElementNode" />
+              <item name="Controller" type="1f31426a:PackageElementNode" />
+            </path>
+            <path>
+              <item name="cloudserver" type="58d84e3e:PackageViewProjectNode" />
+              <item name="cloudserver" type="616d4139:PackageViewModuleNode" />
+              <item name="me.fandong.cloudserver" type="1f31426a:PackageElementNode" />
+              <item name="dao" type="1f31426a:PackageElementNode" />
+            </path>
+            <path>
+              <item name="cloudserver" type="58d84e3e:PackageViewProjectNode" />
+              <item name="cloudserver" type="616d4139:PackageViewModuleNode" />
+              <item name="me.fandong.cloudserver" type="1f31426a:PackageElementNode" />
+              <item name="dao" type="1f31426a:PackageElementNode" />
+              <item name="impl" type="1f31426a:PackageElementNode" />
+            </path>
+            <path>
+              <item name="cloudserver" type="58d84e3e:PackageViewProjectNode" />
+              <item name="cloudserver" type="616d4139:PackageViewModuleNode" />
+              <item name="me.fandong.cloudserver" type="1f31426a:PackageElementNode" />
+              <item name="Model" type="1f31426a:PackageElementNode" />
+            </path>
+            <path>
+              <item name="cloudserver" type="58d84e3e:PackageViewProjectNode" />
+              <item name="cloudserver" type="616d4139:PackageViewModuleNode" />
+              <item name="me.fandong.cloudserver" type="1f31426a:PackageElementNode" />
+              <item name="service" type="1f31426a:PackageElementNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -231,6 +280,15 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="cloudserver" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cloudserver" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cloudserver" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="cloudserver" type="462c0819:PsiDirectoryNode" />
+              <item name="Config" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="cloudserver" type="b2602c69:ProjectViewProjectNode" />
@@ -286,59 +344,6 @@
               <item name="cloudserver" type="b2602c69:ProjectViewProjectNode" />
               <item name="cloudserver" type="462c0819:PsiDirectoryNode" />
               <item name="target" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="PackagesPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="cloudserver" type="58d84e3e:PackageViewProjectNode" />
-              <item name="cloudserver" type="616d4139:PackageViewModuleNode" />
-            </path>
-            <path>
-              <item name="cloudserver" type="58d84e3e:PackageViewProjectNode" />
-              <item name="cloudserver" type="616d4139:PackageViewModuleNode" />
-              <item name="me.fandong.cloudserver" type="1f31426a:PackageElementNode" />
-            </path>
-            <path>
-              <item name="cloudserver" type="58d84e3e:PackageViewProjectNode" />
-              <item name="cloudserver" type="616d4139:PackageViewModuleNode" />
-              <item name="me.fandong.cloudserver" type="1f31426a:PackageElementNode" />
-              <item name="Config" type="1f31426a:PackageElementNode" />
-            </path>
-            <path>
-              <item name="cloudserver" type="58d84e3e:PackageViewProjectNode" />
-              <item name="cloudserver" type="616d4139:PackageViewModuleNode" />
-              <item name="me.fandong.cloudserver" type="1f31426a:PackageElementNode" />
-              <item name="Controller" type="1f31426a:PackageElementNode" />
-            </path>
-            <path>
-              <item name="cloudserver" type="58d84e3e:PackageViewProjectNode" />
-              <item name="cloudserver" type="616d4139:PackageViewModuleNode" />
-              <item name="me.fandong.cloudserver" type="1f31426a:PackageElementNode" />
-              <item name="dao" type="1f31426a:PackageElementNode" />
-            </path>
-            <path>
-              <item name="cloudserver" type="58d84e3e:PackageViewProjectNode" />
-              <item name="cloudserver" type="616d4139:PackageViewModuleNode" />
-              <item name="me.fandong.cloudserver" type="1f31426a:PackageElementNode" />
-              <item name="dao" type="1f31426a:PackageElementNode" />
-              <item name="impl" type="1f31426a:PackageElementNode" />
-            </path>
-            <path>
-              <item name="cloudserver" type="58d84e3e:PackageViewProjectNode" />
-              <item name="cloudserver" type="616d4139:PackageViewModuleNode" />
-              <item name="me.fandong.cloudserver" type="1f31426a:PackageElementNode" />
-              <item name="Model" type="1f31426a:PackageElementNode" />
-            </path>
-            <path>
-              <item name="cloudserver" type="58d84e3e:PackageViewProjectNode" />
-              <item name="cloudserver" type="616d4139:PackageViewModuleNode" />
-              <item name="me.fandong.cloudserver" type="1f31426a:PackageElementNode" />
-              <item name="service" type="1f31426a:PackageElementNode" />
             </path>
           </expand>
           <select />
@@ -443,11 +448,12 @@
       <workItem from="1526828463807" duration="1179000" />
       <workItem from="1526994598967" duration="3909000" />
       <workItem from="1527042222692" duration="4312000" />
+      <workItem from="1527155713538" duration="106000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="42917000" />
+    <option name="totallyTimeSpent" value="43023000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1440" y="23" width="1920" height="1057" extended-state="6" />
@@ -465,7 +471,6 @@
       <window_info id="UI Designer" order="2" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39959225" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Messages" order="8" weight="0.32721713" />
       <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info id="Image Layers" order="2" />
       <window_info anchor="bottom" id="Java Enterprise" order="8" />
@@ -474,7 +479,7 @@
       <window_info anchor="bottom" id="Run" order="2" weight="0.32008156" />
       <window_info anchor="bottom" id="Spring" order="8" />
       <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18690096" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14110756" />
       <window_info anchor="right" id="Bean Validation" order="4" />
       <window_info id="Web" order="3" side_tool="true" />
       <window_info anchor="right" id="Theme Preview" order="3" />
@@ -482,6 +487,7 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Messages" order="8" weight="0.32721713" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.24964234" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32925585" />
@@ -702,13 +708,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/me/fandong/cloudserver/Config/SwaggerConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="158">
-          <caret line="22" column="40" selection-start-line="22" selection-start-column="40" selection-end-line="22" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/me/fandong/cloudserver/CloudserverApplication.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="273">
@@ -758,15 +757,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/me/fandong/cloudserver/Controller/AliyunOSSFileController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="532">
+        <state relative-caret-position="1995">
           <caret line="126" column="4" selection-start-line="126" selection-start-column="4" selection-end-line="132" selection-end-column="6" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/me/fandong/cloudserver/dao/impl/WingManImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="67" column="4" lean-forward="true" selection-start-line="67" selection-start-column="4" selection-end-line="67" selection-end-column="76" />
+        <state relative-caret-position="1007">
+          <caret line="67" column="4" selection-start-line="67" selection-start-column="4" selection-end-line="67" selection-end-column="76" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -782,7 +781,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/me/fandong/cloudserver/service/WingManService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="494">
+        <state relative-caret-position="304">
           <caret line="28" column="67" selection-start-line="28" selection-start-column="67" selection-end-line="28" selection-end-column="67" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -796,18 +795,25 @@
     </entry>
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_161.jdk/Contents/Home/src.zip!/java/lang/String.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
+        <state relative-caret-position="17480">
           <caret line="975" column="19" selection-start-line="975" selection-start-column="19" selection-end-line="975" selection-end-column="19" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/me/fandong/cloudserver/Controller/WingManController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="478">
-          <caret line="130" column="45" lean-forward="true" selection-start-line="130" selection-start-column="45" selection-end-line="130" selection-end-column="45" />
+        <state relative-caret-position="577">
+          <caret line="131" column="17" selection-start-line="131" selection-start-column="17" selection-end-line="131" selection-end-column="17" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/me/fandong/cloudserver/Config/SwaggerConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="29" column="41" lean-forward="true" selection-start-line="29" selection-start-column="41" selection-end-line="29" selection-end-column="41" />
         </state>
       </provider>
     </entry>

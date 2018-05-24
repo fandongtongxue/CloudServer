@@ -27,7 +27,7 @@ public class SwaggerConfig {
     private ApiInfo apiInfo() {
         return new ApiInfoBuilder()
                 .title("CloudServer的接口文档")
-                .description("第三方云的服务端API文档")
+                .description("CloudServer的服务端API文档")
                 .version("1.0")
                 .contact(new Contact("范东同学", "http://fandong.me", "admin@fandong.me"))
                 .build();

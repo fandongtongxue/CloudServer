@@ -126,6 +126,7 @@ public class WingManController {
                 stringMap.put("data","");
                 stringMap.put("status",1);
                 stringMap.put("msg","更新过期时间成功");
+                logger.info("result:" + Json.encode(stringMap));
                 return Json.encode(stringMap);
             }else {
                 //如果过期时间晚于当前时间，在当前过期时间基础上加day
@@ -135,6 +136,7 @@ public class WingManController {
                 stringMap.put("data","");
                 stringMap.put("status",1);
                 stringMap.put("msg","更新过期时间成功");
+                logger.info("result:" + Json.encode(stringMap));
                 return Json.encode(stringMap);
             }
         } catch (ParseException e) {
@@ -142,6 +144,7 @@ public class WingManController {
             stringMap.put("data","");
             stringMap.put("status",0);
             stringMap.put("msg",e.getMessage());
+            logger.info("result:" + Json.encode(stringMap));
             return Json.encode(stringMap);
         }
     }
