@@ -1,5 +1,0 @@
-2018-05-21 21:18:59,000  INFO AnnotationConfigServletWebServerApplicationContext:993 - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@4278a03f: startup date [Sun May 20 23:16:21 CST 2018]; root of context hierarchy
-2018-05-21 21:18:59,018  INFO DefaultLifecycleProcessor:366 - Stopping beans in phase 2147483647
-2018-05-21 21:18:59,023  INFO AnnotationMBeanExporter:451 - Unregistering JMX-exposed beans on shutdown
-2018-05-21 21:18:59,025  INFO AnnotationMBeanExporter:183 - Unregistering JMX-exposed beans
-2018-05-21 21:18:59,035  INFO DruidDataSource:1288 - {dataSource-1} closed
