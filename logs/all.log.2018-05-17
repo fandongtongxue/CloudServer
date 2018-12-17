@@ -1,0 +1,1014 @@
+2018-05-17 10:16:48,900  INFO Version:21 - HV000001: Hibernate Validator 6.0.9.Final
+2018-05-17 10:16:49,682  INFO CloudserverApplication:50 - Starting CloudserverApplication on fandongdeMacBook-Pro-2.local with PID 852 (/Users/fandong/Git/CloudServer/cloudserver/target/classes started by fandong in /Users/fandong/Git/CloudServer/cloudserver)
+2018-05-17 10:16:49,683  INFO CloudserverApplication:663 - The following profiles are active: dis
+2018-05-17 10:16:49,751  INFO AnnotationConfigServletWebServerApplicationContext:590 - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@3901d134: startup date [Thu May 17 10:16:49 CST 2018]; root of context hierarchy
+2018-05-17 10:16:51,528  INFO PostProcessorRegistrationDelegate$BeanPostProcessorChecker:328 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$a34b7b4d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-05-17 10:16:51,832  INFO TomcatWebServer:91 - Tomcat initialized with port(s): 8081 (http)
+2018-05-17 10:16:51,956  INFO ContextLoader:285 - Root WebApplicationContext: initialization completed in 2212 ms
+2018-05-17 10:16:52,094  INFO ServletRegistrationBean:185 - Servlet dispatcherServlet mapped to [/]
+2018-05-17 10:16:52,100  INFO FilterRegistrationBean:244 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-05-17 10:16:52,101  INFO FilterRegistrationBean:244 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-05-17 10:16:52,101  INFO FilterRegistrationBean:244 - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-05-17 10:16:52,101  INFO FilterRegistrationBean:244 - Mapping filter: 'requestContextFilter' to: [/*]
+2018-05-17 10:16:52,378  WARN AnnotationConfigServletWebServerApplicationContext:558 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'wingManController': Unsatisfied dependency expressed through field 'service'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'me.fandong.cloudserver.service.WingManProductService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2018-05-17 10:16:52,402  INFO ConditionEvaluationReportLoggingListener:101 - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2018-05-17 10:16:52,495 ERROR LoggingFailureAnalysisReporter:42 - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field service in me.fandong.cloudserver.Controller.WingManController required a bean of type 'me.fandong.cloudserver.service.WingManProductService' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'me.fandong.cloudserver.service.WingManProductService' in your configuration.
+
+2018-05-17 14:19:39,004  INFO Version:21 - HV000001: Hibernate Validator 6.0.9.Final
+2018-05-17 14:19:39,250  INFO CloudserverApplication:50 - Starting CloudserverApplication on fandongdeMacBook-Pro-2.local with PID 1743 (/Users/fandong/Git/CloudServer/cloudserver/target/classes started by fandong in /Users/fandong/Git/CloudServer/cloudserver)
+2018-05-17 14:19:39,251  INFO CloudserverApplication:663 - The following profiles are active: dis
+2018-05-17 14:19:39,320  INFO AnnotationConfigServletWebServerApplicationContext:590 - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@27ae2fd0: startup date [Thu May 17 14:19:39 CST 2018]; root of context hierarchy
+2018-05-17 14:19:40,697  INFO PostProcessorRegistrationDelegate$BeanPostProcessorChecker:328 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$82fedd4a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-05-17 14:19:40,954  INFO TomcatWebServer:91 - Tomcat initialized with port(s): 8081 (http)
+2018-05-17 14:19:41,084  INFO ContextLoader:285 - Root WebApplicationContext: initialization completed in 1767 ms
+2018-05-17 14:19:41,221  INFO ServletRegistrationBean:185 - Servlet dispatcherServlet mapped to [/]
+2018-05-17 14:19:41,226  INFO FilterRegistrationBean:244 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-05-17 14:19:41,227  INFO FilterRegistrationBean:244 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-05-17 14:19:41,227  INFO FilterRegistrationBean:244 - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-05-17 14:19:41,228  INFO FilterRegistrationBean:244 - Mapping filter: 'requestContextFilter' to: [/*]
+2018-05-17 14:19:41,457  WARN AnnotationConfigServletWebServerApplicationContext:558 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'wingManController': Unsatisfied dependency expressed through field 'wingManProductService'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'me.fandong.cloudserver.service.WingManProductService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2018-05-17 14:19:41,482  INFO ConditionEvaluationReportLoggingListener:101 - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2018-05-17 14:19:41,567 ERROR LoggingFailureAnalysisReporter:42 - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field wingManProductService in me.fandong.cloudserver.Controller.WingManController required a bean of type 'me.fandong.cloudserver.service.WingManProductService' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'me.fandong.cloudserver.service.WingManProductService' in your configuration.
+
+2018-05-17 14:42:06,271  INFO Version:21 - HV000001: Hibernate Validator 6.0.9.Final
+2018-05-17 14:42:06,698  INFO CloudserverApplication:50 - Starting CloudserverApplication on fandongdeMacBook-Pro-2.local with PID 1792 (/Users/fandong/Git/CloudServer/cloudserver/target/classes started by fandong in /Users/fandong/Git/CloudServer/cloudserver)
+2018-05-17 14:42:06,699  INFO CloudserverApplication:663 - The following profiles are active: dis
+2018-05-17 14:42:06,809  INFO AnnotationConfigServletWebServerApplicationContext:590 - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@2928854b: startup date [Thu May 17 14:42:06 CST 2018]; root of context hierarchy
+2018-05-17 14:42:08,018  INFO PostProcessorRegistrationDelegate$BeanPostProcessorChecker:328 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$eb6a46d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-05-17 14:42:08,268  INFO TomcatWebServer:91 - Tomcat initialized with port(s): 8081 (http)
+2018-05-17 14:42:08,387  INFO ContextLoader:285 - Root WebApplicationContext: initialization completed in 1582 ms
+2018-05-17 14:42:08,500  INFO ServletRegistrationBean:185 - Servlet dispatcherServlet mapped to [/]
+2018-05-17 14:42:08,505  INFO FilterRegistrationBean:244 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-05-17 14:42:08,505  INFO FilterRegistrationBean:244 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-05-17 14:42:08,506  INFO FilterRegistrationBean:244 - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-05-17 14:42:08,506  INFO FilterRegistrationBean:244 - Mapping filter: 'requestContextFilter' to: [/*]
+2018-05-17 14:42:08,725  WARN AnnotationConfigServletWebServerApplicationContext:558 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'wingManController': Unsatisfied dependency expressed through field 'wingManProductService'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'me.fandong.cloudserver.service.WingManProductService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2018-05-17 14:42:08,747  INFO ConditionEvaluationReportLoggingListener:101 - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2018-05-17 14:42:08,842 ERROR LoggingFailureAnalysisReporter:42 - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field wingManProductService in me.fandong.cloudserver.Controller.WingManController required a bean of type 'me.fandong.cloudserver.service.WingManProductService' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'me.fandong.cloudserver.service.WingManProductService' in your configuration.
+
+2018-05-17 14:42:18,373  INFO Version:21 - HV000001: Hibernate Validator 6.0.9.Final
+2018-05-17 14:42:18,575  INFO CloudserverApplication:50 - Starting CloudserverApplication on fandongdeMacBook-Pro-2.local with PID 1794 (/Users/fandong/Git/CloudServer/cloudserver/target/classes started by fandong in /Users/fandong/Git/CloudServer/cloudserver)
+2018-05-17 14:42:18,576  INFO CloudserverApplication:663 - The following profiles are active: dis
+2018-05-17 14:42:18,668  INFO AnnotationConfigServletWebServerApplicationContext:590 - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@2928854b: startup date [Thu May 17 14:42:18 CST 2018]; root of context hierarchy
+2018-05-17 14:42:19,735  INFO PostProcessorRegistrationDelegate$BeanPostProcessorChecker:328 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$9cf81214] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-05-17 14:42:19,928  INFO TomcatWebServer:91 - Tomcat initialized with port(s): 8081 (http)
+2018-05-17 14:42:20,023  INFO ContextLoader:285 - Root WebApplicationContext: initialization completed in 1378 ms
+2018-05-17 14:42:20,139  INFO ServletRegistrationBean:185 - Servlet dispatcherServlet mapped to [/]
+2018-05-17 14:42:20,143  INFO FilterRegistrationBean:244 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-05-17 14:42:20,143  INFO FilterRegistrationBean:244 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-05-17 14:42:20,143  INFO FilterRegistrationBean:244 - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-05-17 14:42:20,144  INFO FilterRegistrationBean:244 - Mapping filter: 'requestContextFilter' to: [/*]
+2018-05-17 14:42:20,374  WARN AutowiredAnnotationBeanPostProcessor:438 - Autowired annotation is not supported on static fields: private static org.apache.log4j.Logger me.fandong.cloudserver.Controller.WingManController.logger
+2018-05-17 14:42:20,670  INFO RequestMappingHandlerMapping:547 - Mapped "{[/getAliyunOSSBucketList],methods=[GET]}" onto public java.lang.String me.fandong.cloudserver.Controller.AliyunOSSBucketController.getBucketList(java.lang.String,java.lang.String)
+2018-05-17 14:42:20,670  INFO RequestMappingHandlerMapping:547 - Mapped "{[/createAliyunBucket],methods=[POST]}" onto public java.lang.String me.fandong.cloudserver.Controller.AliyunOSSBucketController.createBucket(java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+2018-05-17 14:42:20,672  INFO RequestMappingHandlerMapping:547 - Mapped "{[/deleteAliyunBucket],methods=[POST]}" onto public java.lang.String me.fandong.cloudserver.Controller.AliyunOSSBucketController.deleteBucket(java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+2018-05-17 14:42:20,674  INFO RequestMappingHandlerMapping:547 - Mapped "{[/getAliyunOSSFileList],methods=[GET]}" onto public java.lang.String me.fandong.cloudserver.Controller.AliyunOSSFileController.getFileList(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+2018-05-17 14:42:20,674  INFO RequestMappingHandlerMapping:547 - Mapped "{[/deleteAliyunOSSFile],methods=[POST]}" onto public java.lang.String me.fandong.cloudserver.Controller.AliyunOSSFileController.deleteFile(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+2018-05-17 14:42:20,675  INFO RequestMappingHandlerMapping:547 - Mapped "{[/getQiniuDomainList],methods=[GET]}" onto public java.lang.String me.fandong.cloudserver.Controller.QiniuBucketController.getDomainList(java.lang.String,java.lang.String,java.lang.String)
+2018-05-17 14:42:20,677  INFO RequestMappingHandlerMapping:547 - Mapped "{[/getQiniuBucketList],methods=[GET]}" onto public java.lang.String me.fandong.cloudserver.Controller.QiniuBucketController.getBucketList(java.lang.String,java.lang.String)
+2018-05-17 14:42:20,677  INFO RequestMappingHandlerMapping:547 - Mapped "{[/createQiniuBucket],methods=[POST]}" onto public java.lang.String me.fandong.cloudserver.Controller.QiniuBucketController.createBucket(java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+2018-05-17 14:42:20,679  INFO RequestMappingHandlerMapping:547 - Mapped "{[/getQiniuFileList],methods=[GET]}" onto public java.lang.String me.fandong.cloudserver.Controller.QiniuFileController.getFileList(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+2018-05-17 14:42:20,679  INFO RequestMappingHandlerMapping:547 - Mapped "{[/deleteQiniuFile],methods=[POST]}" onto public java.lang.String me.fandong.cloudserver.Controller.QiniuFileController.deleteFile(java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+2018-05-17 14:42:20,680  INFO RequestMappingHandlerMapping:547 - Mapped "{[/uploadImageFile],methods=[POST]}" onto public java.lang.String me.fandong.cloudserver.Controller.UploadController.uploadImageFile(org.springframework.web.multipart.MultipartHttpServletRequest) throws java.io.IOException
+2018-05-17 14:42:20,681  INFO RequestMappingHandlerMapping:547 - Mapped "{[/uploadVideoFile],methods=[POST]}" onto public java.lang.String me.fandong.cloudserver.Controller.UploadController.uploadVideoFile(org.springframework.web.multipart.MultipartHttpServletRequest) throws java.io.IOException
+2018-05-17 14:42:20,681  INFO RequestMappingHandlerMapping:547 - Mapped "{[/uploadQiniuFile],methods=[POST]}" onto public java.lang.String me.fandong.cloudserver.Controller.UploadController.uploadQiniuFile(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+2018-05-17 14:42:20,681  INFO RequestMappingHandlerMapping:547 - Mapped "{[/uploadAliyunFile],methods=[POST]}" onto public java.lang.String me.fandong.cloudserver.Controller.UploadController.uploadAliyunFile(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+2018-05-17 14:42:20,682  INFO RequestMappingHandlerMapping:547 - Mapped "{[/getWingManProductList],methods=[GET]}" onto public java.lang.String me.fandong.cloudserver.Controller.WingManController.getWingManProductList()
+2018-05-17 14:42:20,687  INFO RequestMappingHandlerMapping:547 - Mapped "{[/swagger-resources/configuration/ui]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2018-05-17 14:42:20,688  INFO RequestMappingHandlerMapping:547 - Mapped "{[/swagger-resources/configuration/security]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2018-05-17 14:42:20,689  INFO RequestMappingHandlerMapping:547 - Mapped "{[/swagger-resources]}" onto public org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2018-05-17 14:42:20,693  INFO RequestMappingHandlerMapping:547 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-05-17 14:42:20,693  INFO RequestMappingHandlerMapping:547 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-05-17 14:42:20,818  INFO PropertySourcedRequestMappingHandlerMapping:69 - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2018-05-17 14:42:20,879  INFO SimpleUrlHandlerMapping:373 - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-17 14:42:21,057  INFO RequestMappingHandlerAdapter:574 - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@2928854b: startup date [Thu May 17 14:42:18 CST 2018]; root of context hierarchy
+2018-05-17 14:42:21,123  INFO SimpleUrlHandlerMapping:373 - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-17 14:42:21,123  INFO SimpleUrlHandlerMapping:373 - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-17 14:42:21,578  INFO AnnotationMBeanExporter:433 - Registering beans for JMX exposure on startup
+2018-05-17 14:42:21,580  INFO AnnotationMBeanExporter:895 - Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-05-17 14:42:21,585  INFO AnnotationMBeanExporter:668 - Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2018-05-17 14:42:21,590  INFO DefaultLifecycleProcessor:351 - Starting beans in phase 2147483647
+2018-05-17 14:42:21,591  INFO DocumentationPluginsBootstrapper:151 - Context refreshed
+2018-05-17 14:42:21,617  INFO DocumentationPluginsBootstrapper:154 - Found 1 custom documentation plugin(s)
+2018-05-17 14:42:21,647  INFO ApiListingReferenceScanner:41 - Scanning for api listing references
+2018-05-17 14:42:21,749  INFO CachingOperationNameGenerator:40 - Generating unique operation named: createBucketUsingPOST_1
+2018-05-17 14:42:21,751  INFO CachingOperationNameGenerator:40 - Generating unique operation named: getBucketListUsingGET_1
+2018-05-17 14:42:21,756  INFO CachingOperationNameGenerator:40 - Generating unique operation named: deleteFileUsingPOST_1
+2018-05-17 14:42:21,759  INFO CachingOperationNameGenerator:40 - Generating unique operation named: getFileListUsingGET_1
+2018-05-17 14:42:21,838  INFO TomcatWebServer:206 - Tomcat started on port(s): 8081 (http) with context path ''
+2018-05-17 14:42:21,843  INFO CloudserverApplication:59 - Started CloudserverApplication in 3.591 seconds (JVM running for 4.176)
+2018-05-17 14:48:50,328  INFO AnnotationConfigServletWebServerApplicationContext:993 - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@2928854b: startup date [Thu May 17 14:42:18 CST 2018]; root of context hierarchy
+2018-05-17 14:48:50,361  INFO DefaultLifecycleProcessor:366 - Stopping beans in phase 2147483647
+2018-05-17 14:48:50,376  INFO AnnotationMBeanExporter:451 - Unregistering JMX-exposed beans on shutdown
+2018-05-17 14:48:50,377  INFO AnnotationMBeanExporter:183 - Unregistering JMX-exposed beans
+2018-05-17 14:48:54,540  INFO Version:21 - HV000001: Hibernate Validator 6.0.9.Final
+2018-05-17 14:48:54,967  INFO CloudserverApplication:50 - Starting CloudserverApplication on fandongdeMacBook-Pro-2.local with PID 1823 (/Users/fandong/Git/CloudServer/cloudserver/target/classes started by fandong in /Users/fandong/Git/CloudServer/cloudserver)
+2018-05-17 14:48:54,967  INFO CloudserverApplication:663 - The following profiles are active: dis
+2018-05-17 14:48:55,007  INFO AnnotationConfigServletWebServerApplicationContext:590 - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@3b07a0d6: startup date [Thu May 17 14:48:55 CST 2018]; root of context hierarchy
+2018-05-17 14:48:55,934  INFO PostProcessorRegistrationDelegate$BeanPostProcessorChecker:328 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$9cf81214] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-05-17 14:48:56,128  INFO TomcatWebServer:91 - Tomcat initialized with port(s): 8081 (http)
+2018-05-17 14:48:56,214  INFO ContextLoader:285 - Root WebApplicationContext: initialization completed in 1210 ms
+2018-05-17 14:48:56,315  INFO ServletRegistrationBean:185 - Servlet dispatcherServlet mapped to [/]
+2018-05-17 14:48:56,319  INFO FilterRegistrationBean:244 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-05-17 14:48:56,320  INFO FilterRegistrationBean:244 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-05-17 14:48:56,320  INFO FilterRegistrationBean:244 - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-05-17 14:48:56,320  INFO FilterRegistrationBean:244 - Mapping filter: 'requestContextFilter' to: [/*]
+2018-05-17 14:48:56,511  WARN AnnotationConfigServletWebServerApplicationContext:558 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'wingManController': Unsatisfied dependency expressed through field 'wingManProductService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'wingManProductService': Unsatisfied dependency expressed through field 'wingManProductMapper'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'me.fandong.cloudserver.dao.WingManProductMapper' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2018-05-17 14:48:56,527  INFO ConditionEvaluationReportLoggingListener:101 - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2018-05-17 14:48:56,588 ERROR LoggingFailureAnalysisReporter:42 - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field wingManProductMapper in me.fandong.cloudserver.service.WingManProductService required a bean of type 'me.fandong.cloudserver.dao.WingManProductMapper' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'me.fandong.cloudserver.dao.WingManProductMapper' in your configuration.
+
+2018-05-17 15:10:06,687  INFO Version:21 - HV000001: Hibernate Validator 6.0.9.Final
+2018-05-17 15:10:07,140  INFO CloudserverApplication:50 - Starting CloudserverApplication on fandongdeMacBook-Pro-2.local with PID 1849 (/Users/fandong/Git/CloudServer/cloudserver/target/classes started by fandong in /Users/fandong/Git/CloudServer/cloudserver)
+2018-05-17 15:10:07,140  INFO CloudserverApplication:663 - The following profiles are active: dis
+2018-05-17 15:10:07,227  INFO AnnotationConfigServletWebServerApplicationContext:590 - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@30b7c004: startup date [Thu May 17 15:10:07 CST 2018]; root of context hierarchy
+2018-05-17 15:10:08,692  INFO PostProcessorRegistrationDelegate$BeanPostProcessorChecker:328 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$40a4a1b4] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-05-17 15:10:08,944  INFO TomcatWebServer:91 - Tomcat initialized with port(s): 8081 (http)
+2018-05-17 15:10:09,069  INFO ContextLoader:285 - Root WebApplicationContext: initialization completed in 1846 ms
+2018-05-17 15:10:09,184  INFO ServletRegistrationBean:185 - Servlet dispatcherServlet mapped to [/]
+2018-05-17 15:10:09,189  INFO FilterRegistrationBean:244 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-05-17 15:10:09,189  INFO FilterRegistrationBean:244 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-05-17 15:10:09,189  INFO FilterRegistrationBean:244 - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-05-17 15:10:09,190  INFO FilterRegistrationBean:244 - Mapping filter: 'requestContextFilter' to: [/*]
+2018-05-17 15:10:09,397  WARN AnnotationConfigServletWebServerApplicationContext:558 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'wingManController': Unsatisfied dependency expressed through field 'wingManProductService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'wingManProductService': Unsatisfied dependency expressed through field 'wingManProductMapper'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'me.fandong.cloudserver.dao.WingManProductMapper' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2018-05-17 15:10:09,419  INFO ConditionEvaluationReportLoggingListener:101 - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2018-05-17 15:10:09,507 ERROR LoggingFailureAnalysisReporter:42 - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field wingManProductMapper in me.fandong.cloudserver.service.WingManProductService required a bean of type 'me.fandong.cloudserver.dao.WingManProductMapper' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'me.fandong.cloudserver.dao.WingManProductMapper' in your configuration.
+
+2018-05-17 15:11:54,447  INFO Version:21 - HV000001: Hibernate Validator 6.0.9.Final
+2018-05-17 15:11:54,944  INFO CloudserverApplication:50 - Starting CloudserverApplication on fandongdeMacBook-Pro-2.local with PID 1852 (/Users/fandong/Git/CloudServer/cloudserver/target/classes started by fandong in /Users/fandong/Git/CloudServer/cloudserver)
+2018-05-17 15:11:54,944  INFO CloudserverApplication:663 - The following profiles are active: dis
+2018-05-17 15:11:55,069  INFO AnnotationConfigServletWebServerApplicationContext:590 - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@7219ec67: startup date [Thu May 17 15:11:55 CST 2018]; root of context hierarchy
+2018-05-17 15:11:56,302  INFO PostProcessorRegistrationDelegate$BeanPostProcessorChecker:328 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$9c3a0766] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-05-17 15:11:56,555  INFO TomcatWebServer:91 - Tomcat initialized with port(s): 8081 (http)
+2018-05-17 15:11:56,678  INFO ContextLoader:285 - Root WebApplicationContext: initialization completed in 1612 ms
+2018-05-17 15:11:56,802  INFO ServletRegistrationBean:185 - Servlet dispatcherServlet mapped to [/]
+2018-05-17 15:11:56,806  INFO FilterRegistrationBean:244 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-05-17 15:11:56,807  INFO FilterRegistrationBean:244 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-05-17 15:11:56,808  INFO FilterRegistrationBean:244 - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-05-17 15:11:56,808  INFO FilterRegistrationBean:244 - Mapping filter: 'requestContextFilter' to: [/*]
+2018-05-17 15:11:57,330  INFO RequestMappingHandlerMapping:547 - Mapped "{[/getAliyunOSSBucketList],methods=[GET]}" onto public java.lang.String me.fandong.cloudserver.Controller.AliyunOSSBucketController.getBucketList(java.lang.String,java.lang.String)
+2018-05-17 15:11:57,331  INFO RequestMappingHandlerMapping:547 - Mapped "{[/createAliyunBucket],methods=[POST]}" onto public java.lang.String me.fandong.cloudserver.Controller.AliyunOSSBucketController.createBucket(java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+2018-05-17 15:11:57,332  INFO RequestMappingHandlerMapping:547 - Mapped "{[/deleteAliyunBucket],methods=[POST]}" onto public java.lang.String me.fandong.cloudserver.Controller.AliyunOSSBucketController.deleteBucket(java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+2018-05-17 15:11:57,333  INFO RequestMappingHandlerMapping:547 - Mapped "{[/getAliyunOSSFileList],methods=[GET]}" onto public java.lang.String me.fandong.cloudserver.Controller.AliyunOSSFileController.getFileList(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+2018-05-17 15:11:57,334  INFO RequestMappingHandlerMapping:547 - Mapped "{[/deleteAliyunOSSFile],methods=[POST]}" onto public java.lang.String me.fandong.cloudserver.Controller.AliyunOSSFileController.deleteFile(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+2018-05-17 15:11:57,335  INFO RequestMappingHandlerMapping:547 - Mapped "{[/getQiniuBucketList],methods=[GET]}" onto public java.lang.String me.fandong.cloudserver.Controller.QiniuBucketController.getBucketList(java.lang.String,java.lang.String)
+2018-05-17 15:11:57,336  INFO RequestMappingHandlerMapping:547 - Mapped "{[/createQiniuBucket],methods=[POST]}" onto public java.lang.String me.fandong.cloudserver.Controller.QiniuBucketController.createBucket(java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+2018-05-17 15:11:57,336  INFO RequestMappingHandlerMapping:547 - Mapped "{[/getQiniuDomainList],methods=[GET]}" onto public java.lang.String me.fandong.cloudserver.Controller.QiniuBucketController.getDomainList(java.lang.String,java.lang.String,java.lang.String)
+2018-05-17 15:11:57,337  INFO RequestMappingHandlerMapping:547 - Mapped "{[/getQiniuFileList],methods=[GET]}" onto public java.lang.String me.fandong.cloudserver.Controller.QiniuFileController.getFileList(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+2018-05-17 15:11:57,338  INFO RequestMappingHandlerMapping:547 - Mapped "{[/deleteQiniuFile],methods=[POST]}" onto public java.lang.String me.fandong.cloudserver.Controller.QiniuFileController.deleteFile(java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+2018-05-17 15:11:57,339  INFO RequestMappingHandlerMapping:547 - Mapped "{[/uploadImageFile],methods=[POST]}" onto public java.lang.String me.fandong.cloudserver.Controller.UploadController.uploadImageFile(org.springframework.web.multipart.MultipartHttpServletRequest) throws java.io.IOException
+2018-05-17 15:11:57,340  INFO RequestMappingHandlerMapping:547 - Mapped "{[/uploadVideoFile],methods=[POST]}" onto public java.lang.String me.fandong.cloudserver.Controller.UploadController.uploadVideoFile(org.springframework.web.multipart.MultipartHttpServletRequest) throws java.io.IOException
+2018-05-17 15:11:57,340  INFO RequestMappingHandlerMapping:547 - Mapped "{[/uploadQiniuFile],methods=[POST]}" onto public java.lang.String me.fandong.cloudserver.Controller.UploadController.uploadQiniuFile(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+2018-05-17 15:11:57,341  INFO RequestMappingHandlerMapping:547 - Mapped "{[/uploadAliyunFile],methods=[POST]}" onto public java.lang.String me.fandong.cloudserver.Controller.UploadController.uploadAliyunFile(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+2018-05-17 15:11:57,342  INFO RequestMappingHandlerMapping:547 - Mapped "{[/getWingManProductList],methods=[GET]}" onto public java.lang.String me.fandong.cloudserver.Controller.WingManController.getWingManProductList()
+2018-05-17 15:11:57,347  INFO RequestMappingHandlerMapping:547 - Mapped "{[/swagger-resources/configuration/ui]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2018-05-17 15:11:57,348  INFO RequestMappingHandlerMapping:547 - Mapped "{[/swagger-resources/configuration/security]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2018-05-17 15:11:57,349  INFO RequestMappingHandlerMapping:547 - Mapped "{[/swagger-resources]}" onto public org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2018-05-17 15:11:57,352  INFO RequestMappingHandlerMapping:547 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-05-17 15:11:57,355  INFO RequestMappingHandlerMapping:547 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-05-17 15:11:57,460  INFO PropertySourcedRequestMappingHandlerMapping:69 - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2018-05-17 15:11:57,558  INFO SimpleUrlHandlerMapping:373 - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-17 15:11:57,753  INFO RequestMappingHandlerAdapter:574 - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@7219ec67: startup date [Thu May 17 15:11:55 CST 2018]; root of context hierarchy
+2018-05-17 15:11:57,844  INFO SimpleUrlHandlerMapping:373 - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-17 15:11:57,844  INFO SimpleUrlHandlerMapping:373 - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-17 15:11:58,074  INFO AnnotationMBeanExporter:433 - Registering beans for JMX exposure on startup
+2018-05-17 15:11:58,241  INFO AnnotationMBeanExporter:895 - Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-05-17 15:11:58,246  INFO AnnotationMBeanExporter:668 - Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2018-05-17 15:11:58,257  INFO DefaultLifecycleProcessor:351 - Starting beans in phase 2147483647
+2018-05-17 15:11:58,257  INFO DocumentationPluginsBootstrapper:151 - Context refreshed
+2018-05-17 15:11:58,283  INFO DocumentationPluginsBootstrapper:154 - Found 1 custom documentation plugin(s)
+2018-05-17 15:11:58,315  INFO ApiListingReferenceScanner:41 - Scanning for api listing references
+2018-05-17 15:11:58,411  INFO CachingOperationNameGenerator:40 - Generating unique operation named: createBucketUsingPOST_1
+2018-05-17 15:11:58,414  INFO CachingOperationNameGenerator:40 - Generating unique operation named: getBucketListUsingGET_1
+2018-05-17 15:11:58,419  INFO CachingOperationNameGenerator:40 - Generating unique operation named: deleteFileUsingPOST_1
+2018-05-17 15:11:58,421  INFO CachingOperationNameGenerator:40 - Generating unique operation named: getFileListUsingGET_1
+2018-05-17 15:11:58,489  INFO TomcatWebServer:206 - Tomcat started on port(s): 8081 (http) with context path ''
+2018-05-17 15:11:58,494  INFO CloudserverApplication:59 - Started CloudserverApplication in 4.182 seconds (JVM running for 4.794)
+2018-05-17 15:12:10,147  INFO DispatcherServlet:494 - FrameworkServlet 'dispatcherServlet': initialization started
+2018-05-17 15:12:10,165  INFO DispatcherServlet:509 - FrameworkServlet 'dispatcherServlet': initialization completed in 17 ms
+2018-05-17 15:12:20,190  INFO DruidDataSource:638 - {dataSource-1} inited
+2018-05-17 15:15:56,262  INFO AnnotationConfigServletWebServerApplicationContext:993 - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@7219ec67: startup date [Thu May 17 15:11:55 CST 2018]; root of context hierarchy
+2018-05-17 15:15:56,265  INFO DefaultLifecycleProcessor:366 - Stopping beans in phase 2147483647
+2018-05-17 15:15:56,266  INFO AnnotationMBeanExporter:451 - Unregistering JMX-exposed beans on shutdown
+2018-05-17 15:15:56,267  INFO AnnotationMBeanExporter:183 - Unregistering JMX-exposed beans
+2018-05-17 15:15:56,277  INFO DruidDataSource:1288 - {dataSource-1} closed
+2018-05-17 15:15:59,873  INFO Version:21 - HV000001: Hibernate Validator 6.0.9.Final
+2018-05-17 15:16:00,317  INFO CloudserverApplication:50 - Starting CloudserverApplication on fandongdeMacBook-Pro-2.local with PID 1868 (/Users/fandong/Git/CloudServer/cloudserver/target/classes started by fandong in /Users/fandong/Git/CloudServer/cloudserver)
+2018-05-17 15:16:00,318  INFO CloudserverApplication:663 - The following profiles are active: dis
+2018-05-17 15:16:00,403  INFO AnnotationConfigServletWebServerApplicationContext:590 - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@2928854b: startup date [Thu May 17 15:16:00 CST 2018]; root of context hierarchy
+2018-05-17 15:16:01,732  INFO PostProcessorRegistrationDelegate$BeanPostProcessorChecker:328 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$d666a83] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-05-17 15:16:02,085  INFO TomcatWebServer:91 - Tomcat initialized with port(s): 8081 (http)
+2018-05-17 15:16:02,169  INFO ContextLoader:285 - Root WebApplicationContext: initialization completed in 1770 ms
+2018-05-17 15:16:02,270  INFO ServletRegistrationBean:185 - Servlet dispatcherServlet mapped to [/]
+2018-05-17 15:16:02,273  INFO FilterRegistrationBean:244 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-05-17 15:16:02,274  INFO FilterRegistrationBean:244 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-05-17 15:16:02,274  INFO FilterRegistrationBean:244 - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-05-17 15:16:02,274  INFO FilterRegistrationBean:244 - Mapping filter: 'requestContextFilter' to: [/*]
+2018-05-17 15:16:02,824  INFO RequestMappingHandlerMapping:547 - Mapped "{[/getAliyunOSSBucketList],methods=[GET]}" onto public java.lang.String me.fandong.cloudserver.Controller.AliyunOSSBucketController.getBucketList(java.lang.String,java.lang.String)
+2018-05-17 15:16:02,825  INFO RequestMappingHandlerMapping:547 - Mapped "{[/createAliyunBucket],methods=[POST]}" onto public java.lang.String me.fandong.cloudserver.Controller.AliyunOSSBucketController.createBucket(java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+2018-05-17 15:16:02,826  INFO RequestMappingHandlerMapping:547 - Mapped "{[/deleteAliyunBucket],methods=[POST]}" onto public java.lang.String me.fandong.cloudserver.Controller.AliyunOSSBucketController.deleteBucket(java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+2018-05-17 15:16:02,828  INFO RequestMappingHandlerMapping:547 - Mapped "{[/getAliyunOSSFileList],methods=[GET]}" onto public java.lang.String me.fandong.cloudserver.Controller.AliyunOSSFileController.getFileList(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+2018-05-17 15:16:02,829  INFO RequestMappingHandlerMapping:547 - Mapped "{[/deleteAliyunOSSFile],methods=[POST]}" onto public java.lang.String me.fandong.cloudserver.Controller.AliyunOSSFileController.deleteFile(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+2018-05-17 15:16:02,831  INFO RequestMappingHandlerMapping:547 - Mapped "{[/getQiniuBucketList],methods=[GET]}" onto public java.lang.String me.fandong.cloudserver.Controller.QiniuBucketController.getBucketList(java.lang.String,java.lang.String)
+2018-05-17 15:16:02,832  INFO RequestMappingHandlerMapping:547 - Mapped "{[/createQiniuBucket],methods=[POST]}" onto public java.lang.String me.fandong.cloudserver.Controller.QiniuBucketController.createBucket(java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+2018-05-17 15:16:02,833  INFO RequestMappingHandlerMapping:547 - Mapped "{[/getQiniuDomainList],methods=[GET]}" onto public java.lang.String me.fandong.cloudserver.Controller.QiniuBucketController.getDomainList(java.lang.String,java.lang.String,java.lang.String)
+2018-05-17 15:16:02,834  INFO RequestMappingHandlerMapping:547 - Mapped "{[/getQiniuFileList],methods=[GET]}" onto public java.lang.String me.fandong.cloudserver.Controller.QiniuFileController.getFileList(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+2018-05-17 15:16:02,834  INFO RequestMappingHandlerMapping:547 - Mapped "{[/deleteQiniuFile],methods=[POST]}" onto public java.lang.String me.fandong.cloudserver.Controller.QiniuFileController.deleteFile(java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+2018-05-17 15:16:02,835  INFO RequestMappingHandlerMapping:547 - Mapped "{[/uploadImageFile],methods=[POST]}" onto public java.lang.String me.fandong.cloudserver.Controller.UploadController.uploadImageFile(org.springframework.web.multipart.MultipartHttpServletRequest) throws java.io.IOException
+2018-05-17 15:16:02,836  INFO RequestMappingHandlerMapping:547 - Mapped "{[/uploadVideoFile],methods=[POST]}" onto public java.lang.String me.fandong.cloudserver.Controller.UploadController.uploadVideoFile(org.springframework.web.multipart.MultipartHttpServletRequest) throws java.io.IOException
+2018-05-17 15:16:02,837  INFO RequestMappingHandlerMapping:547 - Mapped "{[/uploadQiniuFile],methods=[POST]}" onto public java.lang.String me.fandong.cloudserver.Controller.UploadController.uploadQiniuFile(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+2018-05-17 15:16:02,837  INFO RequestMappingHandlerMapping:547 - Mapped "{[/uploadAliyunFile],methods=[POST]}" onto public java.lang.String me.fandong.cloudserver.Controller.UploadController.uploadAliyunFile(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+2018-05-17 15:16:02,840  INFO RequestMappingHandlerMapping:547 - Mapped "{[/getWingManProductList],methods=[GET]}" onto public java.lang.String me.fandong.cloudserver.Controller.WingManController.getWingManProductList()
+2018-05-17 15:16:02,848  INFO RequestMappingHandlerMapping:547 - Mapped "{[/swagger-resources/configuration/ui]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2018-05-17 15:16:02,850  INFO RequestMappingHandlerMapping:547 - Mapped "{[/swagger-resources/configuration/security]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2018-05-17 15:16:02,851  INFO RequestMappingHandlerMapping:547 - Mapped "{[/swagger-resources]}" onto public org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2018-05-17 15:16:02,855  INFO RequestMappingHandlerMapping:547 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-05-17 15:16:02,857  INFO RequestMappingHandlerMapping:547 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-05-17 15:16:03,014  INFO PropertySourcedRequestMappingHandlerMapping:69 - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2018-05-17 15:16:03,124  INFO SimpleUrlHandlerMapping:373 - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-17 15:16:03,245  INFO RequestMappingHandlerAdapter:574 - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@2928854b: startup date [Thu May 17 15:16:00 CST 2018]; root of context hierarchy
+2018-05-17 15:16:03,279  INFO SimpleUrlHandlerMapping:373 - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-17 15:16:03,279  INFO SimpleUrlHandlerMapping:373 - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-17 15:16:03,513  INFO AnnotationMBeanExporter:433 - Registering beans for JMX exposure on startup
+2018-05-17 15:16:03,669  INFO AnnotationMBeanExporter:895 - Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-05-17 15:16:03,675  INFO AnnotationMBeanExporter:668 - Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2018-05-17 15:16:03,679  INFO DefaultLifecycleProcessor:351 - Starting beans in phase 2147483647
+2018-05-17 15:16:03,679  INFO DocumentationPluginsBootstrapper:151 - Context refreshed
+2018-05-17 15:16:03,693  INFO DocumentationPluginsBootstrapper:154 - Found 1 custom documentation plugin(s)
+2018-05-17 15:16:03,716  INFO ApiListingReferenceScanner:41 - Scanning for api listing references
+2018-05-17 15:16:03,819  INFO CachingOperationNameGenerator:40 - Generating unique operation named: createBucketUsingPOST_1
+2018-05-17 15:16:03,825  INFO CachingOperationNameGenerator:40 - Generating unique operation named: getBucketListUsingGET_1
+2018-05-17 15:16:03,836  INFO CachingOperationNameGenerator:40 - Generating unique operation named: deleteFileUsingPOST_1
+2018-05-17 15:16:03,844  INFO CachingOperationNameGenerator:40 - Generating unique operation named: getFileListUsingGET_1
+2018-05-17 15:16:03,920  INFO TomcatWebServer:206 - Tomcat started on port(s): 8081 (http) with context path ''
+2018-05-17 15:16:03,924  INFO CloudserverApplication:59 - Started CloudserverApplication in 4.196 seconds (JVM running for 5.022)
+2018-05-17 15:16:04,426  INFO DispatcherServlet:494 - FrameworkServlet 'dispatcherServlet': initialization started
+2018-05-17 15:16:04,440  INFO DispatcherServlet:509 - FrameworkServlet 'dispatcherServlet': initialization completed in 13 ms
+2018-05-17 15:16:10,467  INFO DruidDataSource:638 - {dataSource-1} inited
+2018-05-17 15:24:59,545  INFO AnnotationConfigServletWebServerApplicationContext:993 - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@2928854b: startup date [Thu May 17 15:16:00 CST 2018]; root of context hierarchy
+2018-05-17 15:24:59,570  INFO DefaultLifecycleProcessor:366 - Stopping beans in phase 2147483647
+2018-05-17 15:24:59,576  INFO AnnotationMBeanExporter:451 - Unregistering JMX-exposed beans on shutdown
+2018-05-17 15:24:59,577  INFO AnnotationMBeanExporter:183 - Unregistering JMX-exposed beans
+2018-05-17 15:24:59,595  INFO DruidDataSource:1288 - {dataSource-1} closed
+2018-05-17 15:25:27,343  INFO Version:21 - HV000001: Hibernate Validator 6.0.9.Final
+2018-05-17 15:25:27,580  INFO CloudserverApplication:50 - Starting CloudserverApplication on fandongdeMacBook-Pro-2.local with PID 1886 (/Users/fandong/Git/CloudServer/cloudserver/target/classes started by fandong in /Users/fandong/Git/CloudServer/cloudserver)
+2018-05-17 15:25:27,585  INFO CloudserverApplication:663 - The following profiles are active: dis
+2018-05-17 15:25:27,628  INFO AnnotationConfigServletWebServerApplicationContext:590 - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@30b7c004: startup date [Thu May 17 15:25:27 CST 2018]; root of context hierarchy
+2018-05-17 15:25:28,973  INFO PostProcessorRegistrationDelegate$BeanPostProcessorChecker:328 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$4fca10c8] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-05-17 15:25:29,243  INFO TomcatWebServer:91 - Tomcat initialized with port(s): 8081 (http)
+2018-05-17 15:25:29,338  INFO ContextLoader:285 - Root WebApplicationContext: initialization completed in 1713 ms
+2018-05-17 15:25:29,435  INFO ServletRegistrationBean:185 - Servlet dispatcherServlet mapped to [/]
+2018-05-17 15:25:29,439  INFO FilterRegistrationBean:244 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-05-17 15:25:29,440  INFO FilterRegistrationBean:244 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-05-17 15:25:29,440  INFO FilterRegistrationBean:244 - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-05-17 15:25:29,440  INFO FilterRegistrationBean:244 - Mapping filter: 'requestContextFilter' to: [/*]
+2018-05-17 15:25:29,854  INFO RequestMappingHandlerMapping:547 - Mapped "{[/getAliyunOSSBucketList],methods=[GET]}" onto public java.lang.String me.fandong.cloudserver.Controller.AliyunOSSBucketController.getBucketList(java.lang.String,java.lang.String)
+2018-05-17 15:25:29,855  INFO RequestMappingHandlerMapping:547 - Mapped "{[/createAliyunBucket],methods=[POST]}" onto public java.lang.String me.fandong.cloudserver.Controller.AliyunOSSBucketController.createBucket(java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+2018-05-17 15:25:29,855  INFO RequestMappingHandlerMapping:547 - Mapped "{[/deleteAliyunBucket],methods=[POST]}" onto public java.lang.String me.fandong.cloudserver.Controller.AliyunOSSBucketController.deleteBucket(java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+2018-05-17 15:25:29,856  INFO RequestMappingHandlerMapping:547 - Mapped "{[/getAliyunOSSFileList],methods=[GET]}" onto public java.lang.String me.fandong.cloudserver.Controller.AliyunOSSFileController.getFileList(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+2018-05-17 15:25:29,857  INFO RequestMappingHandlerMapping:547 - Mapped "{[/deleteAliyunOSSFile],methods=[POST]}" onto public java.lang.String me.fandong.cloudserver.Controller.AliyunOSSFileController.deleteFile(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+2018-05-17 15:25:29,858  INFO RequestMappingHandlerMapping:547 - Mapped "{[/getQiniuBucketList],methods=[GET]}" onto public java.lang.String me.fandong.cloudserver.Controller.QiniuBucketController.getBucketList(java.lang.String,java.lang.String)
+2018-05-17 15:25:29,858  INFO RequestMappingHandlerMapping:547 - Mapped "{[/createQiniuBucket],methods=[POST]}" onto public java.lang.String me.fandong.cloudserver.Controller.QiniuBucketController.createBucket(java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+2018-05-17 15:25:29,859  INFO RequestMappingHandlerMapping:547 - Mapped "{[/getQiniuDomainList],methods=[GET]}" onto public java.lang.String me.fandong.cloudserver.Controller.QiniuBucketController.getDomainList(java.lang.String,java.lang.String,java.lang.String)
+2018-05-17 15:25:29,860  INFO RequestMappingHandlerMapping:547 - Mapped "{[/getQiniuFileList],methods=[GET]}" onto public java.lang.String me.fandong.cloudserver.Controller.QiniuFileController.getFileList(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+2018-05-17 15:25:29,860  INFO RequestMappingHandlerMapping:547 - Mapped "{[/deleteQiniuFile],methods=[POST]}" onto public java.lang.String me.fandong.cloudserver.Controller.QiniuFileController.deleteFile(java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+2018-05-17 15:25:29,861  INFO RequestMappingHandlerMapping:547 - Mapped "{[/uploadImageFile],methods=[POST]}" onto public java.lang.String me.fandong.cloudserver.Controller.UploadController.uploadImageFile(org.springframework.web.multipart.MultipartHttpServletRequest) throws java.io.IOException
+2018-05-17 15:25:29,861  INFO RequestMappingHandlerMapping:547 - Mapped "{[/uploadVideoFile],methods=[POST]}" onto public java.lang.String me.fandong.cloudserver.Controller.UploadController.uploadVideoFile(org.springframework.web.multipart.MultipartHttpServletRequest) throws java.io.IOException
+2018-05-17 15:25:29,861  INFO RequestMappingHandlerMapping:547 - Mapped "{[/uploadQiniuFile],methods=[POST]}" onto public java.lang.String me.fandong.cloudserver.Controller.UploadController.uploadQiniuFile(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+2018-05-17 15:25:29,862  INFO RequestMappingHandlerMapping:547 - Mapped "{[/uploadAliyunFile],methods=[POST]}" onto public java.lang.String me.fandong.cloudserver.Controller.UploadController.uploadAliyunFile(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+2018-05-17 15:25:29,862  INFO RequestMappingHandlerMapping:547 - Mapped "{[/getWingManProductList],methods=[GET]}" onto public java.lang.String me.fandong.cloudserver.Controller.WingManController.getWingManProductList()
+2018-05-17 15:25:29,866  INFO RequestMappingHandlerMapping:547 - Mapped "{[/swagger-resources/configuration/ui]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2018-05-17 15:25:29,867  INFO RequestMappingHandlerMapping:547 - Mapped "{[/swagger-resources/configuration/security]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2018-05-17 15:25:29,868  INFO RequestMappingHandlerMapping:547 - Mapped "{[/swagger-resources]}" onto public org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2018-05-17 15:25:29,870  INFO RequestMappingHandlerMapping:547 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-05-17 15:25:29,871  INFO RequestMappingHandlerMapping:547 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-05-17 15:25:29,983  INFO PropertySourcedRequestMappingHandlerMapping:69 - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2018-05-17 15:25:30,035  INFO SimpleUrlHandlerMapping:373 - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-17 15:25:30,209  INFO RequestMappingHandlerAdapter:574 - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@30b7c004: startup date [Thu May 17 15:25:27 CST 2018]; root of context hierarchy
+2018-05-17 15:25:30,268  INFO SimpleUrlHandlerMapping:373 - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-17 15:25:30,268  INFO SimpleUrlHandlerMapping:373 - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-17 15:25:30,466  INFO AnnotationMBeanExporter:433 - Registering beans for JMX exposure on startup
+2018-05-17 15:25:30,628  INFO AnnotationMBeanExporter:895 - Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-05-17 15:25:30,633  INFO AnnotationMBeanExporter:668 - Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2018-05-17 15:25:30,637  INFO DefaultLifecycleProcessor:351 - Starting beans in phase 2147483647
+2018-05-17 15:25:30,638  INFO DocumentationPluginsBootstrapper:151 - Context refreshed
+2018-05-17 15:25:30,651  INFO DocumentationPluginsBootstrapper:154 - Found 1 custom documentation plugin(s)
+2018-05-17 15:25:30,678  INFO ApiListingReferenceScanner:41 - Scanning for api listing references
+2018-05-17 15:25:30,815  INFO CachingOperationNameGenerator:40 - Generating unique operation named: createBucketUsingPOST_1
+2018-05-17 15:25:30,819  INFO CachingOperationNameGenerator:40 - Generating unique operation named: getBucketListUsingGET_1
+2018-05-17 15:25:30,828  INFO CachingOperationNameGenerator:40 - Generating unique operation named: deleteFileUsingPOST_1
+2018-05-17 15:25:30,833  INFO CachingOperationNameGenerator:40 - Generating unique operation named: getFileListUsingGET_1
+2018-05-17 15:25:30,916  INFO TomcatWebServer:206 - Tomcat started on port(s): 8081 (http) with context path ''
+2018-05-17 15:25:30,920  INFO CloudserverApplication:59 - Started CloudserverApplication in 3.708 seconds (JVM running for 4.416)
+2018-05-17 15:25:34,722  INFO DispatcherServlet:494 - FrameworkServlet 'dispatcherServlet': initialization started
+2018-05-17 15:25:34,737  INFO DispatcherServlet:509 - FrameworkServlet 'dispatcherServlet': initialization completed in 14 ms
+2018-05-17 15:25:38,686  INFO DruidDataSource:638 - {dataSource-1} inited
+2018-05-17 15:26:32,618  INFO AnnotationConfigServletWebServerApplicationContext:993 - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@30b7c004: startup date [Thu May 17 15:25:27 CST 2018]; root of context hierarchy
+2018-05-17 15:26:32,622  INFO DefaultLifecycleProcessor:366 - Stopping beans in phase 2147483647
+2018-05-17 15:26:32,624  INFO AnnotationMBeanExporter:451 - Unregistering JMX-exposed beans on shutdown
+2018-05-17 15:26:32,625  INFO AnnotationMBeanExporter:183 - Unregistering JMX-exposed beans
+2018-05-17 15:26:32,634  INFO DruidDataSource:1288 - {dataSource-1} closed
+2018-05-17 15:26:35,494  INFO Version:21 - HV000001: Hibernate Validator 6.0.9.Final
+2018-05-17 15:26:35,795  INFO CloudserverApplication:50 - Starting CloudserverApplication on fandongdeMacBook-Pro-2.local with PID 1890 (/Users/fandong/Git/CloudServer/cloudserver/target/classes started by fandong in /Users/fandong/Git/CloudServer/cloudserver)
+2018-05-17 15:26:35,804  INFO CloudserverApplication:663 - The following profiles are active: dis
+2018-05-17 15:26:35,890  INFO AnnotationConfigServletWebServerApplicationContext:590 - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@79efed2d: startup date [Thu May 17 15:26:35 CST 2018]; root of context hierarchy
+2018-05-17 15:26:37,084  INFO PostProcessorRegistrationDelegate$BeanPostProcessorChecker:328 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$7e5a42e5] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-05-17 15:26:37,374  INFO TomcatWebServer:91 - Tomcat initialized with port(s): 8081 (http)
+2018-05-17 15:26:37,463  INFO ContextLoader:285 - Root WebApplicationContext: initialization completed in 1575 ms
+2018-05-17 15:26:37,548  INFO ServletRegistrationBean:185 - Servlet dispatcherServlet mapped to [/]
+2018-05-17 15:26:37,552  INFO FilterRegistrationBean:244 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-05-17 15:26:37,552  INFO FilterRegistrationBean:244 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-05-17 15:26:37,552  INFO FilterRegistrationBean:244 - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-05-17 15:26:37,553  INFO FilterRegistrationBean:244 - Mapping filter: 'requestContextFilter' to: [/*]
+2018-05-17 15:26:37,990  INFO RequestMappingHandlerMapping:547 - Mapped "{[/getAliyunOSSBucketList],methods=[GET]}" onto public java.lang.String me.fandong.cloudserver.Controller.AliyunOSSBucketController.getBucketList(java.lang.String,java.lang.String)
+2018-05-17 15:26:37,991  INFO RequestMappingHandlerMapping:547 - Mapped "{[/createAliyunBucket],methods=[POST]}" onto public java.lang.String me.fandong.cloudserver.Controller.AliyunOSSBucketController.createBucket(java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+2018-05-17 15:26:37,991  INFO RequestMappingHandlerMapping:547 - Mapped "{[/deleteAliyunBucket],methods=[POST]}" onto public java.lang.String me.fandong.cloudserver.Controller.AliyunOSSBucketController.deleteBucket(java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+2018-05-17 15:26:37,992  INFO RequestMappingHandlerMapping:547 - Mapped "{[/getAliyunOSSFileList],methods=[GET]}" onto public java.lang.String me.fandong.cloudserver.Controller.AliyunOSSFileController.getFileList(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+2018-05-17 15:26:37,993  INFO RequestMappingHandlerMapping:547 - Mapped "{[/deleteAliyunOSSFile],methods=[POST]}" onto public java.lang.String me.fandong.cloudserver.Controller.AliyunOSSFileController.deleteFile(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+2018-05-17 15:26:37,993  INFO RequestMappingHandlerMapping:547 - Mapped "{[/getQiniuBucketList],methods=[GET]}" onto public java.lang.String me.fandong.cloudserver.Controller.QiniuBucketController.getBucketList(java.lang.String,java.lang.String)
+2018-05-17 15:26:37,994  INFO RequestMappingHandlerMapping:547 - Mapped "{[/createQiniuBucket],methods=[POST]}" onto public java.lang.String me.fandong.cloudserver.Controller.QiniuBucketController.createBucket(java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+2018-05-17 15:26:37,994  INFO RequestMappingHandlerMapping:547 - Mapped "{[/getQiniuDomainList],methods=[GET]}" onto public java.lang.String me.fandong.cloudserver.Controller.QiniuBucketController.getDomainList(java.lang.String,java.lang.String,java.lang.String)
+2018-05-17 15:26:37,995  INFO RequestMappingHandlerMapping:547 - Mapped "{[/getQiniuFileList],methods=[GET]}" onto public java.lang.String me.fandong.cloudserver.Controller.QiniuFileController.getFileList(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+2018-05-17 15:26:37,995  INFO RequestMappingHandlerMapping:547 - Mapped "{[/deleteQiniuFile],methods=[POST]}" onto public java.lang.String me.fandong.cloudserver.Controller.QiniuFileController.deleteFile(java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+2018-05-17 15:26:37,996  INFO RequestMappingHandlerMapping:547 - Mapped "{[/uploadImageFile],methods=[POST]}" onto public java.lang.String me.fandong.cloudserver.Controller.UploadController.uploadImageFile(org.springframework.web.multipart.MultipartHttpServletRequest) throws java.io.IOException
+2018-05-17 15:26:37,996  INFO RequestMappingHandlerMapping:547 - Mapped "{[/uploadVideoFile],methods=[POST]}" onto public java.lang.String me.fandong.cloudserver.Controller.UploadController.uploadVideoFile(org.springframework.web.multipart.MultipartHttpServletRequest) throws java.io.IOException
+2018-05-17 15:26:37,996  INFO RequestMappingHandlerMapping:547 - Mapped "{[/uploadQiniuFile],methods=[POST]}" onto public java.lang.String me.fandong.cloudserver.Controller.UploadController.uploadQiniuFile(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+2018-05-17 15:26:37,997  INFO RequestMappingHandlerMapping:547 - Mapped "{[/uploadAliyunFile],methods=[POST]}" onto public java.lang.String me.fandong.cloudserver.Controller.UploadController.uploadAliyunFile(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+2018-05-17 15:26:37,997  INFO RequestMappingHandlerMapping:547 - Mapped "{[/getWingManProductList],methods=[GET]}" onto public java.lang.String me.fandong.cloudserver.Controller.WingManController.getWingManProductList()
+2018-05-17 15:26:38,002  INFO RequestMappingHandlerMapping:547 - Mapped "{[/swagger-resources/configuration/ui]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2018-05-17 15:26:38,003  INFO RequestMappingHandlerMapping:547 - Mapped "{[/swagger-resources/configuration/security]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2018-05-17 15:26:38,004  INFO RequestMappingHandlerMapping:547 - Mapped "{[/swagger-resources]}" onto public org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2018-05-17 15:26:38,008  INFO RequestMappingHandlerMapping:547 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-05-17 15:26:38,009  INFO RequestMappingHandlerMapping:547 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-05-17 15:26:38,118  INFO PropertySourcedRequestMappingHandlerMapping:69 - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2018-05-17 15:26:38,172  INFO SimpleUrlHandlerMapping:373 - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-17 15:26:38,286  INFO RequestMappingHandlerAdapter:574 - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@79efed2d: startup date [Thu May 17 15:26:35 CST 2018]; root of context hierarchy
+2018-05-17 15:26:38,324  INFO SimpleUrlHandlerMapping:373 - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-17 15:26:38,324  INFO SimpleUrlHandlerMapping:373 - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-17 15:26:38,514  INFO AnnotationMBeanExporter:433 - Registering beans for JMX exposure on startup
+2018-05-17 15:26:38,672  INFO AnnotationMBeanExporter:895 - Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-05-17 15:26:38,677  INFO AnnotationMBeanExporter:668 - Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2018-05-17 15:26:38,681  INFO DefaultLifecycleProcessor:351 - Starting beans in phase 2147483647
+2018-05-17 15:26:38,682  INFO DocumentationPluginsBootstrapper:151 - Context refreshed
+2018-05-17 15:26:38,696  INFO DocumentationPluginsBootstrapper:154 - Found 1 custom documentation plugin(s)
+2018-05-17 15:26:38,719  INFO ApiListingReferenceScanner:41 - Scanning for api listing references
+2018-05-17 15:26:38,809  INFO CachingOperationNameGenerator:40 - Generating unique operation named: createBucketUsingPOST_1
+2018-05-17 15:26:38,811  INFO CachingOperationNameGenerator:40 - Generating unique operation named: getBucketListUsingGET_1
+2018-05-17 15:26:38,817  INFO CachingOperationNameGenerator:40 - Generating unique operation named: deleteFileUsingPOST_1
+2018-05-17 15:26:38,822  INFO CachingOperationNameGenerator:40 - Generating unique operation named: getFileListUsingGET_1
+2018-05-17 15:26:38,890  INFO TomcatWebServer:206 - Tomcat started on port(s): 8081 (http) with context path ''
+2018-05-17 15:26:38,894  INFO CloudserverApplication:59 - Started CloudserverApplication in 3.529 seconds (JVM running for 4.138)
+2018-05-17 15:26:41,411  INFO DispatcherServlet:494 - FrameworkServlet 'dispatcherServlet': initialization started
+2018-05-17 15:26:41,429  INFO DispatcherServlet:509 - FrameworkServlet 'dispatcherServlet': initialization completed in 15 ms
+2018-05-17 15:26:44,589  INFO DruidDataSource:638 - {dataSource-1} inited
+2018-05-17 15:29:31,702  INFO AnnotationConfigServletWebServerApplicationContext:993 - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@79efed2d: startup date [Thu May 17 15:26:35 CST 2018]; root of context hierarchy
+2018-05-17 15:29:31,704  INFO DefaultLifecycleProcessor:366 - Stopping beans in phase 2147483647
+2018-05-17 15:29:31,705  INFO AnnotationMBeanExporter:451 - Unregistering JMX-exposed beans on shutdown
+2018-05-17 15:29:31,706  INFO AnnotationMBeanExporter:183 - Unregistering JMX-exposed beans
+2018-05-17 15:29:31,712  INFO DruidDataSource:1288 - {dataSource-1} closed
+2018-05-17 15:29:34,666  INFO Version:21 - HV000001: Hibernate Validator 6.0.9.Final
+2018-05-17 15:29:34,877  INFO CloudserverApplication:50 - Starting CloudserverApplication on fandongdeMacBook-Pro-2.local with PID 1896 (/Users/fandong/Git/CloudServer/cloudserver/target/classes started by fandong in /Users/fandong/Git/CloudServer/cloudserver)
+2018-05-17 15:29:34,878  INFO CloudserverApplication:663 - The following profiles are active: dis
+2018-05-17 15:29:34,939  INFO AnnotationConfigServletWebServerApplicationContext:590 - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@2928854b: startup date [Thu May 17 15:29:34 CST 2018]; root of context hierarchy
+2018-05-17 15:29:36,202  INFO PostProcessorRegistrationDelegate$BeanPostProcessorChecker:328 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$9c3a0766] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-05-17 15:29:36,409  INFO TomcatWebServer:91 - Tomcat initialized with port(s): 8081 (http)
+2018-05-17 15:29:36,516  INFO ContextLoader:285 - Root WebApplicationContext: initialization completed in 1580 ms
+2018-05-17 15:29:36,653  INFO ServletRegistrationBean:185 - Servlet dispatcherServlet mapped to [/]
+2018-05-17 15:29:36,656  INFO FilterRegistrationBean:244 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-05-17 15:29:36,657  INFO FilterRegistrationBean:244 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-05-17 15:29:36,657  INFO FilterRegistrationBean:244 - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-05-17 15:29:36,657  INFO FilterRegistrationBean:244 - Mapping filter: 'requestContextFilter' to: [/*]
+2018-05-17 15:29:37,071  INFO RequestMappingHandlerMapping:547 - Mapped "{[/getAliyunOSSBucketList],methods=[GET]}" onto public java.lang.String me.fandong.cloudserver.Controller.AliyunOSSBucketController.getBucketList(java.lang.String,java.lang.String)
+2018-05-17 15:29:37,072  INFO RequestMappingHandlerMapping:547 - Mapped "{[/createAliyunBucket],methods=[POST]}" onto public java.lang.String me.fandong.cloudserver.Controller.AliyunOSSBucketController.createBucket(java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+2018-05-17 15:29:37,072  INFO RequestMappingHandlerMapping:547 - Mapped "{[/deleteAliyunBucket],methods=[POST]}" onto public java.lang.String me.fandong.cloudserver.Controller.AliyunOSSBucketController.deleteBucket(java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+2018-05-17 15:29:37,073  INFO RequestMappingHandlerMapping:547 - Mapped "{[/getAliyunOSSFileList],methods=[GET]}" onto public java.lang.String me.fandong.cloudserver.Controller.AliyunOSSFileController.getFileList(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+2018-05-17 15:29:37,074  INFO RequestMappingHandlerMapping:547 - Mapped "{[/deleteAliyunOSSFile],methods=[POST]}" onto public java.lang.String me.fandong.cloudserver.Controller.AliyunOSSFileController.deleteFile(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+2018-05-17 15:29:37,075  INFO RequestMappingHandlerMapping:547 - Mapped "{[/getQiniuBucketList],methods=[GET]}" onto public java.lang.String me.fandong.cloudserver.Controller.QiniuBucketController.getBucketList(java.lang.String,java.lang.String)
+2018-05-17 15:29:37,075  INFO RequestMappingHandlerMapping:547 - Mapped "{[/createQiniuBucket],methods=[POST]}" onto public java.lang.String me.fandong.cloudserver.Controller.QiniuBucketController.createBucket(java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+2018-05-17 15:29:37,076  INFO RequestMappingHandlerMapping:547 - Mapped "{[/getQiniuDomainList],methods=[GET]}" onto public java.lang.String me.fandong.cloudserver.Controller.QiniuBucketController.getDomainList(java.lang.String,java.lang.String,java.lang.String)
+2018-05-17 15:29:37,076  INFO RequestMappingHandlerMapping:547 - Mapped "{[/getQiniuFileList],methods=[GET]}" onto public java.lang.String me.fandong.cloudserver.Controller.QiniuFileController.getFileList(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+2018-05-17 15:29:37,077  INFO RequestMappingHandlerMapping:547 - Mapped "{[/deleteQiniuFile],methods=[POST]}" onto public java.lang.String me.fandong.cloudserver.Controller.QiniuFileController.deleteFile(java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+2018-05-17 15:29:37,078  INFO RequestMappingHandlerMapping:547 - Mapped "{[/uploadImageFile],methods=[POST]}" onto public java.lang.String me.fandong.cloudserver.Controller.UploadController.uploadImageFile(org.springframework.web.multipart.MultipartHttpServletRequest) throws java.io.IOException
+2018-05-17 15:29:37,078  INFO RequestMappingHandlerMapping:547 - Mapped "{[/uploadVideoFile],methods=[POST]}" onto public java.lang.String me.fandong.cloudserver.Controller.UploadController.uploadVideoFile(org.springframework.web.multipart.MultipartHttpServletRequest) throws java.io.IOException
+2018-05-17 15:29:37,079  INFO RequestMappingHandlerMapping:547 - Mapped "{[/uploadQiniuFile],methods=[POST]}" onto public java.lang.String me.fandong.cloudserver.Controller.UploadController.uploadQiniuFile(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+2018-05-17 15:29:37,079  INFO RequestMappingHandlerMapping:547 - Mapped "{[/uploadAliyunFile],methods=[POST]}" onto public java.lang.String me.fandong.cloudserver.Controller.UploadController.uploadAliyunFile(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+2018-05-17 15:29:37,080  INFO RequestMappingHandlerMapping:547 - Mapped "{[/getWingManProductList],methods=[GET]}" onto public java.lang.String me.fandong.cloudserver.Controller.WingManController.getWingManProductList()
+2018-05-17 15:29:37,086  INFO RequestMappingHandlerMapping:547 - Mapped "{[/swagger-resources/configuration/ui]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2018-05-17 15:29:37,086  INFO RequestMappingHandlerMapping:547 - Mapped "{[/swagger-resources/configuration/security]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2018-05-17 15:29:37,087  INFO RequestMappingHandlerMapping:547 - Mapped "{[/swagger-resources]}" onto public org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2018-05-17 15:29:37,090  INFO RequestMappingHandlerMapping:547 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-05-17 15:29:37,091  INFO RequestMappingHandlerMapping:547 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-05-17 15:29:37,220  INFO PropertySourcedRequestMappingHandlerMapping:69 - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2018-05-17 15:29:37,277  INFO SimpleUrlHandlerMapping:373 - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-17 15:29:37,411  INFO RequestMappingHandlerAdapter:574 - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@2928854b: startup date [Thu May 17 15:29:34 CST 2018]; root of context hierarchy
+2018-05-17 15:29:37,448  INFO SimpleUrlHandlerMapping:373 - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-17 15:29:37,448  INFO SimpleUrlHandlerMapping:373 - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-17 15:29:37,827  INFO AnnotationMBeanExporter:433 - Registering beans for JMX exposure on startup
+2018-05-17 15:29:37,829  INFO AnnotationMBeanExporter:895 - Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-05-17 15:29:37,834  INFO AnnotationMBeanExporter:668 - Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2018-05-17 15:29:37,839  INFO DefaultLifecycleProcessor:351 - Starting beans in phase 2147483647
+2018-05-17 15:29:37,839  INFO DocumentationPluginsBootstrapper:151 - Context refreshed
+2018-05-17 15:29:37,854  INFO DocumentationPluginsBootstrapper:154 - Found 1 custom documentation plugin(s)
+2018-05-17 15:29:37,876  INFO ApiListingReferenceScanner:41 - Scanning for api listing references
+2018-05-17 15:29:37,949  INFO CachingOperationNameGenerator:40 - Generating unique operation named: createBucketUsingPOST_1
+2018-05-17 15:29:37,953  INFO CachingOperationNameGenerator:40 - Generating unique operation named: getBucketListUsingGET_1
+2018-05-17 15:29:37,958  INFO CachingOperationNameGenerator:40 - Generating unique operation named: deleteFileUsingPOST_1
+2018-05-17 15:29:37,961  INFO CachingOperationNameGenerator:40 - Generating unique operation named: getFileListUsingGET_1
+2018-05-17 15:29:38,021  INFO TomcatWebServer:206 - Tomcat started on port(s): 8081 (http) with context path ''
+2018-05-17 15:29:38,025  INFO CloudserverApplication:59 - Started CloudserverApplication in 3.488 seconds (JVM running for 4.075)
+2018-05-17 15:29:49,012  INFO DispatcherServlet:494 - FrameworkServlet 'dispatcherServlet': initialization started
+2018-05-17 15:29:49,029  INFO DispatcherServlet:509 - FrameworkServlet 'dispatcherServlet': initialization completed in 14 ms
+2018-05-17 15:29:49,068  INFO DruidDataSource:638 - {dataSource-1} inited
+2018-05-17 15:30:52,299  INFO AnnotationConfigServletWebServerApplicationContext:993 - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@2928854b: startup date [Thu May 17 15:29:34 CST 2018]; root of context hierarchy
+2018-05-17 15:30:52,302  INFO DefaultLifecycleProcessor:366 - Stopping beans in phase 2147483647
+2018-05-17 15:30:52,303  INFO AnnotationMBeanExporter:451 - Unregistering JMX-exposed beans on shutdown
+2018-05-17 15:30:52,303  INFO AnnotationMBeanExporter:183 - Unregistering JMX-exposed beans
+2018-05-17 15:30:52,308  INFO DruidDataSource:1288 - {dataSource-1} closed
+2018-05-17 15:30:56,274  INFO Version:21 - HV000001: Hibernate Validator 6.0.9.Final
+2018-05-17 15:30:56,701  INFO CloudserverApplication:50 - Starting CloudserverApplication on fandongdeMacBook-Pro-2.local with PID 1903 (/Users/fandong/Git/CloudServer/cloudserver/target/classes started by fandong in /Users/fandong/Git/CloudServer/cloudserver)
+2018-05-17 15:30:56,705  INFO CloudserverApplication:663 - The following profiles are active: dis
+2018-05-17 15:30:56,786  INFO AnnotationConfigServletWebServerApplicationContext:590 - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@7b227d8d: startup date [Thu May 17 15:30:56 CST 2018]; root of context hierarchy
+2018-05-17 15:30:57,799  INFO PostProcessorRegistrationDelegate$BeanPostProcessorChecker:328 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$abd7a297] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-05-17 15:30:58,000  INFO TomcatWebServer:91 - Tomcat initialized with port(s): 8081 (http)
+2018-05-17 15:30:58,085  INFO ContextLoader:285 - Root WebApplicationContext: initialization completed in 1309 ms
+2018-05-17 15:30:58,178  INFO ServletRegistrationBean:185 - Servlet dispatcherServlet mapped to [/]
+2018-05-17 15:30:58,182  INFO FilterRegistrationBean:244 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-05-17 15:30:58,182  INFO FilterRegistrationBean:244 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-05-17 15:30:58,182  INFO FilterRegistrationBean:244 - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-05-17 15:30:58,182  INFO FilterRegistrationBean:244 - Mapping filter: 'requestContextFilter' to: [/*]
+2018-05-17 15:30:58,583  INFO RequestMappingHandlerMapping:547 - Mapped "{[/getAliyunOSSBucketList],methods=[GET]}" onto public java.lang.String me.fandong.cloudserver.Controller.AliyunOSSBucketController.getBucketList(java.lang.String,java.lang.String)
+2018-05-17 15:30:58,584  INFO RequestMappingHandlerMapping:547 - Mapped "{[/createAliyunBucket],methods=[POST]}" onto public java.lang.String me.fandong.cloudserver.Controller.AliyunOSSBucketController.createBucket(java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+2018-05-17 15:30:58,584  INFO RequestMappingHandlerMapping:547 - Mapped "{[/deleteAliyunBucket],methods=[POST]}" onto public java.lang.String me.fandong.cloudserver.Controller.AliyunOSSBucketController.deleteBucket(java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+2018-05-17 15:30:58,585  INFO RequestMappingHandlerMapping:547 - Mapped "{[/getAliyunOSSFileList],methods=[GET]}" onto public java.lang.String me.fandong.cloudserver.Controller.AliyunOSSFileController.getFileList(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+2018-05-17 15:30:58,586  INFO RequestMappingHandlerMapping:547 - Mapped "{[/deleteAliyunOSSFile],methods=[POST]}" onto public java.lang.String me.fandong.cloudserver.Controller.AliyunOSSFileController.deleteFile(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+2018-05-17 15:30:58,586  INFO RequestMappingHandlerMapping:547 - Mapped "{[/getQiniuBucketList],methods=[GET]}" onto public java.lang.String me.fandong.cloudserver.Controller.QiniuBucketController.getBucketList(java.lang.String,java.lang.String)
+2018-05-17 15:30:58,587  INFO RequestMappingHandlerMapping:547 - Mapped "{[/createQiniuBucket],methods=[POST]}" onto public java.lang.String me.fandong.cloudserver.Controller.QiniuBucketController.createBucket(java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+2018-05-17 15:30:58,587  INFO RequestMappingHandlerMapping:547 - Mapped "{[/getQiniuDomainList],methods=[GET]}" onto public java.lang.String me.fandong.cloudserver.Controller.QiniuBucketController.getDomainList(java.lang.String,java.lang.String,java.lang.String)
+2018-05-17 15:30:58,588  INFO RequestMappingHandlerMapping:547 - Mapped "{[/getQiniuFileList],methods=[GET]}" onto public java.lang.String me.fandong.cloudserver.Controller.QiniuFileController.getFileList(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+2018-05-17 15:30:58,588  INFO RequestMappingHandlerMapping:547 - Mapped "{[/deleteQiniuFile],methods=[POST]}" onto public java.lang.String me.fandong.cloudserver.Controller.QiniuFileController.deleteFile(java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+2018-05-17 15:30:58,589  INFO RequestMappingHandlerMapping:547 - Mapped "{[/uploadImageFile],methods=[POST]}" onto public java.lang.String me.fandong.cloudserver.Controller.UploadController.uploadImageFile(org.springframework.web.multipart.MultipartHttpServletRequest) throws java.io.IOException
+2018-05-17 15:30:58,589  INFO RequestMappingHandlerMapping:547 - Mapped "{[/uploadVideoFile],methods=[POST]}" onto public java.lang.String me.fandong.cloudserver.Controller.UploadController.uploadVideoFile(org.springframework.web.multipart.MultipartHttpServletRequest) throws java.io.IOException
+2018-05-17 15:30:58,590  INFO RequestMappingHandlerMapping:547 - Mapped "{[/uploadQiniuFile],methods=[POST]}" onto public java.lang.String me.fandong.cloudserver.Controller.UploadController.uploadQiniuFile(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+2018-05-17 15:30:58,590  INFO RequestMappingHandlerMapping:547 - Mapped "{[/uploadAliyunFile],methods=[POST]}" onto public java.lang.String me.fandong.cloudserver.Controller.UploadController.uploadAliyunFile(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+2018-05-17 15:30:58,591  INFO RequestMappingHandlerMapping:547 - Mapped "{[/getWingManProductList],methods=[GET]}" onto public java.lang.String me.fandong.cloudserver.Controller.WingManController.getWingManProductList()
+2018-05-17 15:30:58,594  INFO RequestMappingHandlerMapping:547 - Mapped "{[/swagger-resources/configuration/ui]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2018-05-17 15:30:58,595  INFO RequestMappingHandlerMapping:547 - Mapped "{[/swagger-resources/configuration/security]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2018-05-17 15:30:58,596  INFO RequestMappingHandlerMapping:547 - Mapped "{[/swagger-resources]}" onto public org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2018-05-17 15:30:58,599  INFO RequestMappingHandlerMapping:547 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-05-17 15:30:58,599  INFO RequestMappingHandlerMapping:547 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-05-17 15:30:58,687  INFO PropertySourcedRequestMappingHandlerMapping:69 - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2018-05-17 15:30:58,761  INFO SimpleUrlHandlerMapping:373 - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-17 15:30:58,875  INFO RequestMappingHandlerAdapter:574 - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@7b227d8d: startup date [Thu May 17 15:30:56 CST 2018]; root of context hierarchy
+2018-05-17 15:30:58,912  INFO SimpleUrlHandlerMapping:373 - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-17 15:30:58,913  INFO SimpleUrlHandlerMapping:373 - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-17 15:30:59,091  INFO AnnotationMBeanExporter:433 - Registering beans for JMX exposure on startup
+2018-05-17 15:30:59,094  INFO AnnotationMBeanExporter:895 - Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-05-17 15:30:59,265  INFO AnnotationMBeanExporter:668 - Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2018-05-17 15:30:59,270  INFO DefaultLifecycleProcessor:351 - Starting beans in phase 2147483647
+2018-05-17 15:30:59,270  INFO DocumentationPluginsBootstrapper:151 - Context refreshed
+2018-05-17 15:30:59,282  INFO DocumentationPluginsBootstrapper:154 - Found 1 custom documentation plugin(s)
+2018-05-17 15:30:59,304  INFO ApiListingReferenceScanner:41 - Scanning for api listing references
+2018-05-17 15:30:59,392  INFO CachingOperationNameGenerator:40 - Generating unique operation named: createBucketUsingPOST_1
+2018-05-17 15:30:59,396  INFO CachingOperationNameGenerator:40 - Generating unique operation named: getBucketListUsingGET_1
+2018-05-17 15:30:59,402  INFO CachingOperationNameGenerator:40 - Generating unique operation named: deleteFileUsingPOST_1
+2018-05-17 15:30:59,406  INFO CachingOperationNameGenerator:40 - Generating unique operation named: getFileListUsingGET_1
+2018-05-17 15:30:59,464  INFO TomcatWebServer:206 - Tomcat started on port(s): 8081 (http) with context path ''
+2018-05-17 15:30:59,468  INFO CloudserverApplication:59 - Started CloudserverApplication in 3.394 seconds (JVM running for 4.391)
+2018-05-17 15:31:00,771  INFO DispatcherServlet:494 - FrameworkServlet 'dispatcherServlet': initialization started
+2018-05-17 15:31:00,784  INFO DispatcherServlet:509 - FrameworkServlet 'dispatcherServlet': initialization completed in 13 ms
+2018-05-17 15:31:00,822  INFO DruidDataSource:638 - {dataSource-1} inited
+2018-05-17 15:31:51,526  INFO AnnotationConfigServletWebServerApplicationContext:993 - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@7b227d8d: startup date [Thu May 17 15:30:56 CST 2018]; root of context hierarchy
+2018-05-17 15:31:51,528  INFO DefaultLifecycleProcessor:366 - Stopping beans in phase 2147483647
+2018-05-17 15:31:51,529  INFO AnnotationMBeanExporter:451 - Unregistering JMX-exposed beans on shutdown
+2018-05-17 15:31:51,530  INFO AnnotationMBeanExporter:183 - Unregistering JMX-exposed beans
+2018-05-17 15:31:51,534  INFO DruidDataSource:1288 - {dataSource-1} closed
+2018-05-17 15:31:54,595  INFO Version:21 - HV000001: Hibernate Validator 6.0.9.Final
+2018-05-17 15:31:54,792  INFO CloudserverApplication:50 - Starting CloudserverApplication on fandongdeMacBook-Pro-2.local with PID 1909 (/Users/fandong/Git/CloudServer/cloudserver/target/classes started by fandong in /Users/fandong/Git/CloudServer/cloudserver)
+2018-05-17 15:31:54,792  INFO CloudserverApplication:663 - The following profiles are active: dis
+2018-05-17 15:31:54,883  INFO AnnotationConfigServletWebServerApplicationContext:590 - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@2928854b: startup date [Thu May 17 15:31:54 CST 2018]; root of context hierarchy
+2018-05-17 15:31:56,179  INFO PostProcessorRegistrationDelegate$BeanPostProcessorChecker:328 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$3eba981e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-05-17 15:31:56,364  INFO TomcatWebServer:91 - Tomcat initialized with port(s): 8081 (http)
+2018-05-17 15:31:56,447  INFO ContextLoader:285 - Root WebApplicationContext: initialization completed in 1568 ms
+2018-05-17 15:31:56,543  INFO ServletRegistrationBean:185 - Servlet dispatcherServlet mapped to [/]
+2018-05-17 15:31:56,546  INFO FilterRegistrationBean:244 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-05-17 15:31:56,547  INFO FilterRegistrationBean:244 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-05-17 15:31:56,547  INFO FilterRegistrationBean:244 - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-05-17 15:31:56,547  INFO FilterRegistrationBean:244 - Mapping filter: 'requestContextFilter' to: [/*]
+2018-05-17 15:31:56,930  INFO RequestMappingHandlerMapping:547 - Mapped "{[/getAliyunOSSBucketList],methods=[GET]}" onto public java.lang.String me.fandong.cloudserver.Controller.AliyunOSSBucketController.getBucketList(java.lang.String,java.lang.String)
+2018-05-17 15:31:56,931  INFO RequestMappingHandlerMapping:547 - Mapped "{[/createAliyunBucket],methods=[POST]}" onto public java.lang.String me.fandong.cloudserver.Controller.AliyunOSSBucketController.createBucket(java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+2018-05-17 15:31:56,931  INFO RequestMappingHandlerMapping:547 - Mapped "{[/deleteAliyunBucket],methods=[POST]}" onto public java.lang.String me.fandong.cloudserver.Controller.AliyunOSSBucketController.deleteBucket(java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+2018-05-17 15:31:56,932  INFO RequestMappingHandlerMapping:547 - Mapped "{[/getAliyunOSSFileList],methods=[GET]}" onto public java.lang.String me.fandong.cloudserver.Controller.AliyunOSSFileController.getFileList(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+2018-05-17 15:31:56,933  INFO RequestMappingHandlerMapping:547 - Mapped "{[/deleteAliyunOSSFile],methods=[POST]}" onto public java.lang.String me.fandong.cloudserver.Controller.AliyunOSSFileController.deleteFile(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+2018-05-17 15:31:56,934  INFO RequestMappingHandlerMapping:547 - Mapped "{[/getQiniuBucketList],methods=[GET]}" onto public java.lang.String me.fandong.cloudserver.Controller.QiniuBucketController.getBucketList(java.lang.String,java.lang.String)
+2018-05-17 15:31:56,934  INFO RequestMappingHandlerMapping:547 - Mapped "{[/createQiniuBucket],methods=[POST]}" onto public java.lang.String me.fandong.cloudserver.Controller.QiniuBucketController.createBucket(java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+2018-05-17 15:31:56,934  INFO RequestMappingHandlerMapping:547 - Mapped "{[/getQiniuDomainList],methods=[GET]}" onto public java.lang.String me.fandong.cloudserver.Controller.QiniuBucketController.getDomainList(java.lang.String,java.lang.String,java.lang.String)
+2018-05-17 15:31:56,935  INFO RequestMappingHandlerMapping:547 - Mapped "{[/getQiniuFileList],methods=[GET]}" onto public java.lang.String me.fandong.cloudserver.Controller.QiniuFileController.getFileList(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+2018-05-17 15:31:56,935  INFO RequestMappingHandlerMapping:547 - Mapped "{[/deleteQiniuFile],methods=[POST]}" onto public java.lang.String me.fandong.cloudserver.Controller.QiniuFileController.deleteFile(java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+2018-05-17 15:31:56,936  INFO RequestMappingHandlerMapping:547 - Mapped "{[/uploadImageFile],methods=[POST]}" onto public java.lang.String me.fandong.cloudserver.Controller.UploadController.uploadImageFile(org.springframework.web.multipart.MultipartHttpServletRequest) throws java.io.IOException
+2018-05-17 15:31:56,937  INFO RequestMappingHandlerMapping:547 - Mapped "{[/uploadVideoFile],methods=[POST]}" onto public java.lang.String me.fandong.cloudserver.Controller.UploadController.uploadVideoFile(org.springframework.web.multipart.MultipartHttpServletRequest) throws java.io.IOException
+2018-05-17 15:31:56,937  INFO RequestMappingHandlerMapping:547 - Mapped "{[/uploadQiniuFile],methods=[POST]}" onto public java.lang.String me.fandong.cloudserver.Controller.UploadController.uploadQiniuFile(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+2018-05-17 15:31:56,937  INFO RequestMappingHandlerMapping:547 - Mapped "{[/uploadAliyunFile],methods=[POST]}" onto public java.lang.String me.fandong.cloudserver.Controller.UploadController.uploadAliyunFile(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+2018-05-17 15:31:56,938  INFO RequestMappingHandlerMapping:547 - Mapped "{[/getWingManProductList],methods=[GET]}" onto public java.lang.String me.fandong.cloudserver.Controller.WingManController.getWingManProductList()
+2018-05-17 15:31:56,942  INFO RequestMappingHandlerMapping:547 - Mapped "{[/swagger-resources/configuration/ui]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2018-05-17 15:31:56,942  INFO RequestMappingHandlerMapping:547 - Mapped "{[/swagger-resources/configuration/security]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2018-05-17 15:31:56,943  INFO RequestMappingHandlerMapping:547 - Mapped "{[/swagger-resources]}" onto public org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2018-05-17 15:31:56,946  INFO RequestMappingHandlerMapping:547 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-05-17 15:31:56,946  INFO RequestMappingHandlerMapping:547 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-05-17 15:31:57,042  INFO PropertySourcedRequestMappingHandlerMapping:69 - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2018-05-17 15:31:57,091  INFO SimpleUrlHandlerMapping:373 - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-17 15:31:57,193  INFO RequestMappingHandlerAdapter:574 - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@2928854b: startup date [Thu May 17 15:31:54 CST 2018]; root of context hierarchy
+2018-05-17 15:31:57,230  INFO SimpleUrlHandlerMapping:373 - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-17 15:31:57,230  INFO SimpleUrlHandlerMapping:373 - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-17 15:31:57,429  INFO AnnotationMBeanExporter:433 - Registering beans for JMX exposure on startup
+2018-05-17 15:31:57,434  INFO AnnotationMBeanExporter:895 - Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-05-17 15:31:57,565  INFO AnnotationMBeanExporter:668 - Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2018-05-17 15:31:57,569  INFO DefaultLifecycleProcessor:351 - Starting beans in phase 2147483647
+2018-05-17 15:31:57,569  INFO DocumentationPluginsBootstrapper:151 - Context refreshed
+2018-05-17 15:31:57,588  INFO DocumentationPluginsBootstrapper:154 - Found 1 custom documentation plugin(s)
+2018-05-17 15:31:57,624  INFO ApiListingReferenceScanner:41 - Scanning for api listing references
+2018-05-17 15:31:57,774  INFO CachingOperationNameGenerator:40 - Generating unique operation named: createBucketUsingPOST_1
+2018-05-17 15:31:57,778  INFO CachingOperationNameGenerator:40 - Generating unique operation named: getBucketListUsingGET_1
+2018-05-17 15:31:57,788  INFO CachingOperationNameGenerator:40 - Generating unique operation named: deleteFileUsingPOST_1
+2018-05-17 15:31:57,794  INFO CachingOperationNameGenerator:40 - Generating unique operation named: getFileListUsingGET_1
+2018-05-17 15:31:57,874  INFO TomcatWebServer:206 - Tomcat started on port(s): 8081 (http) with context path ''
+2018-05-17 15:31:57,878  INFO CloudserverApplication:59 - Started CloudserverApplication in 3.404 seconds (JVM running for 3.99)
+2018-05-17 15:31:59,245  INFO DispatcherServlet:494 - FrameworkServlet 'dispatcherServlet': initialization started
+2018-05-17 15:31:59,259  INFO DispatcherServlet:509 - FrameworkServlet 'dispatcherServlet': initialization completed in 14 ms
+2018-05-17 15:31:59,300  INFO DruidDataSource:638 - {dataSource-1} inited
+2018-05-17 15:32:59,147  INFO AnnotationConfigServletWebServerApplicationContext:993 - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@2928854b: startup date [Thu May 17 15:31:54 CST 2018]; root of context hierarchy
+2018-05-17 15:32:59,150  INFO DefaultLifecycleProcessor:366 - Stopping beans in phase 2147483647
+2018-05-17 15:32:59,151  INFO AnnotationMBeanExporter:451 - Unregistering JMX-exposed beans on shutdown
+2018-05-17 15:32:59,152  INFO AnnotationMBeanExporter:183 - Unregistering JMX-exposed beans
+2018-05-17 15:32:59,156  INFO DruidDataSource:1288 - {dataSource-1} closed
+2018-05-17 15:33:03,001  INFO Version:21 - HV000001: Hibernate Validator 6.0.9.Final
+2018-05-17 15:33:03,364  INFO CloudserverApplication:50 - Starting CloudserverApplication on fandongdeMacBook-Pro-2.local with PID 1913 (/Users/fandong/Git/CloudServer/cloudserver/target/classes started by fandong in /Users/fandong/Git/CloudServer/cloudserver)
+2018-05-17 15:33:03,365  INFO CloudserverApplication:663 - The following profiles are active: dis
+2018-05-17 15:33:03,411  INFO AnnotationConfigServletWebServerApplicationContext:590 - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@2f177a4b: startup date [Thu May 17 15:33:03 CST 2018]; root of context hierarchy
+2018-05-17 15:33:04,383  INFO PostProcessorRegistrationDelegate$BeanPostProcessorChecker:328 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$3dae109f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-05-17 15:33:04,571  INFO TomcatWebServer:91 - Tomcat initialized with port(s): 8081 (http)
+2018-05-17 15:33:04,657  INFO ContextLoader:285 - Root WebApplicationContext: initialization completed in 1249 ms
+2018-05-17 15:33:04,771  INFO ServletRegistrationBean:185 - Servlet dispatcherServlet mapped to [/]
+2018-05-17 15:33:04,774  INFO FilterRegistrationBean:244 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-05-17 15:33:04,775  INFO FilterRegistrationBean:244 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-05-17 15:33:04,775  INFO FilterRegistrationBean:244 - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-05-17 15:33:04,775  INFO FilterRegistrationBean:244 - Mapping filter: 'requestContextFilter' to: [/*]
+2018-05-17 15:33:05,204  INFO RequestMappingHandlerMapping:547 - Mapped "{[/getAliyunOSSBucketList],methods=[GET]}" onto public java.lang.String me.fandong.cloudserver.Controller.AliyunOSSBucketController.getBucketList(java.lang.String,java.lang.String)
+2018-05-17 15:33:05,205  INFO RequestMappingHandlerMapping:547 - Mapped "{[/createAliyunBucket],methods=[POST]}" onto public java.lang.String me.fandong.cloudserver.Controller.AliyunOSSBucketController.createBucket(java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+2018-05-17 15:33:05,205  INFO RequestMappingHandlerMapping:547 - Mapped "{[/deleteAliyunBucket],methods=[POST]}" onto public java.lang.String me.fandong.cloudserver.Controller.AliyunOSSBucketController.deleteBucket(java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+2018-05-17 15:33:05,206  INFO RequestMappingHandlerMapping:547 - Mapped "{[/getAliyunOSSFileList],methods=[GET]}" onto public java.lang.String me.fandong.cloudserver.Controller.AliyunOSSFileController.getFileList(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+2018-05-17 15:33:05,207  INFO RequestMappingHandlerMapping:547 - Mapped "{[/deleteAliyunOSSFile],methods=[POST]}" onto public java.lang.String me.fandong.cloudserver.Controller.AliyunOSSFileController.deleteFile(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+2018-05-17 15:33:05,208  INFO RequestMappingHandlerMapping:547 - Mapped "{[/getQiniuBucketList],methods=[GET]}" onto public java.lang.String me.fandong.cloudserver.Controller.QiniuBucketController.getBucketList(java.lang.String,java.lang.String)
+2018-05-17 15:33:05,208  INFO RequestMappingHandlerMapping:547 - Mapped "{[/createQiniuBucket],methods=[POST]}" onto public java.lang.String me.fandong.cloudserver.Controller.QiniuBucketController.createBucket(java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+2018-05-17 15:33:05,209  INFO RequestMappingHandlerMapping:547 - Mapped "{[/getQiniuDomainList],methods=[GET]}" onto public java.lang.String me.fandong.cloudserver.Controller.QiniuBucketController.getDomainList(java.lang.String,java.lang.String,java.lang.String)
+2018-05-17 15:33:05,209  INFO RequestMappingHandlerMapping:547 - Mapped "{[/getQiniuFileList],methods=[GET]}" onto public java.lang.String me.fandong.cloudserver.Controller.QiniuFileController.getFileList(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+2018-05-17 15:33:05,210  INFO RequestMappingHandlerMapping:547 - Mapped "{[/deleteQiniuFile],methods=[POST]}" onto public java.lang.String me.fandong.cloudserver.Controller.QiniuFileController.deleteFile(java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+2018-05-17 15:33:05,211  INFO RequestMappingHandlerMapping:547 - Mapped "{[/uploadImageFile],methods=[POST]}" onto public java.lang.String me.fandong.cloudserver.Controller.UploadController.uploadImageFile(org.springframework.web.multipart.MultipartHttpServletRequest) throws java.io.IOException
+2018-05-17 15:33:05,211  INFO RequestMappingHandlerMapping:547 - Mapped "{[/uploadVideoFile],methods=[POST]}" onto public java.lang.String me.fandong.cloudserver.Controller.UploadController.uploadVideoFile(org.springframework.web.multipart.MultipartHttpServletRequest) throws java.io.IOException
+2018-05-17 15:33:05,211  INFO RequestMappingHandlerMapping:547 - Mapped "{[/uploadQiniuFile],methods=[POST]}" onto public java.lang.String me.fandong.cloudserver.Controller.UploadController.uploadQiniuFile(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+2018-05-17 15:33:05,212  INFO RequestMappingHandlerMapping:547 - Mapped "{[/uploadAliyunFile],methods=[POST]}" onto public java.lang.String me.fandong.cloudserver.Controller.UploadController.uploadAliyunFile(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+2018-05-17 15:33:05,212  INFO RequestMappingHandlerMapping:547 - Mapped "{[/getWingManProductList],methods=[GET]}" onto public java.lang.String me.fandong.cloudserver.Controller.WingManController.getWingManProductList()
+2018-05-17 15:33:05,216  INFO RequestMappingHandlerMapping:547 - Mapped "{[/swagger-resources/configuration/security]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2018-05-17 15:33:05,217  INFO RequestMappingHandlerMapping:547 - Mapped "{[/swagger-resources/configuration/ui]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2018-05-17 15:33:05,217  INFO RequestMappingHandlerMapping:547 - Mapped "{[/swagger-resources]}" onto public org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2018-05-17 15:33:05,220  INFO RequestMappingHandlerMapping:547 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-05-17 15:33:05,221  INFO RequestMappingHandlerMapping:547 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-05-17 15:33:05,319  INFO PropertySourcedRequestMappingHandlerMapping:69 - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2018-05-17 15:33:05,405  INFO SimpleUrlHandlerMapping:373 - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-17 15:33:05,542  INFO RequestMappingHandlerAdapter:574 - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@2f177a4b: startup date [Thu May 17 15:33:03 CST 2018]; root of context hierarchy
+2018-05-17 15:33:05,580  INFO SimpleUrlHandlerMapping:373 - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-17 15:33:05,580  INFO SimpleUrlHandlerMapping:373 - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-17 15:33:05,766  INFO AnnotationMBeanExporter:433 - Registering beans for JMX exposure on startup
+2018-05-17 15:33:05,768  INFO AnnotationMBeanExporter:895 - Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-05-17 15:33:05,925  INFO AnnotationMBeanExporter:668 - Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2018-05-17 15:33:05,929  INFO DefaultLifecycleProcessor:351 - Starting beans in phase 2147483647
+2018-05-17 15:33:05,929  INFO DocumentationPluginsBootstrapper:151 - Context refreshed
+2018-05-17 15:33:05,944  INFO DocumentationPluginsBootstrapper:154 - Found 1 custom documentation plugin(s)
+2018-05-17 15:33:05,972  INFO ApiListingReferenceScanner:41 - Scanning for api listing references
+2018-05-17 15:33:06,069  INFO CachingOperationNameGenerator:40 - Generating unique operation named: createBucketUsingPOST_1
+2018-05-17 15:33:06,072  INFO CachingOperationNameGenerator:40 - Generating unique operation named: getBucketListUsingGET_1
+2018-05-17 15:33:06,079  INFO CachingOperationNameGenerator:40 - Generating unique operation named: deleteFileUsingPOST_1
+2018-05-17 15:33:06,081  INFO CachingOperationNameGenerator:40 - Generating unique operation named: getFileListUsingGET_1
+2018-05-17 15:33:06,144  INFO TomcatWebServer:206 - Tomcat started on port(s): 8081 (http) with context path ''
+2018-05-17 15:33:06,148  INFO CloudserverApplication:59 - Started CloudserverApplication in 3.268 seconds (JVM running for 3.944)
+2018-05-17 15:33:27,199  INFO DispatcherServlet:494 - FrameworkServlet 'dispatcherServlet': initialization started
+2018-05-17 15:33:27,211  INFO DispatcherServlet:509 - FrameworkServlet 'dispatcherServlet': initialization completed in 12 ms
+2018-05-17 15:33:27,248  INFO DruidDataSource:638 - {dataSource-1} inited
+2018-05-17 15:39:58,664  INFO AnnotationConfigServletWebServerApplicationContext:993 - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@2f177a4b: startup date [Thu May 17 15:33:03 CST 2018]; root of context hierarchy
+2018-05-17 15:39:58,676  INFO DefaultLifecycleProcessor:366 - Stopping beans in phase 2147483647
+2018-05-17 15:39:58,679  INFO AnnotationMBeanExporter:451 - Unregistering JMX-exposed beans on shutdown
+2018-05-17 15:39:58,680  INFO AnnotationMBeanExporter:183 - Unregistering JMX-exposed beans
+2018-05-17 15:39:58,689  INFO DruidDataSource:1288 - {dataSource-1} closed
+2018-05-17 15:40:22,230  INFO Version:21 - HV000001: Hibernate Validator 6.0.9.Final
+2018-05-17 15:40:22,780  INFO CloudserverApplication:50 - Starting CloudserverApplication on fandongdeMacBook-Pro-2.local with PID 1929 (/Users/fandong/Git/CloudServer/cloudserver/target/classes started by fandong in /Users/fandong/Git/CloudServer/cloudserver)
+2018-05-17 15:40:22,781  INFO CloudserverApplication:663 - The following profiles are active: dis
+2018-05-17 15:40:22,836  INFO AnnotationConfigServletWebServerApplicationContext:590 - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@3901d134: startup date [Thu May 17 15:40:22 CST 2018]; root of context hierarchy
+2018-05-17 15:40:23,841  INFO PostProcessorRegistrationDelegate$BeanPostProcessorChecker:328 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$9cf81214] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-05-17 15:40:24,037  INFO TomcatWebServer:91 - Tomcat initialized with port(s): 8081 (http)
+2018-05-17 15:40:24,132  INFO ContextLoader:285 - Root WebApplicationContext: initialization completed in 1299 ms
+2018-05-17 15:40:24,240  INFO ServletRegistrationBean:185 - Servlet dispatcherServlet mapped to [/]
+2018-05-17 15:40:24,245  INFO FilterRegistrationBean:244 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-05-17 15:40:24,246  INFO FilterRegistrationBean:244 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-05-17 15:40:24,246  INFO FilterRegistrationBean:244 - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-05-17 15:40:24,246  INFO FilterRegistrationBean:244 - Mapping filter: 'requestContextFilter' to: [/*]
+2018-05-17 15:40:24,649  INFO RequestMappingHandlerMapping:547 - Mapped "{[/getAliyunOSSBucketList],methods=[GET]}" onto public java.lang.String me.fandong.cloudserver.Controller.AliyunOSSBucketController.getBucketList(java.lang.String,java.lang.String)
+2018-05-17 15:40:24,650  INFO RequestMappingHandlerMapping:547 - Mapped "{[/createAliyunBucket],methods=[POST]}" onto public java.lang.String me.fandong.cloudserver.Controller.AliyunOSSBucketController.createBucket(java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+2018-05-17 15:40:24,650  INFO RequestMappingHandlerMapping:547 - Mapped "{[/deleteAliyunBucket],methods=[POST]}" onto public java.lang.String me.fandong.cloudserver.Controller.AliyunOSSBucketController.deleteBucket(java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+2018-05-17 15:40:24,651  INFO RequestMappingHandlerMapping:547 - Mapped "{[/getAliyunOSSFileList],methods=[GET]}" onto public java.lang.String me.fandong.cloudserver.Controller.AliyunOSSFileController.getFileList(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+2018-05-17 15:40:24,652  INFO RequestMappingHandlerMapping:547 - Mapped "{[/deleteAliyunOSSFile],methods=[POST]}" onto public java.lang.String me.fandong.cloudserver.Controller.AliyunOSSFileController.deleteFile(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+2018-05-17 15:40:24,652  INFO RequestMappingHandlerMapping:547 - Mapped "{[/getQiniuBucketList],methods=[GET]}" onto public java.lang.String me.fandong.cloudserver.Controller.QiniuBucketController.getBucketList(java.lang.String,java.lang.String)
+2018-05-17 15:40:24,653  INFO RequestMappingHandlerMapping:547 - Mapped "{[/createQiniuBucket],methods=[POST]}" onto public java.lang.String me.fandong.cloudserver.Controller.QiniuBucketController.createBucket(java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+2018-05-17 15:40:24,653  INFO RequestMappingHandlerMapping:547 - Mapped "{[/getQiniuDomainList],methods=[GET]}" onto public java.lang.String me.fandong.cloudserver.Controller.QiniuBucketController.getDomainList(java.lang.String,java.lang.String,java.lang.String)
+2018-05-17 15:40:24,654  INFO RequestMappingHandlerMapping:547 - Mapped "{[/getQiniuFileList],methods=[GET]}" onto public java.lang.String me.fandong.cloudserver.Controller.QiniuFileController.getFileList(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+2018-05-17 15:40:24,654  INFO RequestMappingHandlerMapping:547 - Mapped "{[/deleteQiniuFile],methods=[POST]}" onto public java.lang.String me.fandong.cloudserver.Controller.QiniuFileController.deleteFile(java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+2018-05-17 15:40:24,655  INFO RequestMappingHandlerMapping:547 - Mapped "{[/uploadImageFile],methods=[POST]}" onto public java.lang.String me.fandong.cloudserver.Controller.UploadController.uploadImageFile(org.springframework.web.multipart.MultipartHttpServletRequest) throws java.io.IOException
+2018-05-17 15:40:24,655  INFO RequestMappingHandlerMapping:547 - Mapped "{[/uploadVideoFile],methods=[POST]}" onto public java.lang.String me.fandong.cloudserver.Controller.UploadController.uploadVideoFile(org.springframework.web.multipart.MultipartHttpServletRequest) throws java.io.IOException
+2018-05-17 15:40:24,656  INFO RequestMappingHandlerMapping:547 - Mapped "{[/uploadQiniuFile],methods=[POST]}" onto public java.lang.String me.fandong.cloudserver.Controller.UploadController.uploadQiniuFile(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+2018-05-17 15:40:24,656  INFO RequestMappingHandlerMapping:547 - Mapped "{[/uploadAliyunFile],methods=[POST]}" onto public java.lang.String me.fandong.cloudserver.Controller.UploadController.uploadAliyunFile(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+2018-05-17 15:40:24,656  INFO RequestMappingHandlerMapping:547 - Mapped "{[/getWingManProductList],methods=[GET]}" onto public java.lang.String me.fandong.cloudserver.Controller.WingManController.getWingManProductList()
+2018-05-17 15:40:24,660  INFO RequestMappingHandlerMapping:547 - Mapped "{[/swagger-resources/configuration/ui]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2018-05-17 15:40:24,661  INFO RequestMappingHandlerMapping:547 - Mapped "{[/swagger-resources/configuration/security]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2018-05-17 15:40:24,662  INFO RequestMappingHandlerMapping:547 - Mapped "{[/swagger-resources]}" onto public org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2018-05-17 15:40:24,664  INFO RequestMappingHandlerMapping:547 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-05-17 15:40:24,665  INFO RequestMappingHandlerMapping:547 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-05-17 15:40:24,748  INFO PropertySourcedRequestMappingHandlerMapping:69 - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2018-05-17 15:40:24,825  INFO SimpleUrlHandlerMapping:373 - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-17 15:40:24,939  INFO RequestMappingHandlerAdapter:574 - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@3901d134: startup date [Thu May 17 15:40:22 CST 2018]; root of context hierarchy
+2018-05-17 15:40:24,975  INFO SimpleUrlHandlerMapping:373 - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-17 15:40:24,975  INFO SimpleUrlHandlerMapping:373 - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-17 15:40:25,313  INFO AnnotationMBeanExporter:433 - Registering beans for JMX exposure on startup
+2018-05-17 15:40:25,314  INFO AnnotationMBeanExporter:895 - Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-05-17 15:40:25,319  INFO AnnotationMBeanExporter:668 - Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2018-05-17 15:40:25,323  INFO DefaultLifecycleProcessor:351 - Starting beans in phase 2147483647
+2018-05-17 15:40:25,323  INFO DocumentationPluginsBootstrapper:151 - Context refreshed
+2018-05-17 15:40:25,335  INFO DocumentationPluginsBootstrapper:154 - Found 1 custom documentation plugin(s)
+2018-05-17 15:40:25,358  INFO ApiListingReferenceScanner:41 - Scanning for api listing references
+2018-05-17 15:40:25,423  INFO CachingOperationNameGenerator:40 - Generating unique operation named: createBucketUsingPOST_1
+2018-05-17 15:40:25,425  INFO CachingOperationNameGenerator:40 - Generating unique operation named: getBucketListUsingGET_1
+2018-05-17 15:40:25,429  INFO CachingOperationNameGenerator:40 - Generating unique operation named: deleteFileUsingPOST_1
+2018-05-17 15:40:25,432  INFO CachingOperationNameGenerator:40 - Generating unique operation named: getFileListUsingGET_1
+2018-05-17 15:40:25,488  INFO TomcatWebServer:206 - Tomcat started on port(s): 8081 (http) with context path ''
+2018-05-17 15:40:25,492  INFO CloudserverApplication:59 - Started CloudserverApplication in 3.392 seconds (JVM running for 4.042)
+2018-05-17 16:01:30,271  INFO AnnotationConfigServletWebServerApplicationContext:993 - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@3901d134: startup date [Thu May 17 15:40:22 CST 2018]; root of context hierarchy
+2018-05-17 16:01:30,296  INFO DefaultLifecycleProcessor:366 - Stopping beans in phase 2147483647
+2018-05-17 16:01:30,301  INFO AnnotationMBeanExporter:451 - Unregistering JMX-exposed beans on shutdown
+2018-05-17 16:01:30,302  INFO AnnotationMBeanExporter:183 - Unregistering JMX-exposed beans
+2018-05-17 16:01:33,652  INFO Version:21 - HV000001: Hibernate Validator 6.0.9.Final
+2018-05-17 16:01:33,892  INFO CloudserverApplication:50 - Starting CloudserverApplication on fandongdeMacBook-Pro-2.local with PID 1996 (/Users/fandong/Git/CloudServer/cloudserver/target/classes started by fandong in /Users/fandong/Git/CloudServer/cloudserver)
+2018-05-17 16:01:33,895  INFO CloudserverApplication:663 - The following profiles are active: dis
+2018-05-17 16:01:34,062  INFO AnnotationConfigServletWebServerApplicationContext:590 - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@2f177a4b: startup date [Thu May 17 16:01:34 CST 2018]; root of context hierarchy
+2018-05-17 16:01:35,384  INFO PostProcessorRegistrationDelegate$BeanPostProcessorChecker:328 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$3dae109f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-05-17 16:01:35,648  INFO TomcatWebServer:91 - Tomcat initialized with port(s): 8081 (http)
+2018-05-17 16:01:35,763  INFO ContextLoader:285 - Root WebApplicationContext: initialization completed in 1708 ms
+2018-05-17 16:01:35,914  INFO ServletRegistrationBean:185 - Servlet dispatcherServlet mapped to [/]
+2018-05-17 16:01:35,922  INFO FilterRegistrationBean:244 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-05-17 16:01:35,923  INFO FilterRegistrationBean:244 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-05-17 16:01:35,923  INFO FilterRegistrationBean:244 - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-05-17 16:01:35,924  INFO FilterRegistrationBean:244 - Mapping filter: 'requestContextFilter' to: [/*]
+2018-05-17 16:01:36,473  INFO RequestMappingHandlerMapping:547 - Mapped "{[/getAliyunOSSBucketList],methods=[GET]}" onto public java.lang.String me.fandong.cloudserver.Controller.AliyunOSSBucketController.getBucketList(java.lang.String,java.lang.String)
+2018-05-17 16:01:36,474  INFO RequestMappingHandlerMapping:547 - Mapped "{[/createAliyunBucket],methods=[POST]}" onto public java.lang.String me.fandong.cloudserver.Controller.AliyunOSSBucketController.createBucket(java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+2018-05-17 16:01:36,474  INFO RequestMappingHandlerMapping:547 - Mapped "{[/deleteAliyunBucket],methods=[POST]}" onto public java.lang.String me.fandong.cloudserver.Controller.AliyunOSSBucketController.deleteBucket(java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+2018-05-17 16:01:36,475  INFO RequestMappingHandlerMapping:547 - Mapped "{[/getAliyunOSSFileList],methods=[GET]}" onto public java.lang.String me.fandong.cloudserver.Controller.AliyunOSSFileController.getFileList(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+2018-05-17 16:01:36,476  INFO RequestMappingHandlerMapping:547 - Mapped "{[/deleteAliyunOSSFile],methods=[POST]}" onto public java.lang.String me.fandong.cloudserver.Controller.AliyunOSSFileController.deleteFile(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+2018-05-17 16:01:36,477  INFO RequestMappingHandlerMapping:547 - Mapped "{[/getQiniuBucketList],methods=[GET]}" onto public java.lang.String me.fandong.cloudserver.Controller.QiniuBucketController.getBucketList(java.lang.String,java.lang.String)
+2018-05-17 16:01:36,477  INFO RequestMappingHandlerMapping:547 - Mapped "{[/createQiniuBucket],methods=[POST]}" onto public java.lang.String me.fandong.cloudserver.Controller.QiniuBucketController.createBucket(java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+2018-05-17 16:01:36,478  INFO RequestMappingHandlerMapping:547 - Mapped "{[/getQiniuDomainList],methods=[GET]}" onto public java.lang.String me.fandong.cloudserver.Controller.QiniuBucketController.getDomainList(java.lang.String,java.lang.String,java.lang.String)
+2018-05-17 16:01:36,478  INFO RequestMappingHandlerMapping:547 - Mapped "{[/getQiniuFileList],methods=[GET]}" onto public java.lang.String me.fandong.cloudserver.Controller.QiniuFileController.getFileList(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+2018-05-17 16:01:36,479  INFO RequestMappingHandlerMapping:547 - Mapped "{[/deleteQiniuFile],methods=[POST]}" onto public java.lang.String me.fandong.cloudserver.Controller.QiniuFileController.deleteFile(java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+2018-05-17 16:01:36,480  INFO RequestMappingHandlerMapping:547 - Mapped "{[/uploadImageFile],methods=[POST]}" onto public java.lang.String me.fandong.cloudserver.Controller.UploadController.uploadImageFile(org.springframework.web.multipart.MultipartHttpServletRequest) throws java.io.IOException
+2018-05-17 16:01:36,480  INFO RequestMappingHandlerMapping:547 - Mapped "{[/uploadVideoFile],methods=[POST]}" onto public java.lang.String me.fandong.cloudserver.Controller.UploadController.uploadVideoFile(org.springframework.web.multipart.MultipartHttpServletRequest) throws java.io.IOException
+2018-05-17 16:01:36,480  INFO RequestMappingHandlerMapping:547 - Mapped "{[/uploadQiniuFile],methods=[POST]}" onto public java.lang.String me.fandong.cloudserver.Controller.UploadController.uploadQiniuFile(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+2018-05-17 16:01:36,481  INFO RequestMappingHandlerMapping:547 - Mapped "{[/uploadAliyunFile],methods=[POST]}" onto public java.lang.String me.fandong.cloudserver.Controller.UploadController.uploadAliyunFile(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+2018-05-17 16:01:36,482  INFO RequestMappingHandlerMapping:547 - Mapped "{[/getWingManProductList],methods=[GET]}" onto public java.lang.String me.fandong.cloudserver.Controller.WingManController.getWingManProductList()
+2018-05-17 16:01:36,482  INFO RequestMappingHandlerMapping:547 - Mapped "{[/getWingManUser],methods=[GET]}" onto public java.lang.String me.fandong.cloudserver.Controller.WingManController.getWingManUser(java.lang.String)
+2018-05-17 16:01:36,487  INFO RequestMappingHandlerMapping:547 - Mapped "{[/swagger-resources/configuration/ui]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2018-05-17 16:01:36,487  INFO RequestMappingHandlerMapping:547 - Mapped "{[/swagger-resources/configuration/security]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2018-05-17 16:01:36,488  INFO RequestMappingHandlerMapping:547 - Mapped "{[/swagger-resources]}" onto public org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2018-05-17 16:01:36,491  INFO RequestMappingHandlerMapping:547 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-05-17 16:01:36,491  INFO RequestMappingHandlerMapping:547 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-05-17 16:01:36,634  INFO PropertySourcedRequestMappingHandlerMapping:69 - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2018-05-17 16:01:36,791  INFO SimpleUrlHandlerMapping:373 - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-17 16:01:36,896  INFO RequestMappingHandlerAdapter:574 - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@2f177a4b: startup date [Thu May 17 16:01:34 CST 2018]; root of context hierarchy
+2018-05-17 16:01:36,931  INFO SimpleUrlHandlerMapping:373 - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-17 16:01:36,931  INFO SimpleUrlHandlerMapping:373 - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-17 16:01:37,233  INFO AnnotationMBeanExporter:433 - Registering beans for JMX exposure on startup
+2018-05-17 16:01:37,409  INFO AnnotationMBeanExporter:895 - Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-05-17 16:01:37,417  INFO AnnotationMBeanExporter:668 - Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2018-05-17 16:01:37,422  INFO DefaultLifecycleProcessor:351 - Starting beans in phase 2147483647
+2018-05-17 16:01:37,422  INFO DocumentationPluginsBootstrapper:151 - Context refreshed
+2018-05-17 16:01:37,441  INFO DocumentationPluginsBootstrapper:154 - Found 1 custom documentation plugin(s)
+2018-05-17 16:01:37,469  INFO ApiListingReferenceScanner:41 - Scanning for api listing references
+2018-05-17 16:01:37,552  INFO CachingOperationNameGenerator:40 - Generating unique operation named: createBucketUsingPOST_1
+2018-05-17 16:01:37,554  INFO CachingOperationNameGenerator:40 - Generating unique operation named: getBucketListUsingGET_1
+2018-05-17 16:01:37,559  INFO CachingOperationNameGenerator:40 - Generating unique operation named: deleteFileUsingPOST_1
+2018-05-17 16:01:37,562  INFO CachingOperationNameGenerator:40 - Generating unique operation named: getFileListUsingGET_1
+2018-05-17 16:01:37,746  INFO TomcatWebServer:206 - Tomcat started on port(s): 8081 (http) with context path ''
+2018-05-17 16:01:37,753  INFO CloudserverApplication:59 - Started CloudserverApplication in 4.22 seconds (JVM running for 5.036)
+2018-05-17 16:01:38,622  INFO DispatcherServlet:494 - FrameworkServlet 'dispatcherServlet': initialization started
+2018-05-17 16:01:38,636  INFO DispatcherServlet:509 - FrameworkServlet 'dispatcherServlet': initialization completed in 14 ms
+2018-05-17 16:01:55,368  INFO DruidDataSource:638 - {dataSource-1} inited
+2018-05-17 16:01:55,793  INFO XmlBeanDefinitionReader:316 - Loading XML bean definitions from class path resource [org/springframework/jdbc/support/sql-error-codes.xml]
+2018-05-17 16:01:55,862  INFO SQLErrorCodesFactory:128 - SQLErrorCodes loaded: [DB2, Derby, H2, HDB, HSQL, Informix, MS-SQL, MySQL, Oracle, PostgreSQL, Sybase]
+2018-05-17 16:02:17,107  INFO AnnotationConfigServletWebServerApplicationContext:993 - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@2f177a4b: startup date [Thu May 17 16:01:34 CST 2018]; root of context hierarchy
+2018-05-17 16:02:17,109  INFO DefaultLifecycleProcessor:366 - Stopping beans in phase 2147483647
+2018-05-17 16:02:17,110  INFO AnnotationMBeanExporter:451 - Unregistering JMX-exposed beans on shutdown
+2018-05-17 16:02:17,110  INFO AnnotationMBeanExporter:183 - Unregistering JMX-exposed beans
+2018-05-17 16:02:17,116  INFO DruidDataSource:1288 - {dataSource-1} closed
+2018-05-17 16:02:19,906  INFO Version:21 - HV000001: Hibernate Validator 6.0.9.Final
+2018-05-17 16:02:20,133  INFO CloudserverApplication:50 - Starting CloudserverApplication on fandongdeMacBook-Pro-2.local with PID 2002 (/Users/fandong/Git/CloudServer/cloudserver/target/classes started by fandong in /Users/fandong/Git/CloudServer/cloudserver)
+2018-05-17 16:02:20,134  INFO CloudserverApplication:663 - The following profiles are active: dis
+2018-05-17 16:02:20,201  INFO AnnotationConfigServletWebServerApplicationContext:590 - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@2928854b: startup date [Thu May 17 16:02:20 CST 2018]; root of context hierarchy
+2018-05-17 16:02:21,451  INFO PostProcessorRegistrationDelegate$BeanPostProcessorChecker:328 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$a7b5932c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-05-17 16:02:21,682  INFO TomcatWebServer:91 - Tomcat initialized with port(s): 8081 (http)
+2018-05-17 16:02:21,777  INFO ContextLoader:285 - Root WebApplicationContext: initialization completed in 1581 ms
+2018-05-17 16:02:21,882  INFO ServletRegistrationBean:185 - Servlet dispatcherServlet mapped to [/]
+2018-05-17 16:02:21,886  INFO FilterRegistrationBean:244 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-05-17 16:02:21,887  INFO FilterRegistrationBean:244 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-05-17 16:02:21,887  INFO FilterRegistrationBean:244 - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-05-17 16:02:21,887  INFO FilterRegistrationBean:244 - Mapping filter: 'requestContextFilter' to: [/*]
+2018-05-17 16:02:22,321  INFO RequestMappingHandlerMapping:547 - Mapped "{[/getAliyunOSSBucketList],methods=[GET]}" onto public java.lang.String me.fandong.cloudserver.Controller.AliyunOSSBucketController.getBucketList(java.lang.String,java.lang.String)
+2018-05-17 16:02:22,322  INFO RequestMappingHandlerMapping:547 - Mapped "{[/createAliyunBucket],methods=[POST]}" onto public java.lang.String me.fandong.cloudserver.Controller.AliyunOSSBucketController.createBucket(java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+2018-05-17 16:02:22,322  INFO RequestMappingHandlerMapping:547 - Mapped "{[/deleteAliyunBucket],methods=[POST]}" onto public java.lang.String me.fandong.cloudserver.Controller.AliyunOSSBucketController.deleteBucket(java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+2018-05-17 16:02:22,323  INFO RequestMappingHandlerMapping:547 - Mapped "{[/getAliyunOSSFileList],methods=[GET]}" onto public java.lang.String me.fandong.cloudserver.Controller.AliyunOSSFileController.getFileList(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+2018-05-17 16:02:22,325  INFO RequestMappingHandlerMapping:547 - Mapped "{[/deleteAliyunOSSFile],methods=[POST]}" onto public java.lang.String me.fandong.cloudserver.Controller.AliyunOSSFileController.deleteFile(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+2018-05-17 16:02:22,326  INFO RequestMappingHandlerMapping:547 - Mapped "{[/getQiniuBucketList],methods=[GET]}" onto public java.lang.String me.fandong.cloudserver.Controller.QiniuBucketController.getBucketList(java.lang.String,java.lang.String)
+2018-05-17 16:02:22,327  INFO RequestMappingHandlerMapping:547 - Mapped "{[/createQiniuBucket],methods=[POST]}" onto public java.lang.String me.fandong.cloudserver.Controller.QiniuBucketController.createBucket(java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+2018-05-17 16:02:22,328  INFO RequestMappingHandlerMapping:547 - Mapped "{[/getQiniuDomainList],methods=[GET]}" onto public java.lang.String me.fandong.cloudserver.Controller.QiniuBucketController.getDomainList(java.lang.String,java.lang.String,java.lang.String)
+2018-05-17 16:02:22,329  INFO RequestMappingHandlerMapping:547 - Mapped "{[/getQiniuFileList],methods=[GET]}" onto public java.lang.String me.fandong.cloudserver.Controller.QiniuFileController.getFileList(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+2018-05-17 16:02:22,329  INFO RequestMappingHandlerMapping:547 - Mapped "{[/deleteQiniuFile],methods=[POST]}" onto public java.lang.String me.fandong.cloudserver.Controller.QiniuFileController.deleteFile(java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+2018-05-17 16:02:22,330  INFO RequestMappingHandlerMapping:547 - Mapped "{[/uploadImageFile],methods=[POST]}" onto public java.lang.String me.fandong.cloudserver.Controller.UploadController.uploadImageFile(org.springframework.web.multipart.MultipartHttpServletRequest) throws java.io.IOException
+2018-05-17 16:02:22,331  INFO RequestMappingHandlerMapping:547 - Mapped "{[/uploadVideoFile],methods=[POST]}" onto public java.lang.String me.fandong.cloudserver.Controller.UploadController.uploadVideoFile(org.springframework.web.multipart.MultipartHttpServletRequest) throws java.io.IOException
+2018-05-17 16:02:22,331  INFO RequestMappingHandlerMapping:547 - Mapped "{[/uploadQiniuFile],methods=[POST]}" onto public java.lang.String me.fandong.cloudserver.Controller.UploadController.uploadQiniuFile(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+2018-05-17 16:02:22,332  INFO RequestMappingHandlerMapping:547 - Mapped "{[/uploadAliyunFile],methods=[POST]}" onto public java.lang.String me.fandong.cloudserver.Controller.UploadController.uploadAliyunFile(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+2018-05-17 16:02:22,332  INFO RequestMappingHandlerMapping:547 - Mapped "{[/getWingManProductList],methods=[GET]}" onto public java.lang.String me.fandong.cloudserver.Controller.WingManController.getWingManProductList()
+2018-05-17 16:02:22,333  INFO RequestMappingHandlerMapping:547 - Mapped "{[/getWingManUser],methods=[GET]}" onto public java.lang.String me.fandong.cloudserver.Controller.WingManController.getWingManUser(java.lang.String)
+2018-05-17 16:02:22,338  INFO RequestMappingHandlerMapping:547 - Mapped "{[/swagger-resources/configuration/ui]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2018-05-17 16:02:22,339  INFO RequestMappingHandlerMapping:547 - Mapped "{[/swagger-resources/configuration/security]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2018-05-17 16:02:22,340  INFO RequestMappingHandlerMapping:547 - Mapped "{[/swagger-resources]}" onto public org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2018-05-17 16:02:22,342  INFO RequestMappingHandlerMapping:547 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-05-17 16:02:22,343  INFO RequestMappingHandlerMapping:547 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-05-17 16:02:22,451  INFO PropertySourcedRequestMappingHandlerMapping:69 - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2018-05-17 16:02:22,505  INFO SimpleUrlHandlerMapping:373 - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-17 16:02:22,632  INFO RequestMappingHandlerAdapter:574 - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@2928854b: startup date [Thu May 17 16:02:20 CST 2018]; root of context hierarchy
+2018-05-17 16:02:22,667  INFO SimpleUrlHandlerMapping:373 - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-17 16:02:22,667  INFO SimpleUrlHandlerMapping:373 - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-17 16:02:23,000  INFO AnnotationMBeanExporter:433 - Registering beans for JMX exposure on startup
+2018-05-17 16:02:23,002  INFO AnnotationMBeanExporter:895 - Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-05-17 16:02:23,007  INFO AnnotationMBeanExporter:668 - Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2018-05-17 16:02:23,013  INFO DefaultLifecycleProcessor:351 - Starting beans in phase 2147483647
+2018-05-17 16:02:23,013  INFO DocumentationPluginsBootstrapper:151 - Context refreshed
+2018-05-17 16:02:23,025  INFO DocumentationPluginsBootstrapper:154 - Found 1 custom documentation plugin(s)
+2018-05-17 16:02:23,050  INFO ApiListingReferenceScanner:41 - Scanning for api listing references
+2018-05-17 16:02:23,122  INFO CachingOperationNameGenerator:40 - Generating unique operation named: createBucketUsingPOST_1
+2018-05-17 16:02:23,124  INFO CachingOperationNameGenerator:40 - Generating unique operation named: getBucketListUsingGET_1
+2018-05-17 16:02:23,130  INFO CachingOperationNameGenerator:40 - Generating unique operation named: deleteFileUsingPOST_1
+2018-05-17 16:02:23,133  INFO CachingOperationNameGenerator:40 - Generating unique operation named: getFileListUsingGET_1
+2018-05-17 16:02:23,197  INFO TomcatWebServer:206 - Tomcat started on port(s): 8081 (http) with context path ''
+2018-05-17 16:02:23,201  INFO CloudserverApplication:59 - Started CloudserverApplication in 3.43 seconds (JVM running for 4.006)
+2018-05-17 16:02:33,053  INFO DispatcherServlet:494 - FrameworkServlet 'dispatcherServlet': initialization started
+2018-05-17 16:02:33,071  INFO DispatcherServlet:509 - FrameworkServlet 'dispatcherServlet': initialization completed in 15 ms
+2018-05-17 16:02:33,115  INFO DruidDataSource:638 - {dataSource-1} inited
+2018-05-17 16:16:51,075  INFO AnnotationConfigServletWebServerApplicationContext:993 - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@2928854b: startup date [Thu May 17 16:02:20 CST 2018]; root of context hierarchy
+2018-05-17 16:16:51,101  INFO DefaultLifecycleProcessor:366 - Stopping beans in phase 2147483647
+2018-05-17 16:16:51,105  INFO AnnotationMBeanExporter:451 - Unregistering JMX-exposed beans on shutdown
+2018-05-17 16:16:51,106  INFO AnnotationMBeanExporter:183 - Unregistering JMX-exposed beans
+2018-05-17 16:16:51,124  INFO DruidDataSource:1288 - {dataSource-1} closed
+2018-05-17 16:16:55,544  INFO Version:21 - HV000001: Hibernate Validator 6.0.9.Final
+2018-05-17 16:16:55,780  INFO CloudserverApplication:50 - Starting CloudserverApplication on fandongdeMacBook-Pro-2.local with PID 2018 (/Users/fandong/Git/CloudServer/cloudserver/target/classes started by fandong in /Users/fandong/Git/CloudServer/cloudserver)
+2018-05-17 16:16:55,780  INFO CloudserverApplication:663 - The following profiles are active: dis
+2018-05-17 16:16:55,855  INFO AnnotationConfigServletWebServerApplicationContext:590 - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@2928854b: startup date [Thu May 17 16:16:55 CST 2018]; root of context hierarchy
+2018-05-17 16:16:57,199  INFO PostProcessorRegistrationDelegate$BeanPostProcessorChecker:328 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$3152df7b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-05-17 16:16:57,428  INFO TomcatWebServer:91 - Tomcat initialized with port(s): 8081 (http)
+2018-05-17 16:16:57,522  INFO ContextLoader:285 - Root WebApplicationContext: initialization completed in 1672 ms
+2018-05-17 16:16:57,634  INFO ServletRegistrationBean:185 - Servlet dispatcherServlet mapped to [/]
+2018-05-17 16:16:57,640  INFO FilterRegistrationBean:244 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-05-17 16:16:57,640  INFO FilterRegistrationBean:244 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-05-17 16:16:57,640  INFO FilterRegistrationBean:244 - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-05-17 16:16:57,641  INFO FilterRegistrationBean:244 - Mapping filter: 'requestContextFilter' to: [/*]
+2018-05-17 16:16:58,077  INFO RequestMappingHandlerMapping:547 - Mapped "{[/getAliyunOSSBucketList],methods=[GET]}" onto public java.lang.String me.fandong.cloudserver.Controller.AliyunOSSBucketController.getBucketList(java.lang.String,java.lang.String)
+2018-05-17 16:16:58,078  INFO RequestMappingHandlerMapping:547 - Mapped "{[/createAliyunBucket],methods=[POST]}" onto public java.lang.String me.fandong.cloudserver.Controller.AliyunOSSBucketController.createBucket(java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+2018-05-17 16:16:58,078  INFO RequestMappingHandlerMapping:547 - Mapped "{[/deleteAliyunBucket],methods=[POST]}" onto public java.lang.String me.fandong.cloudserver.Controller.AliyunOSSBucketController.deleteBucket(java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+2018-05-17 16:16:58,079  INFO RequestMappingHandlerMapping:547 - Mapped "{[/getAliyunOSSFileList],methods=[GET]}" onto public java.lang.String me.fandong.cloudserver.Controller.AliyunOSSFileController.getFileList(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+2018-05-17 16:16:58,080  INFO RequestMappingHandlerMapping:547 - Mapped "{[/deleteAliyunOSSFile],methods=[POST]}" onto public java.lang.String me.fandong.cloudserver.Controller.AliyunOSSFileController.deleteFile(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+2018-05-17 16:16:58,081  INFO RequestMappingHandlerMapping:547 - Mapped "{[/getQiniuDomainList],methods=[GET]}" onto public java.lang.String me.fandong.cloudserver.Controller.QiniuBucketController.getDomainList(java.lang.String,java.lang.String,java.lang.String)
+2018-05-17 16:16:58,081  INFO RequestMappingHandlerMapping:547 - Mapped "{[/getQiniuBucketList],methods=[GET]}" onto public java.lang.String me.fandong.cloudserver.Controller.QiniuBucketController.getBucketList(java.lang.String,java.lang.String)
+2018-05-17 16:16:58,082  INFO RequestMappingHandlerMapping:547 - Mapped "{[/createQiniuBucket],methods=[POST]}" onto public java.lang.String me.fandong.cloudserver.Controller.QiniuBucketController.createBucket(java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+2018-05-17 16:16:58,082  INFO RequestMappingHandlerMapping:547 - Mapped "{[/getQiniuFileList],methods=[GET]}" onto public java.lang.String me.fandong.cloudserver.Controller.QiniuFileController.getFileList(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+2018-05-17 16:16:58,083  INFO RequestMappingHandlerMapping:547 - Mapped "{[/deleteQiniuFile],methods=[POST]}" onto public java.lang.String me.fandong.cloudserver.Controller.QiniuFileController.deleteFile(java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+2018-05-17 16:16:58,084  INFO RequestMappingHandlerMapping:547 - Mapped "{[/uploadImageFile],methods=[POST]}" onto public java.lang.String me.fandong.cloudserver.Controller.UploadController.uploadImageFile(org.springframework.web.multipart.MultipartHttpServletRequest) throws java.io.IOException
+2018-05-17 16:16:58,084  INFO RequestMappingHandlerMapping:547 - Mapped "{[/uploadVideoFile],methods=[POST]}" onto public java.lang.String me.fandong.cloudserver.Controller.UploadController.uploadVideoFile(org.springframework.web.multipart.MultipartHttpServletRequest) throws java.io.IOException
+2018-05-17 16:16:58,084  INFO RequestMappingHandlerMapping:547 - Mapped "{[/uploadQiniuFile],methods=[POST]}" onto public java.lang.String me.fandong.cloudserver.Controller.UploadController.uploadQiniuFile(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+2018-05-17 16:16:58,085  INFO RequestMappingHandlerMapping:547 - Mapped "{[/uploadAliyunFile],methods=[POST]}" onto public java.lang.String me.fandong.cloudserver.Controller.UploadController.uploadAliyunFile(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+2018-05-17 16:16:58,086  INFO RequestMappingHandlerMapping:547 - Mapped "{[/getWingManProductList],methods=[GET]}" onto public java.lang.String me.fandong.cloudserver.Controller.WingManController.getWingManProductList()
+2018-05-17 16:16:58,086  INFO RequestMappingHandlerMapping:547 - Mapped "{[/getWingManUser],methods=[GET]}" onto public java.lang.String me.fandong.cloudserver.Controller.WingManController.getWingManUser(java.lang.String)
+2018-05-17 16:16:58,091  INFO RequestMappingHandlerMapping:547 - Mapped "{[/swagger-resources/configuration/security]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2018-05-17 16:16:58,092  INFO RequestMappingHandlerMapping:547 - Mapped "{[/swagger-resources/configuration/ui]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2018-05-17 16:16:58,093  INFO RequestMappingHandlerMapping:547 - Mapped "{[/swagger-resources]}" onto public org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2018-05-17 16:16:58,095  INFO RequestMappingHandlerMapping:547 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-05-17 16:16:58,096  INFO RequestMappingHandlerMapping:547 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-05-17 16:16:58,200  INFO PropertySourcedRequestMappingHandlerMapping:69 - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2018-05-17 16:16:58,285  INFO SimpleUrlHandlerMapping:373 - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-17 16:16:58,443  INFO RequestMappingHandlerAdapter:574 - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@2928854b: startup date [Thu May 17 16:16:55 CST 2018]; root of context hierarchy
+2018-05-17 16:16:58,477  INFO SimpleUrlHandlerMapping:373 - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-17 16:16:58,477  INFO SimpleUrlHandlerMapping:373 - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-17 16:16:58,831  INFO AnnotationMBeanExporter:433 - Registering beans for JMX exposure on startup
+2018-05-17 16:16:58,833  INFO AnnotationMBeanExporter:895 - Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-05-17 16:16:58,837  INFO AnnotationMBeanExporter:668 - Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2018-05-17 16:16:58,841  INFO DefaultLifecycleProcessor:351 - Starting beans in phase 2147483647
+2018-05-17 16:16:58,841  INFO DocumentationPluginsBootstrapper:151 - Context refreshed
+2018-05-17 16:16:58,854  INFO DocumentationPluginsBootstrapper:154 - Found 1 custom documentation plugin(s)
+2018-05-17 16:16:58,877  INFO ApiListingReferenceScanner:41 - Scanning for api listing references
+2018-05-17 16:16:58,948  INFO CachingOperationNameGenerator:40 - Generating unique operation named: createBucketUsingPOST_1
+2018-05-17 16:16:58,950  INFO CachingOperationNameGenerator:40 - Generating unique operation named: getBucketListUsingGET_1
+2018-05-17 16:16:58,955  INFO CachingOperationNameGenerator:40 - Generating unique operation named: deleteFileUsingPOST_1
+2018-05-17 16:16:58,958  INFO CachingOperationNameGenerator:40 - Generating unique operation named: getFileListUsingGET_1
+2018-05-17 16:16:59,017  INFO TomcatWebServer:206 - Tomcat started on port(s): 8081 (http) with context path ''
+2018-05-17 16:16:59,021  INFO CloudserverApplication:59 - Started CloudserverApplication in 3.62 seconds (JVM running for 4.581)
+2018-05-17 16:17:01,320  INFO DispatcherServlet:494 - FrameworkServlet 'dispatcherServlet': initialization started
+2018-05-17 16:17:01,339  INFO DispatcherServlet:509 - FrameworkServlet 'dispatcherServlet': initialization completed in 16 ms
+2018-05-17 16:17:01,383  INFO DruidDataSource:638 - {dataSource-1} inited
+2018-05-17 16:18:08,673  INFO AnnotationConfigServletWebServerApplicationContext:993 - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@2928854b: startup date [Thu May 17 16:16:55 CST 2018]; root of context hierarchy
+2018-05-17 16:18:08,675  INFO DefaultLifecycleProcessor:366 - Stopping beans in phase 2147483647
+2018-05-17 16:18:08,676  INFO AnnotationMBeanExporter:451 - Unregistering JMX-exposed beans on shutdown
+2018-05-17 16:18:08,677  INFO AnnotationMBeanExporter:183 - Unregistering JMX-exposed beans
+2018-05-17 16:18:08,681  INFO DruidDataSource:1288 - {dataSource-1} closed
+2018-05-17 16:18:11,733  INFO Version:21 - HV000001: Hibernate Validator 6.0.9.Final
+2018-05-17 16:18:12,009  INFO CloudserverApplication:50 - Starting CloudserverApplication on fandongdeMacBook-Pro-2.local with PID 2023 (/Users/fandong/Git/CloudServer/cloudserver/target/classes started by fandong in /Users/fandong/Git/CloudServer/cloudserver)
+2018-05-17 16:18:12,010  INFO CloudserverApplication:663 - The following profiles are active: dis
+2018-05-17 16:18:12,164  INFO AnnotationConfigServletWebServerApplicationContext:590 - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@2928854b: startup date [Thu May 17 16:18:12 CST 2018]; root of context hierarchy
+2018-05-17 16:18:13,349  INFO PostProcessorRegistrationDelegate$BeanPostProcessorChecker:328 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$3152df7b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-05-17 16:18:13,597  INFO TomcatWebServer:91 - Tomcat initialized with port(s): 8081 (http)
+2018-05-17 16:18:13,681  INFO ContextLoader:285 - Root WebApplicationContext: initialization completed in 1521 ms
+2018-05-17 16:18:13,765  INFO ServletRegistrationBean:185 - Servlet dispatcherServlet mapped to [/]
+2018-05-17 16:18:13,769  INFO FilterRegistrationBean:244 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-05-17 16:18:13,769  INFO FilterRegistrationBean:244 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-05-17 16:18:13,769  INFO FilterRegistrationBean:244 - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-05-17 16:18:13,769  INFO FilterRegistrationBean:244 - Mapping filter: 'requestContextFilter' to: [/*]
+2018-05-17 16:18:14,369  INFO RequestMappingHandlerMapping:547 - Mapped "{[/getAliyunOSSBucketList],methods=[GET]}" onto public java.lang.String me.fandong.cloudserver.Controller.AliyunOSSBucketController.getBucketList(java.lang.String,java.lang.String)
+2018-05-17 16:18:14,370  INFO RequestMappingHandlerMapping:547 - Mapped "{[/createAliyunBucket],methods=[POST]}" onto public java.lang.String me.fandong.cloudserver.Controller.AliyunOSSBucketController.createBucket(java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+2018-05-17 16:18:14,371  INFO RequestMappingHandlerMapping:547 - Mapped "{[/deleteAliyunBucket],methods=[POST]}" onto public java.lang.String me.fandong.cloudserver.Controller.AliyunOSSBucketController.deleteBucket(java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+2018-05-17 16:18:14,372  INFO RequestMappingHandlerMapping:547 - Mapped "{[/getAliyunOSSFileList],methods=[GET]}" onto public java.lang.String me.fandong.cloudserver.Controller.AliyunOSSFileController.getFileList(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+2018-05-17 16:18:14,372  INFO RequestMappingHandlerMapping:547 - Mapped "{[/deleteAliyunOSSFile],methods=[POST]}" onto public java.lang.String me.fandong.cloudserver.Controller.AliyunOSSFileController.deleteFile(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+2018-05-17 16:18:14,373  INFO RequestMappingHandlerMapping:547 - Mapped "{[/getQiniuBucketList],methods=[GET]}" onto public java.lang.String me.fandong.cloudserver.Controller.QiniuBucketController.getBucketList(java.lang.String,java.lang.String)
+2018-05-17 16:18:14,374  INFO RequestMappingHandlerMapping:547 - Mapped "{[/createQiniuBucket],methods=[POST]}" onto public java.lang.String me.fandong.cloudserver.Controller.QiniuBucketController.createBucket(java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+2018-05-17 16:18:14,374  INFO RequestMappingHandlerMapping:547 - Mapped "{[/getQiniuDomainList],methods=[GET]}" onto public java.lang.String me.fandong.cloudserver.Controller.QiniuBucketController.getDomainList(java.lang.String,java.lang.String,java.lang.String)
+2018-05-17 16:18:14,375  INFO RequestMappingHandlerMapping:547 - Mapped "{[/getQiniuFileList],methods=[GET]}" onto public java.lang.String me.fandong.cloudserver.Controller.QiniuFileController.getFileList(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+2018-05-17 16:18:14,375  INFO RequestMappingHandlerMapping:547 - Mapped "{[/deleteQiniuFile],methods=[POST]}" onto public java.lang.String me.fandong.cloudserver.Controller.QiniuFileController.deleteFile(java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+2018-05-17 16:18:14,376  INFO RequestMappingHandlerMapping:547 - Mapped "{[/uploadImageFile],methods=[POST]}" onto public java.lang.String me.fandong.cloudserver.Controller.UploadController.uploadImageFile(org.springframework.web.multipart.MultipartHttpServletRequest) throws java.io.IOException
+2018-05-17 16:18:14,377  INFO RequestMappingHandlerMapping:547 - Mapped "{[/uploadVideoFile],methods=[POST]}" onto public java.lang.String me.fandong.cloudserver.Controller.UploadController.uploadVideoFile(org.springframework.web.multipart.MultipartHttpServletRequest) throws java.io.IOException
+2018-05-17 16:18:14,378  INFO RequestMappingHandlerMapping:547 - Mapped "{[/uploadQiniuFile],methods=[POST]}" onto public java.lang.String me.fandong.cloudserver.Controller.UploadController.uploadQiniuFile(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+2018-05-17 16:18:14,379  INFO RequestMappingHandlerMapping:547 - Mapped "{[/uploadAliyunFile],methods=[POST]}" onto public java.lang.String me.fandong.cloudserver.Controller.UploadController.uploadAliyunFile(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+2018-05-17 16:18:14,379  INFO RequestMappingHandlerMapping:547 - Mapped "{[/getWingManProductList],methods=[GET]}" onto public java.lang.String me.fandong.cloudserver.Controller.WingManController.getWingManProductList()
+2018-05-17 16:18:14,380  INFO RequestMappingHandlerMapping:547 - Mapped "{[/getWingManUser],methods=[GET]}" onto public java.lang.String me.fandong.cloudserver.Controller.WingManController.getWingManUser(java.lang.String)
+2018-05-17 16:18:14,384  INFO RequestMappingHandlerMapping:547 - Mapped "{[/swagger-resources/configuration/ui]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2018-05-17 16:18:14,385  INFO RequestMappingHandlerMapping:547 - Mapped "{[/swagger-resources/configuration/security]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2018-05-17 16:18:14,385  INFO RequestMappingHandlerMapping:547 - Mapped "{[/swagger-resources]}" onto public org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2018-05-17 16:18:14,388  INFO RequestMappingHandlerMapping:547 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-05-17 16:18:14,389  INFO RequestMappingHandlerMapping:547 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-05-17 16:18:14,487  INFO PropertySourcedRequestMappingHandlerMapping:69 - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2018-05-17 16:18:14,549  INFO SimpleUrlHandlerMapping:373 - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-17 16:18:14,687  INFO RequestMappingHandlerAdapter:574 - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@2928854b: startup date [Thu May 17 16:18:12 CST 2018]; root of context hierarchy
+2018-05-17 16:18:14,725  INFO SimpleUrlHandlerMapping:373 - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-17 16:18:14,726  INFO SimpleUrlHandlerMapping:373 - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-17 16:18:15,050  INFO AnnotationMBeanExporter:433 - Registering beans for JMX exposure on startup
+2018-05-17 16:18:15,343  INFO AnnotationMBeanExporter:895 - Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-05-17 16:18:15,349  INFO AnnotationMBeanExporter:668 - Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2018-05-17 16:18:15,353  INFO DefaultLifecycleProcessor:351 - Starting beans in phase 2147483647
+2018-05-17 16:18:15,353  INFO DocumentationPluginsBootstrapper:151 - Context refreshed
+2018-05-17 16:18:15,366  INFO DocumentationPluginsBootstrapper:154 - Found 1 custom documentation plugin(s)
+2018-05-17 16:18:15,391  INFO ApiListingReferenceScanner:41 - Scanning for api listing references
+2018-05-17 16:18:15,465  INFO CachingOperationNameGenerator:40 - Generating unique operation named: createBucketUsingPOST_1
+2018-05-17 16:18:15,468  INFO CachingOperationNameGenerator:40 - Generating unique operation named: getBucketListUsingGET_1
+2018-05-17 16:18:15,472  INFO CachingOperationNameGenerator:40 - Generating unique operation named: deleteFileUsingPOST_1
+2018-05-17 16:18:15,475  INFO CachingOperationNameGenerator:40 - Generating unique operation named: getFileListUsingGET_1
+2018-05-17 16:18:15,538  INFO TomcatWebServer:206 - Tomcat started on port(s): 8081 (http) with context path ''
+2018-05-17 16:18:15,542  INFO CloudserverApplication:59 - Started CloudserverApplication in 3.94 seconds (JVM running for 4.521)
+2018-05-17 16:18:18,108  INFO DispatcherServlet:494 - FrameworkServlet 'dispatcherServlet': initialization started
+2018-05-17 16:18:18,124  INFO DispatcherServlet:509 - FrameworkServlet 'dispatcherServlet': initialization completed in 15 ms
+2018-05-17 16:18:18,169  INFO DruidDataSource:638 - {dataSource-1} inited
+2018-05-17 16:21:54,520  INFO SpringBootTestContextBootstrapper:308 - Neither @ContextConfiguration nor @ContextHierarchy found for test class [me.fandong.cloudserver.CloudserverApplicationTests], using SpringBootContextLoader
+2018-05-17 16:21:54,526  INFO AbstractContextLoader:264 - Could not detect default resource locations for test class [me.fandong.cloudserver.CloudserverApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+2018-05-17 16:21:54,527  INFO AnnotationConfigContextLoaderUtils:83 - Could not detect default configuration classes for test class [me.fandong.cloudserver.CloudserverApplicationTests]: CloudserverApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2018-05-17 16:21:54,677  INFO SpringBootTestContextBootstrapper:244 - Found @SpringBootConfiguration me.fandong.cloudserver.CloudserverApplication for test class me.fandong.cloudserver.CloudserverApplicationTests
+2018-05-17 16:21:54,778  INFO SpringBootTestContextBootstrapper:248 - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2018-05-17 16:21:54,799  INFO SpringBootTestContextBootstrapper:177 - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@3a93b025, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@35cabb2a, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@7e07db1f, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@1189dd52, org.springframework.test.context.support.DirtiesContextTestExecutionListener@36bc55de, org.springframework.test.context.transaction.TransactionalTestExecutionListener@564fabc8, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@16d04d3d, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@49ec71f8, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@1d2adfbe, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@36902638, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@223d2c72, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@8f4ea7c]
+2018-05-17 16:21:54,872  INFO Version:21 - HV000001: Hibernate Validator 6.0.9.Final
+2018-05-17 16:21:55,198  INFO CloudserverApplicationTests:50 - Starting CloudserverApplicationTests on fandongdeMacBook-Pro-2.local with PID 2042 (started by fandong in /Users/fandong/Git/CloudServer/cloudserver)
+2018-05-17 16:21:55,198  INFO CloudserverApplicationTests:663 - The following profiles are active: dis
+2018-05-17 16:21:55,235  INFO GenericWebApplicationContext:590 - Refreshing org.springframework.web.context.support.GenericWebApplicationContext@5afa3c9: startup date [Thu May 17 16:21:55 CST 2018]; root of context hierarchy
+2018-05-17 16:21:56,971  INFO PostProcessorRegistrationDelegate$BeanPostProcessorChecker:328 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$f2664999] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-05-17 16:21:57,666  INFO RequestMappingHandlerMapping:547 - Mapped "{[/getAliyunOSSBucketList],methods=[GET]}" onto public java.lang.String me.fandong.cloudserver.Controller.AliyunOSSBucketController.getBucketList(java.lang.String,java.lang.String)
+2018-05-17 16:21:57,671  INFO RequestMappingHandlerMapping:547 - Mapped "{[/createAliyunBucket],methods=[POST]}" onto public java.lang.String me.fandong.cloudserver.Controller.AliyunOSSBucketController.createBucket(java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+2018-05-17 16:21:57,672  INFO RequestMappingHandlerMapping:547 - Mapped "{[/deleteAliyunBucket],methods=[POST]}" onto public java.lang.String me.fandong.cloudserver.Controller.AliyunOSSBucketController.deleteBucket(java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+2018-05-17 16:21:57,674  INFO RequestMappingHandlerMapping:547 - Mapped "{[/getAliyunOSSFileList],methods=[GET]}" onto public java.lang.String me.fandong.cloudserver.Controller.AliyunOSSFileController.getFileList(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+2018-05-17 16:21:57,675  INFO RequestMappingHandlerMapping:547 - Mapped "{[/deleteAliyunOSSFile],methods=[POST]}" onto public java.lang.String me.fandong.cloudserver.Controller.AliyunOSSFileController.deleteFile(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+2018-05-17 16:21:57,678  INFO RequestMappingHandlerMapping:547 - Mapped "{[/getQiniuDomainList],methods=[GET]}" onto public java.lang.String me.fandong.cloudserver.Controller.QiniuBucketController.getDomainList(java.lang.String,java.lang.String,java.lang.String)
+2018-05-17 16:21:57,679  INFO RequestMappingHandlerMapping:547 - Mapped "{[/getQiniuBucketList],methods=[GET]}" onto public java.lang.String me.fandong.cloudserver.Controller.QiniuBucketController.getBucketList(java.lang.String,java.lang.String)
+2018-05-17 16:21:57,680  INFO RequestMappingHandlerMapping:547 - Mapped "{[/createQiniuBucket],methods=[POST]}" onto public java.lang.String me.fandong.cloudserver.Controller.QiniuBucketController.createBucket(java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+2018-05-17 16:21:57,681  INFO RequestMappingHandlerMapping:547 - Mapped "{[/getQiniuFileList],methods=[GET]}" onto public java.lang.String me.fandong.cloudserver.Controller.QiniuFileController.getFileList(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+2018-05-17 16:21:57,682  INFO RequestMappingHandlerMapping:547 - Mapped "{[/deleteQiniuFile],methods=[POST]}" onto public java.lang.String me.fandong.cloudserver.Controller.QiniuFileController.deleteFile(java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+2018-05-17 16:21:57,684  INFO RequestMappingHandlerMapping:547 - Mapped "{[/uploadImageFile],methods=[POST]}" onto public java.lang.String me.fandong.cloudserver.Controller.UploadController.uploadImageFile(org.springframework.web.multipart.MultipartHttpServletRequest) throws java.io.IOException
+2018-05-17 16:21:57,685  INFO RequestMappingHandlerMapping:547 - Mapped "{[/uploadVideoFile],methods=[POST]}" onto public java.lang.String me.fandong.cloudserver.Controller.UploadController.uploadVideoFile(org.springframework.web.multipart.MultipartHttpServletRequest) throws java.io.IOException
+2018-05-17 16:21:57,689  INFO RequestMappingHandlerMapping:547 - Mapped "{[/uploadQiniuFile],methods=[POST]}" onto public java.lang.String me.fandong.cloudserver.Controller.UploadController.uploadQiniuFile(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+2018-05-17 16:21:57,690  INFO RequestMappingHandlerMapping:547 - Mapped "{[/uploadAliyunFile],methods=[POST]}" onto public java.lang.String me.fandong.cloudserver.Controller.UploadController.uploadAliyunFile(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+2018-05-17 16:21:57,691  INFO RequestMappingHandlerMapping:547 - Mapped "{[/getWingManProductList],methods=[GET]}" onto public java.lang.String me.fandong.cloudserver.Controller.WingManController.getWingManProductList()
+2018-05-17 16:21:57,693  INFO RequestMappingHandlerMapping:547 - Mapped "{[/getWingManUser],methods=[GET]}" onto public java.lang.String me.fandong.cloudserver.Controller.WingManController.getWingManUser(java.lang.String)
+2018-05-17 16:21:57,698  INFO RequestMappingHandlerMapping:547 - Mapped "{[/swagger-resources/configuration/ui]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2018-05-17 16:21:57,699  INFO RequestMappingHandlerMapping:547 - Mapped "{[/swagger-resources/configuration/security]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2018-05-17 16:21:57,700  INFO RequestMappingHandlerMapping:547 - Mapped "{[/swagger-resources]}" onto public org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2018-05-17 16:21:57,705  INFO RequestMappingHandlerMapping:547 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-05-17 16:21:57,706  INFO RequestMappingHandlerMapping:547 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-05-17 16:21:57,889  INFO PropertySourcedRequestMappingHandlerMapping:69 - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2018-05-17 16:21:58,287  INFO SimpleUrlHandlerMapping:373 - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-17 16:21:58,419  INFO RequestMappingHandlerAdapter:574 - Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@5afa3c9: startup date [Thu May 17 16:21:55 CST 2018]; root of context hierarchy
+2018-05-17 16:21:58,478  INFO SimpleUrlHandlerMapping:373 - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-17 16:21:58,479  INFO SimpleUrlHandlerMapping:373 - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-17 16:21:58,773  INFO DefaultLifecycleProcessor:351 - Starting beans in phase 2147483647
+2018-05-17 16:21:58,781  INFO DocumentationPluginsBootstrapper:151 - Context refreshed
+2018-05-17 16:21:58,814  INFO DocumentationPluginsBootstrapper:154 - Found 1 custom documentation plugin(s)
+2018-05-17 16:21:58,846  INFO ApiListingReferenceScanner:41 - Scanning for api listing references
+2018-05-17 16:21:58,949  INFO CachingOperationNameGenerator:40 - Generating unique operation named: createBucketUsingPOST_1
+2018-05-17 16:21:58,953  INFO CachingOperationNameGenerator:40 - Generating unique operation named: getBucketListUsingGET_1
+2018-05-17 16:21:58,961  INFO CachingOperationNameGenerator:40 - Generating unique operation named: deleteFileUsingPOST_1
+2018-05-17 16:21:58,964  INFO CachingOperationNameGenerator:40 - Generating unique operation named: getFileListUsingGET_1
+2018-05-17 16:21:59,011  INFO CloudserverApplicationTests:59 - Started CloudserverApplicationTests in 4.178 seconds (JVM running for 5.003)
+2018-05-17 16:21:59,224  INFO GenericWebApplicationContext:993 - Closing org.springframework.web.context.support.GenericWebApplicationContext@5afa3c9: startup date [Thu May 17 16:21:55 CST 2018]; root of context hierarchy
+2018-05-17 16:21:59,227  INFO DefaultLifecycleProcessor:366 - Stopping beans in phase 2147483647
+2018-05-17 16:30:13,695  INFO AnnotationConfigServletWebServerApplicationContext:993 - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@2928854b: startup date [Thu May 17 16:18:12 CST 2018]; root of context hierarchy
+2018-05-17 16:30:13,719  INFO DefaultLifecycleProcessor:366 - Stopping beans in phase 2147483647
+2018-05-17 16:30:13,728  INFO AnnotationMBeanExporter:451 - Unregistering JMX-exposed beans on shutdown
+2018-05-17 16:30:13,729  INFO AnnotationMBeanExporter:183 - Unregistering JMX-exposed beans
+2018-05-17 16:30:13,746  INFO DruidDataSource:1288 - {dataSource-1} closed
