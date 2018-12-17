@@ -1,8 +1,0 @@
-<component name="ArtifactManager">
-  <artifact type="jar" name="cloudserver:jar">
-    <output-path>$PROJECT_DIR$/out/artifacts/cloudserver_jar</output-path>
-    <root id="archive" name="cloudserver.jar">
-      <element id="module-output" name="cloudserver" />
-    </root>
-  </artifact>
-</component>
