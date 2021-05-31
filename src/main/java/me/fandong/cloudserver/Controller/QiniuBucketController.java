@@ -15,6 +15,7 @@ import me.fandong.cloudserver.service.MyRequestService;
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
+import me.fandong.cloudserver.Config.ServerConfig;
 
 import javax.servlet.http.HttpServletRequest;
 
@@ -26,13 +27,11 @@ public class QiniuBucketController {
     MyRequestService myRequestService;
 
     @ApiOperation(value="获取七牛云存储Bucket列表", notes="根据AK和SK查询Bucket列表")
-    @ApiImplicitParams({
-            @ApiImplicitParam(name = "AK", value = "AK", required = true, dataType = "string"),
-            @ApiImplicitParam(name = "SK", value = "SK", required = true, dataType = "string")
-    })
     @GetMapping("/getQiniuBucketList")
-    public String getBucketList(String AK, String SK) {
+    public String getBucketList() {
         stringMap = new StringMap();
+        String AK = new ServerConfig().AK;
+        String SK = new ServerConfig().SK;
         //传空值处理
         if (AK == null){
             stringMap.put("data","");
@@ -77,13 +76,13 @@ public class QiniuBucketController {
 
     @ApiOperation(value="获取七牛云存储Bucket的Domain列表", notes="根据AK、SK、Bucket查询Bucket的Domain列表")
     @ApiImplicitParams({
-            @ApiImplicitParam(name = "AK", value = "AK", required = true, dataType = "string"),
-            @ApiImplicitParam(name = "SK", value = "SK", required = true, dataType = "string"),
             @ApiImplicitParam(name = "bucket", value = "bucket", required = true, dataType = "string")
     })
     @GetMapping("/getQiniuDomainList")
-    public String getDomainList(String AK, String SK, String bucket) {
+    public String getDomainList(String bucket) {
         stringMap = new StringMap();
+        String AK = new ServerConfig().AK;
+        String SK = new ServerConfig().SK;
         //传空值处理
         if (AK == null){
             stringMap.put("data","");
@@ -133,14 +132,14 @@ public class QiniuBucketController {
 
     @ApiOperation(value="创建七牛云存储Bucket", notes="根据AK、SK、Bucket，Region来创建Bucket")
     @ApiImplicitParams({
-            @ApiImplicitParam(name = "AK", value = "AK", required = true, dataType = "string"),
-            @ApiImplicitParam(name = "SK", value = "SK", required = true, dataType = "string"),
             @ApiImplicitParam(name = "bucket", value = "bucket", required = true, dataType = "string"),
             @ApiImplicitParam(name = "region", value = "region", required = true, dataType = "string")
     })
     @PostMapping("/createQiniuBucket")
-    public String createBucket (String AK, String SK, String bucket, String region){
+    public String createBucket (String bucket, String region){
         stringMap = new StringMap();
+        String AK = new ServerConfig().AK;
+        String SK = new ServerConfig().SK;
         //传空值处理
         if (AK == null){
             stringMap.put("data","");

@@ -1,227 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="adff7c04-b2eb-4f86-91e1-b0df74ecfad1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/cloudserver.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/cloudserver_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/me/fandong/cloudserver/Config/ServerConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloudserver/.idea/cloudserver.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloudserver/.idea/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloudserver/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloudserver/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloudserver/.idea/libraries/Maven__com_alibaba_druid_1_0_5.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloudserver/.idea/libraries/Maven__com_aliyun_oss_aliyun_sdk_oss_2_8_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloudserver/.idea/libraries/Maven__com_fasterxml_classmate_1_3_4.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloudserver/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_9_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloudserver/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_9_5.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloudserver/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_9_5.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloudserver/.idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_jdk8_2_9_5.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloudserver/.idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_jsr310_2_9_5.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloudserver/.idea/libraries/Maven__com_fasterxml_jackson_module_jackson_module_parameter_names_2_9_5.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloudserver/.idea/libraries/Maven__com_google_code_gson_gson_2_8_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloudserver/.idea/libraries/Maven__com_google_guava_guava_20_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloudserver/.idea/libraries/Maven__com_jayway_jsonpath_json_path_2_4_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloudserver/.idea/libraries/Maven__com_qiniu_happy_dns_java_0_1_6.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloudserver/.idea/libraries/Maven__com_qiniu_qiniu_java_sdk_7_2_12.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloudserver/.idea/libraries/Maven__com_squareup_okhttp3_okhttp_3_9_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloudserver/.idea/libraries/Maven__com_squareup_okio_okio_1_13_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloudserver/.idea/libraries/Maven__com_vaadin_external_google_android_json_0_0_20131108_vaadin1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloudserver/.idea/libraries/Maven__com_zaxxer_HikariCP_2_7_8.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloudserver/.idea/libraries/Maven__commons_codec_commons_codec_1_11.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloudserver/.idea/libraries/Maven__io_springfox_springfox_core_2_8_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloudserver/.idea/libraries/Maven__io_springfox_springfox_schema_2_8_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloudserver/.idea/libraries/Maven__io_springfox_springfox_spi_2_8_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloudserver/.idea/libraries/Maven__io_springfox_springfox_spring_web_2_8_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloudserver/.idea/libraries/Maven__io_springfox_springfox_swagger2_2_8_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloudserver/.idea/libraries/Maven__io_springfox_springfox_swagger_common_2_8_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloudserver/.idea/libraries/Maven__io_springfox_springfox_swagger_ui_2_8_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloudserver/.idea/libraries/Maven__io_swagger_swagger_annotations_1_5_14.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloudserver/.idea/libraries/Maven__io_swagger_swagger_models_1_5_14.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloudserver/.idea/libraries/Maven__javax_annotation_javax_annotation_api_1_3_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloudserver/.idea/libraries/Maven__javax_validation_validation_api_2_0_1_Final.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloudserver/.idea/libraries/Maven__junit_junit_4_12.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloudserver/.idea/libraries/Maven__log4j_log4j_1_2_17.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloudserver/.idea/libraries/Maven__mysql_mysql_connector_java_5_1_46.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloudserver/.idea/libraries/Maven__net_bytebuddy_byte_buddy_1_7_11.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloudserver/.idea/libraries/Maven__net_bytebuddy_byte_buddy_agent_1_7_11.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloudserver/.idea/libraries/Maven__net_minidev_accessors_smart_1_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloudserver/.idea/libraries/Maven__net_minidev_json_smart_2_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloudserver/.idea/libraries/Maven__org_apache_httpcomponents_httpclient_4_5_5.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloudserver/.idea/libraries/Maven__org_apache_httpcomponents_httpcore_4_4_9.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloudserver/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_core_8_5_29.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloudserver/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_el_8_5_29.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloudserver/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_websocket_8_5_29.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloudserver/.idea/libraries/Maven__org_assertj_assertj_core_3_9_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloudserver/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloudserver/.idea/libraries/Maven__org_hamcrest_hamcrest_library_1_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloudserver/.idea/libraries/Maven__org_hibernate_validator_hibernate_validator_6_0_9_Final.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloudserver/.idea/libraries/Maven__org_javassist_javassist_3_21_0_GA.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloudserver/.idea/libraries/Maven__org_jboss_logging_jboss_logging_3_3_2_Final.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloudserver/.idea/libraries/Maven__org_jdom_jdom_1_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloudserver/.idea/libraries/Maven__org_mapstruct_mapstruct_1_2_0_Final.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloudserver/.idea/libraries/Maven__org_mockito_mockito_core_2_15_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloudserver/.idea/libraries/Maven__org_objenesis_objenesis_2_6.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloudserver/.idea/libraries/Maven__org_ow2_asm_asm_5_0_4.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloudserver/.idea/libraries/Maven__org_reflections_reflections_0_9_11.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloudserver/.idea/libraries/Maven__org_skyscreamer_jsonassert_1_5_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloudserver/.idea/libraries/Maven__org_slf4j_jcl_over_slf4j_1_7_25.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloudserver/.idea/libraries/Maven__org_slf4j_jul_to_slf4j_1_7_25.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloudserver/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_25.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloudserver/.idea/libraries/Maven__org_slf4j_slf4j_log4j12_1_7_25.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloudserver/.idea/libraries/Maven__org_springframework_boot_spring_boot_2_0_1_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloudserver/.idea/libraries/Maven__org_springframework_boot_spring_boot_autoconfigure_2_0_1_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloudserver/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_2_0_1_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloudserver/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_jdbc_2_0_1_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloudserver/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_json_2_0_1_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloudserver/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_log4j_1_3_8_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloudserver/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_test_2_0_1_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloudserver/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_tomcat_2_0_1_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloudserver/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_web_2_0_1_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloudserver/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_2_0_1_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloudserver/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_autoconfigure_2_0_1_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloudserver/.idea/libraries/Maven__org_springframework_plugin_spring_plugin_core_1_2_0_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloudserver/.idea/libraries/Maven__org_springframework_plugin_spring_plugin_metadata_1_2_0_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloudserver/.idea/libraries/Maven__org_springframework_spring_aop_5_0_5_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloudserver/.idea/libraries/Maven__org_springframework_spring_beans_5_0_5_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloudserver/.idea/libraries/Maven__org_springframework_spring_context_5_0_5_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloudserver/.idea/libraries/Maven__org_springframework_spring_core_5_0_5_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloudserver/.idea/libraries/Maven__org_springframework_spring_expression_5_0_5_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloudserver/.idea/libraries/Maven__org_springframework_spring_jcl_5_0_5_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloudserver/.idea/libraries/Maven__org_springframework_spring_jdbc_5_0_5_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloudserver/.idea/libraries/Maven__org_springframework_spring_test_5_0_5_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloudserver/.idea/libraries/Maven__org_springframework_spring_tx_5_0_5_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloudserver/.idea/libraries/Maven__org_springframework_spring_web_5_0_5_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloudserver/.idea/libraries/Maven__org_springframework_spring_webmvc_5_0_5_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloudserver/.idea/libraries/Maven__org_xmlunit_xmlunit_core_2_5_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloudserver/.idea/libraries/Maven__org_yaml_snakeyaml_1_19.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloudserver/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloudserver/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloudserver/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloudserver/cloudserver.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloudserver/logs/all.log.2018-05-07" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloudserver/logs/all.log.2018-05-08" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloudserver/logs/all.log.2018-05-10" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloudserver/logs/all.log.2018-05-11" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloudserver/logs/all.log.2018-05-14" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloudserver/logs/all.log.2018-05-17" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloudserver/logs/all.log.2018-05-19" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloudserver/logs/all.log.2018-05-20" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloudserver/logs/all.log.2018-05-21" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloudserver/mvnw" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloudserver/mvnw.cmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloudserver/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloudserver/src/main/java/META-INF/MANIFEST.MF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloudserver/src/main/java/me/fandong/cloudserver/CloudserverApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloudserver/src/main/java/me/fandong/cloudserver/Config/SwaggerConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloudserver/src/main/java/me/fandong/cloudserver/Controller/AliyunOSSBucketController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloudserver/src/main/java/me/fandong/cloudserver/Controller/AliyunOSSFileController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloudserver/src/main/java/me/fandong/cloudserver/Controller/QiniuBucketController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloudserver/src/main/java/me/fandong/cloudserver/Controller/QiniuFileController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloudserver/src/main/java/me/fandong/cloudserver/Controller/UploadController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloudserver/src/main/java/me/fandong/cloudserver/Controller/WingManController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloudserver/src/main/java/me/fandong/cloudserver/Model/AliyunOSSBucketListModel.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloudserver/src/main/java/me/fandong/cloudserver/Model/AliyunOSSBucketModel.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloudserver/src/main/java/me/fandong/cloudserver/Model/FileListModel.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloudserver/src/main/java/me/fandong/cloudserver/Model/FileModel.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloudserver/src/main/java/me/fandong/cloudserver/Model/FilePathModel.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloudserver/src/main/java/me/fandong/cloudserver/Model/MyRequestModel.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloudserver/src/main/java/me/fandong/cloudserver/Model/QiniuCommonListModel.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloudserver/src/main/java/me/fandong/cloudserver/Model/WingManProductListModel.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloudserver/src/main/java/me/fandong/cloudserver/Model/WingManProductModel.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloudserver/src/main/java/me/fandong/cloudserver/Model/WingManUserModel.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloudserver/src/main/java/me/fandong/cloudserver/dao/MyRequestMapper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloudserver/src/main/java/me/fandong/cloudserver/dao/WingManMapper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloudserver/src/main/java/me/fandong/cloudserver/dao/impl/MyRequestImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloudserver/src/main/java/me/fandong/cloudserver/dao/impl/WingManImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloudserver/src/main/java/me/fandong/cloudserver/service/MyRequestService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloudserver/src/main/java/me/fandong/cloudserver/service/WingManService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloudserver/src/main/resources/application-dev.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloudserver/src/main/resources/application-dis.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloudserver/src/main/resources/application.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloudserver/src/main/resources/log4j.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloudserver/src/test/java/me/fandong/cloudserver/CloudserverApplicationTests.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloudserver/target/classes/application-dev.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloudserver/target/classes/application-dis.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloudserver/target/classes/application.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloudserver/target/classes/log4j.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloudserver/target/cloudserver-1.0.0.jar.original" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloudserver/target/maven-archiver/pom.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloudserver/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloudserver/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloudserver/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloudserver/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloudserver/target/surefire-reports/2018-05-01T22-45-43_885.dumpstream" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloudserver/target/surefire-reports/2018-05-07T22-52-27_099.dumpstream" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloudserver/target/surefire-reports/2018-05-10T18-08-20_994-jvmRun1.dump" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloudserver/target/surefire-reports/TEST-me.fandong.cloudserver.CloudserverApplicationTests.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloudserver/target/surefire-reports/me.fandong.cloudserver.CloudserverApplicationTests.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/fandong/cloudserver/Controller/QiniuBucketController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/fandong/cloudserver/Controller/QiniuBucketController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/fandong/cloudserver/Controller/QiniuFileController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/fandong/cloudserver/Controller/QiniuFileController.java" afterDir="false" />
     </list>
-    <ignored path="$PROJECT_DIR$/target/" />
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FUSProjectUsageTrigger">
-    <session id="605502295">
-      <usages-collector id="statistics.lifecycle.project">
-        <counts>
-          <entry key="project.closed" value="1" />
-          <entry key="project.open.time.1" value="1" />
-          <entry key="project.opened" value="1" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.open">
-        <counts>
-          <entry key="java" value="2" />
-          <entry key="xml" value="1" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.open">
-        <counts>
-          <entry key="JAVA" value="2" />
-          <entry key="XML" value="1" />
-        </counts>
-      </usages-collector>
-    </session>
-  </component>
-  <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="266">
-              <caret line="14" column="51" selection-start-line="14" selection-start-column="51" selection-end-line="14" selection-end-column="51" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/me/fandong/cloudserver/CloudserverApplication.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="266">
-              <caret line="18" column="16" selection-start-line="18" selection-start-column="16" selection-end-line="18" selection-end-column="16" />
-              <folding>
-                <element signature="e#424#425#0" expanded="true" />
-                <element signature="e#497#498#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="jar://$MAVEN_REPOSITORY$/io/springfox/springfox-schema/2.8.0/springfox-schema-2.8.0-sources.jar!/springfox/documentation/schema/XmlModelPlugin.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="114">
-              <caret line="31" column="13" selection-start-line="31" selection-start-column="13" selection-end-line="31" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -254,6 +53,7 @@
     <option name="width" value="1920" />
     <option name="height" value="1059" />
   </component>
+  <component name="ProjectId" id="1t9rQSlj3zC0EClEJs5l3NAH9vP" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -275,6 +75,10 @@
       </pane>
     </panes>
   </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
     <property name="RequestMappingsPanelOrder0" value="0" />
     <property name="RequestMappingsPanelOrder1" value="1" />
@@ -284,20 +88,21 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1545017843190" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
+    <option name="configurationTypes">
+      <set>
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
     </option>
   </component>
   <component name="RunManager">
@@ -313,20 +118,35 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
+      <option name="TEST_OBJECT" value="class" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <configuration name="CloudserverApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <module name="cloudserver" />
+      <module name="CloudServer" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="me.fandong.cloudserver.CloudserverApplication" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SHORTEN_COMMAND_LINE" value="NONE" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="TestNG" factoryName="TestNG">
+    <configuration default="true" type="TestNG">
+      <option name="TEST_OBJECT" value="CLASS" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <properties />
       <listeners />
@@ -334,16 +154,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
+    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType">
       <module name="" />
       <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
       <option name="PROGRAM_PARAMETERS" />
-      <predefined_log_file id="idea.log" enabled="true" />
+      <predefined_log_file enabled="true" id="idea.log" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -355,6 +176,8 @@
       <option name="presentableId" value="Default" />
       <updated>1545017491230</updated>
       <workItem from="1545017493370" duration="173000" />
+      <workItem from="1622192134546" duration="986000" />
+      <workItem from="1622421145517" duration="1473000" />
     </task>
     <servers />
   </component>
@@ -399,10 +222,18 @@
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="3" />
   </component>
-  <component name="VcsContentAnnotationSettings">
-    <option name="myLimit" value="2678400000" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/pom.xml">
